@@ -20,6 +20,8 @@ public class Script_next_wave : MonoBehaviour
     {
         var next = FindObjectOfType<Script_enemy_spawner>();
 
+        var test = GameObject.FindGameObjectsWithTag("Spawner");
+
         next.spawned = 0;
         next.spawn = true;
     }
