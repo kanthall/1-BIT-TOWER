@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e933a3e1b3cc8bc42833073f39aa1e4a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SBH
+  fontNames:
+  - SBH
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2e12bc54f7dfabb48b0862633f7afabe, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
