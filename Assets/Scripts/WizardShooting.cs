@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Script_wizard_shooting : MonoBehaviour
+public class WizardShooting : MonoBehaviour
 {
     [Header("Shooting")]
     [SerializeField] GameObject wizardProjectile;

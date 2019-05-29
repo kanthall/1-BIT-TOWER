@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Script_wizard_projectiles : MonoBehaviour
+public class WizardProjectiles : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 1f;
     [SerializeField] int damage = 1;
@@ -19,8 +19,8 @@ public class Script_wizard_projectiles : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        var health = otherCollider.GetComponent<Script_enemy_health>();
-        var attacker = otherCollider.GetComponent<Script_enemy_move>();
+        var health = otherCollider.GetComponent<EnemyHealth>();
+        var attacker = otherCollider.GetComponent<EnemyMovement>();
 
         if (health && attacker)
         {

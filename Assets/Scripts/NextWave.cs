@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Script_next_wave : MonoBehaviour
+public class NextWave : MonoBehaviour
 {
     
     void Start()
@@ -18,7 +18,7 @@ public class Script_next_wave : MonoBehaviour
 
     public void spawnNextWave()
     {
-        var next = FindObjectOfType<Script_enemy_spawner>();
+        var next = FindObjectOfType<EnemySpawner>();
 
         var test = GameObject.FindGameObjectsWithTag("Spawner");
 

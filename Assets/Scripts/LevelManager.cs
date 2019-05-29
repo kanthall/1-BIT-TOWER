@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Script_level_manager : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
 
     [SerializeField] float delayInSeconds = 4f;

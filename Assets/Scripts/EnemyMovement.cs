@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Script_enemy_move : MonoBehaviour
+public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float enemyMoveSpeed = 0.5f;    
 

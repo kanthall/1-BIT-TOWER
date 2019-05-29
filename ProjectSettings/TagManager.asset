@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wizard
   - Enemy
+  - Spawner
   layers:
   - Default
   - TransparentFX

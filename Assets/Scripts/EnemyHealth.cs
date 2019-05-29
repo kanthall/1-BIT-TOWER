@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Script_enemy_health : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     [Header("Enemie Stats")]
     [SerializeField] int enemyHealth = 0;

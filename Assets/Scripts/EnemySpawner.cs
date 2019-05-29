@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Script_enemy_spawner : MonoBehaviour
+public class EnemySpawner : MonoBehaviour
 {
 
     [Header("Enemies Types")]
