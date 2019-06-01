@@ -11,7 +11,6 @@ public class WizardShooting : MonoBehaviour
     [SerializeField] float shotCounter;
     [SerializeField] float minTimeBetweenShots = 0.2f;
     [SerializeField] float maxTimeBetweenShots = 1f;
-    [SerializeField] float projectileSpeed = 10f;
 
     [Header("Music")]
     [SerializeField] AudioClip projectileSound;

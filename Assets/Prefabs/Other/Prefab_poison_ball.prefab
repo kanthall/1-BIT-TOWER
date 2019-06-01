@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4532614979192913859}
   - component: {fileID: 7449849322554180460}
   - component: {fileID: 7912849576431769339}
-  - component: {fileID: -1832450525537312645}
   - component: {fileID: -1419446115044818813}
+  - component: {fileID: -1832450525537312645}
   m_Layer: 0
   m_Name: Prefab_poison_ball
   m_TagString: Untagged
@@ -102,19 +102,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-1832450525537312645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7912849576431769338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e423fd2ed9a38dd4984cf9a18712869d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileSpeed: 1
 --- !u!61 &-1419446115044818813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -141,3 +128,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.09}
   m_EdgeRadius: 0
+--- !u!114 &-1832450525537312645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7912849576431769338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e423fd2ed9a38dd4984cf9a18712869d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpeed: 1
+  damage: 1

@@ -5,7 +5,7 @@ using UnityEngine;
 public class WizardProjectiles : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 1f;
-    [SerializeField] int damage = 1;
+    [SerializeField] int damage = 2;
 
     void Update()
     {

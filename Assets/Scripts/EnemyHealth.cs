@@ -1,26 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [Header("Enemie Stats")]
-    [SerializeField] int enemyHealth = 0;
+    [Header("Enemy Stats")]
+    [SerializeField] float startHealth = 100;
+    [SerializeField] float health;
     [SerializeField] int scoreValue = 150;
 
     [Header("Visual & sound")]
     [SerializeField] GameObject deathParticle;
     [SerializeField] AudioClip hitSound;
 
-    //on hit - deal damage
+    [Header("Healthbar")]
+    [SerializeField] Image healthBar;
+
+    AudioSource audioSource; 
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        health = startHealth;
+    }
+
     public void DealDamage(int damage)
     {
-        enemyHealth -= damage;
+        health = health - damage;
 
-        if (enemyHealth <= 0)
+        healthBar.fillAmount = health / startHealth;
+
+        if (health <= 0)
         {
+            Camera.main.GetComponent<CameraShake>().Shake();
             showDeathParticle();
-            //on health 0 - destroy game object
+
             Destroy(gameObject);
         }
     }
@@ -29,7 +44,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (!deathParticle) { return; }
         GameObject deathVFXObject = Instantiate(deathParticle, transform.position, Quaternion.identity);
-        AudioSource.PlayClipAtPoint(hitSound, new Vector3(0, 0, 0));
+        audioSource.PlayOneShot(hitSound);
         Destroy(deathVFXObject, 0.5f);
     }
 }
