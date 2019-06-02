@@ -12,7 +12,10 @@ public class EnemyHealth : MonoBehaviour
 
     [Header("Visual & sound")]
     [SerializeField] GameObject deathParticle;
+    [SerializeField] GameObject bloodParticle;
     [SerializeField] AudioClip hitSound;
+    [SerializeField] AudioClip bloodSound;
+    [SerializeField] [Range(0, 1)] float projectileSoundVolume = 0.50f;
 
     [Header("Healthbar")]
     [SerializeField] Image healthBar;
@@ -31,11 +34,13 @@ public class EnemyHealth : MonoBehaviour
 
         healthBar.fillAmount = health / startHealth;
 
+        AudioSource.PlayClipAtPoint(hitSound, Camera.main.transform.position, projectileSoundVolume);
+
         if (health <= 0)
         {
             Camera.main.GetComponent<CameraShake>().Shake();
             showDeathParticle();
-
+            showBloodParticle();
             Destroy(gameObject);
         }
     }
@@ -44,7 +49,22 @@ public class EnemyHealth : MonoBehaviour
     {
         if (!deathParticle) { return; }
         GameObject deathVFXObject = Instantiate(deathParticle, transform.position, Quaternion.identity);
-        audioSource.PlayOneShot(hitSound);
         Destroy(deathVFXObject, 0.5f);
+    }
+
+    private void showBloodParticle()
+    {
+        if (!bloodParticle)
+        {
+            return;
+        }
+        else
+        {
+            Debug.Log("udalo sie");
+            GameObject bloodObject = Instantiate(bloodParticle, transform.position, Quaternion.identity);
+            //audioSource.PlayOneShot(bloodSound);
+            AudioSource.PlayClipAtPoint(bloodSound, Camera.main.transform.position, projectileSoundVolume);
+            Destroy(bloodObject, 3f);
+        }
     }
 }

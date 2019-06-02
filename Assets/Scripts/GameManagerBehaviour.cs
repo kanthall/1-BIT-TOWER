@@ -6,44 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerBehaviour : MonoBehaviour
 {
-    public Text healthLabel;
+    [SerializeField] Text bloodLabel;
     public GameObject[] healthIndicator;
 
-    private int health;
-    public int Health
+    private void Start()
+    {
+        Gold = 200;
+    }
+
+    private int gold;
+    public int Gold
     {
         get
         {
-            return health;
+            return gold;
         }
         set
         {
-            // 1
-            if (value < health)
-            {
-                Camera.main.GetComponent<CameraShake>().Shake();
-            }
-            // 2
-            health = value;
-            healthLabel.text = "HEALTH: " + health;
-            // 3
-            if (health <= 0)
-            {
-                SceneManager.LoadScene(0);
-            }
-            // 4 
-            for (int i = 0; i < healthIndicator.Length; i++)
-            {
-                if (i < Health)
-                {
-                    healthIndicator[i].SetActive(true);
-                }
-                else
-                {
-                    healthIndicator[i].SetActive(false);
-                }
-            }
+            gold = value;
+            bloodLabel.GetComponent<Text>().text = "" + gold;
         }
     }
 
+   
 }

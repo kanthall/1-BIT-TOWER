@@ -28,10 +28,10 @@ public class CameraShake : MonoBehaviour
         {
             transformAtOrigin.localPosition = originPosition + Random.insideUnitSphere * shakeIntensity;
             transformAtOrigin.localRotation = new Quaternion(
-                originRotation.x + Random.Range(-shakeIntensity, shakeIntensity) * .2f,
-                originRotation.y + Random.Range(-shakeIntensity, shakeIntensity) * .2f,
-                originRotation.z + Random.Range(-shakeIntensity, shakeIntensity) * .2f,
-                originRotation.w + Random.Range(-shakeIntensity, shakeIntensity) * .2f);
+                originRotation.x + Random.Range(-shakeIntensity, shakeIntensity) * .1f,
+                originRotation.y + Random.Range(-shakeIntensity, shakeIntensity) * .1f,
+                originRotation.z + Random.Range(-shakeIntensity, shakeIntensity) * .1f,
+                originRotation.w + Random.Range(-shakeIntensity, shakeIntensity) * .1f);
             shakeIntensity -= shakeDecay;
         }
         else

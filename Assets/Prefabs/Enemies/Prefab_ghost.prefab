@@ -163,7 +163,11 @@ MonoBehaviour:
   scoreValue: 150
   deathParticle: {fileID: 4691589010909807673, guid: 34f8f3fa15baa7c46a3d389b936adf8e,
     type: 3}
-  hitSound: {fileID: 8300000, guid: 72d38edde990ef64189e0893737bb98e, type: 3}
+  bloodParticle: {fileID: 3315457047935365390, guid: c06a2fd460b172c4299f4e413844c094,
+    type: 3}
+  hitSound: {fileID: 8300000, guid: a6ec053a868997a4681db456da4b17dd, type: 3}
+  bloodSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
+  projectileSoundVolume: 1
   healthBar: {fileID: 335710043177421926}
 --- !u!82 &6654595823894127027
 AudioSource:

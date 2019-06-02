@@ -7,7 +7,14 @@ public class PlacingUnits : MonoBehaviour
 
     [SerializeField] private GameObject unitPrefab;
     private GameObject unit;
-    
+
+    [SerializeField] bool unitPlacing = false;
+
+    private void Start()
+    {
+        
+    }
+
 
     private bool canPlaceUnit()
     {
@@ -17,19 +24,28 @@ public class PlacingUnits : MonoBehaviour
     
     void OnMouseUp()
     {
-       
-        if (canPlaceUnit())
+        var next = FindObjectOfType<GameManagerBehaviour>();
+
+        if (canPlaceUnit() && unitPlacing == false)
         {
             
             unit = (GameObject)
             Instantiate(unitPrefab , transform.position, Quaternion.identity);
 
             
+            next.Gold = next.Gold - 50;
 
-
-            // TODO: Deduct gold
+            
         }
-        
+
+        if (next.Gold == 0)
+        {
+            Debug.Log("koniec kasy");
+            next.Gold = 0;
+            unitPlacing = true;
+            return;
+        }
+
     }
 
     void OnMouseOver()
