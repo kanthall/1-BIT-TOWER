@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 7912849576431769339}
   - component: {fileID: -1419446115044818813}
   - component: {fileID: -1832450525537312645}
-  m_Layer: 0
+  - component: {fileID: 4513448888475374299}
+  m_Layer: 9
   m_Name: Prefab_poison_ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,3 +143,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpeed: 1
   damage: 1
+--- !u!50 &4513448888475374299
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7912849576431769338}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

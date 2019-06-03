@@ -28,24 +28,19 @@ public class PlacingUnits : MonoBehaviour
 
         if (canPlaceUnit() && unitPlacing == false)
         {
-            
-            unit = (GameObject)
-            Instantiate(unitPrefab , transform.position, Quaternion.identity);
-
-            
-            next.Gold = next.Gold - 50;
-
-            
+            if (next.Gold == 0)
+            {
+                Debug.Log("koniec kasy");
+                next.Gold = 0;
+                unitPlacing = true;
+                return;
+            }
+            else
+            {
+                unit = (GameObject) Instantiate(unitPrefab, transform.position, Quaternion.identity);
+                next.Gold = next.Gold - 50;
+            }
         }
-
-        if (next.Gold == 0)
-        {
-            Debug.Log("koniec kasy");
-            next.Gold = 0;
-            unitPlacing = true;
-            return;
-        }
-
     }
 
     void OnMouseOver()

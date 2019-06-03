@@ -9,43 +9,55 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] GameObject[] enemiesArray;
 
     [Header("Time")]
-    [SerializeField] float minTime = 10f;
-    [SerializeField] float maxTime = 15f;
+    [SerializeField] float timeBeforeSpawn;
+    [SerializeField] float time;
 
+    [Header("Spawn")]
     [SerializeField] public bool spawn = true;
-    [SerializeField] public int spawned = 0;
+    [SerializeField] public int unitsToSpawn = 0;
 
-    /*IEnumerator Start()
+    private void Start()
     {
-        while (spawn)
-        {
-
-            yield return new WaitForSeconds(Random.Range(minTime, maxTime));
-            Spawn();
-            spawned++;
-
-            if (spawned >= 1)
-            {
-                spawn = false;
-                break;
-            }
-
-        }
-    }*/
+        timeBeforeSpawn = time;
+    }
 
     void Update()
     {
+
+        CountDownAndShoot(); 
+        /*
         while (spawn)
         {
-            Spawn();
+            CountDownAndShoot();
             spawned++;
 
-            if (spawned >= 1)
+            if (spawned >= 5)
             {
                 spawn = false;
                 break;
             }
 
+        }*/
+    }
+
+    private void CountDownAndShoot()
+    {
+        if (spawn == true)
+        {
+            time -= Time.deltaTime;
+
+            if (time <= 0f)
+            {
+                Spawn();
+                unitsToSpawn++;
+                time = timeBeforeSpawn;
+
+                if (unitsToSpawn == 1)
+                {
+                    spawn = false;
+                    return;
+                }
+            }
         }
     }
 
@@ -57,4 +69,6 @@ public class EnemySpawner : MonoBehaviour
         var newObject = Instantiate(array, transform.position, Quaternion.identity);
         newObject.transform.parent = gameObject.transform;
     }
+
+   
 }

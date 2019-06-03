@@ -18,11 +18,23 @@ public class NextWave : MonoBehaviour
 
     public void spawnNextWave()
     {
-        var next = FindObjectOfType<EnemySpawner>();
+        /*var next = FindObjectsOfType<EnemySpawner>();
+        
+        //var test = GameObject.FindGameObjectsWithTag("Spawner");
 
-        var test = GameObject.FindGameObjectsWithTag("Spawner");
+        for (int i = 0; i < next.Length; i++)
+            {
+            next[i].unitsToSpawn = 0;
+            next[i].spawn = true;
+        }
+        */
 
-        next.spawned = 0;
-        next.spawn = true;
+        EnemySpawner[] enemySpawners = FindObjectsOfType<EnemySpawner>();
+
+        for (int i = 0; i < enemySpawners.Length; i++)
+        {
+            enemySpawners[i].unitsToSpawn = 0;
+            enemySpawners[i].spawn = true;
+        }
     }
 }
