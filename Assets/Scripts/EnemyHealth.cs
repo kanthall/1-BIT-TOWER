@@ -60,7 +60,7 @@ public class EnemyHealth : MonoBehaviour
         }
         else
         {
-            Debug.Log("udalo sie");
+            Debug.Log("udalo sie, mamy krew");
             GameObject bloodObject = Instantiate(bloodParticle, transform.position, Quaternion.identity);
             //audioSource.PlayOneShot(bloodSound);
             AudioSource.PlayClipAtPoint(bloodSound, Camera.main.transform.position, projectileSoundVolume);

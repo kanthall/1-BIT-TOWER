@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlacingUnits : MonoBehaviour
 {
 
-    [SerializeField] private GameObject unitPrefab;
+    [SerializeField] public GameObject unitPrefab;
+    [SerializeField] GameObject placingParticle;
     private GameObject unit;
+    [SerializeField] GameObject particlePlace;
 
     [SerializeField] bool unitPlacing = false;
 
@@ -38,6 +40,8 @@ public class PlacingUnits : MonoBehaviour
             else
             {
                 unit = (GameObject) Instantiate(unitPrefab, transform.position, Quaternion.identity);
+                Instantiate(placingParticle, particlePlace.transform.position, Quaternion.identity);
+                Destroy(placingParticle, 1f);
                 next.Gold = next.Gold - 50;
             }
         }
