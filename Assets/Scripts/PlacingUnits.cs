@@ -8,6 +8,7 @@ public class PlacingUnits : MonoBehaviour
     [SerializeField] public GameObject unitPrefab;
     [SerializeField] GameObject placingParticle;
     private GameObject unit;
+    private GameObject particle;
     [SerializeField] GameObject particlePlace;
 
     [SerializeField] bool unitPlacing = false;
@@ -39,9 +40,9 @@ public class PlacingUnits : MonoBehaviour
             }
             else
             {
-                unit = (GameObject) Instantiate(unitPrefab, transform.position, Quaternion.identity);
-                Instantiate(placingParticle, particlePlace.transform.position, Quaternion.identity);
-                Destroy(placingParticle, 1f);
+                unit = (GameObject)Instantiate(unitPrefab, transform.position, Quaternion.identity);
+                particle = (GameObject)Instantiate(placingParticle, particlePlace.transform.position, Quaternion.identity);
+                Destroy(particle, 1f);
                 next.Gold = next.Gold - 50;
             }
         }
@@ -49,7 +50,7 @@ public class PlacingUnits : MonoBehaviour
 
     void OnMouseOver()
     {
-        gameObject.GetComponent<Renderer>().material.color = new Color32(245, 50, 50, 255);
+        gameObject.GetComponent<Renderer>().material.color = new Color32(255, 177, 177, 255);
     }
 
     void OnMouseExit()
