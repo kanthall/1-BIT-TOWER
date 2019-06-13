@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -2288923818378853388}
   - component: {fileID: -6744236851441895426}
   - component: {fileID: 6654595823894127027}
+  - component: {fileID: -956987897852294354}
   m_Layer: 8
   m_Name: Prefab_ghost
   m_TagString: Enemy
@@ -265,6 +266,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-956987897852294354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019632099307947733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470a0305a31d21a44a22b524d24c2b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blood: 3
 --- !u!1001 &1345210887516600233
 PrefabInstance:
   m_ObjectHideFlags: 0

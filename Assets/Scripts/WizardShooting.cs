@@ -8,7 +8,7 @@ public class WizardShooting : MonoBehaviour
     [SerializeField] GameObject wizardProjectile;
     [SerializeField] GameObject wand;
 
-    [SerializeField] float shotCounter;
+    [SerializeField] float timeBeforeFirstShoot;
     [SerializeField] float minTimeBetweenShots = 0.2f;
     [SerializeField] float maxTimeBetweenShots = 1f;
 
@@ -22,8 +22,8 @@ public class WizardShooting : MonoBehaviour
     [Header("Death")]
     [SerializeField] GameObject deathParticle;
 
-    public Transform wizard;
-    public Transform enemy;
+    //public Transform wizard;
+    //public Transform enemy;
 
     void Start()
     {
@@ -52,11 +52,11 @@ public class WizardShooting : MonoBehaviour
       
     private void CountDownAndShoot()
     {
-        shotCounter -= Time.deltaTime;
-        if (shotCounter <= 0f)
+        timeBeforeFirstShoot -= Time.deltaTime;
+        if (timeBeforeFirstShoot <= 0f)
         {
             Shooting();
-            shotCounter = maxTimeBetweenShots;
+            timeBeforeFirstShoot = maxTimeBetweenShots;
         }
     }
 

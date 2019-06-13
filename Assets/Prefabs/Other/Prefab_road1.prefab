@@ -151,9 +151,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d81f29478da1e040a68fb587a8f21ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitPrefab: {fileID: 5564454690962094851, guid: 1d968538637e7cd4cb1ce7b5b16cdb76,
-    type: 3}
-  placingParticle: {fileID: 7285990772871968805, guid: 30b1b79e1e8e40b4283e8189bb0b8c79,
-    type: 3}
-  particlePlace: {fileID: 1977046102500547792}
-  unitPlacing: 0
+  placingSound: {fileID: 8300000, guid: 1c38f1b7c60eb984fbbcfa12176f100e, type: 3}
+  placingSoundVolume: 1

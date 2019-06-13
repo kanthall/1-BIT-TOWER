@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -1183600346485620108}
   - component: {fileID: -5506370324480841870}
   - component: {fileID: -5746023289033436313}
+  - component: {fileID: 3527169393162007353}
   m_Layer: 8
   m_Name: Prefab_golem
   m_TagString: Enemy
@@ -265,6 +266,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3527169393162007353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7448180306381164526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470a0305a31d21a44a22b524d24c2b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blood: 5
 --- !u!1001 &6015405727260114642
 PrefabInstance:
   m_ObjectHideFlags: 0

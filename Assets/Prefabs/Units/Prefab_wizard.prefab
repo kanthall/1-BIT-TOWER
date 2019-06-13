@@ -127,14 +127,12 @@ MonoBehaviour:
   wizardProjectile: {fileID: 7912849576431769338, guid: 5bba7866d53e8944087cba603d183631,
     type: 3}
   wand: {fileID: 117333369}
-  shotCounter: 2
+  timeBeforeFirstShoot: 3
   minTimeBetweenShots: 0.5
-  maxTimeBetweenShots: 1
+  maxTimeBetweenShots: 2
   projectileSound: {fileID: 8300000, guid: 72d38edde990ef64189e0893737bb98e, type: 3}
   projectileSoundVolume: 0.25
   deathSound: {fileID: 8300000, guid: b6ca9eae276fc1d4e8c6857a262a92fc, type: 3}
   deathSoundVolume: 0.75
   deathParticle: {fileID: 4691589010909807673, guid: 34f8f3fa15baa7c46a3d389b936adf8e,
     type: 3}
-  wizard: {fileID: 0}
-  enemy: {fileID: 0}

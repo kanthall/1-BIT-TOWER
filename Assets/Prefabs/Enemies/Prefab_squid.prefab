@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4105729500114964496}
   - component: {fileID: -7220247195418846244}
   - component: {fileID: 7859885101970319478}
+  - component: {fileID: 2845894957378558527}
   m_Layer: 8
   m_Name: Prefab_squid
   m_TagString: Enemy
@@ -265,6 +266,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2845894957378558527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3864371862078414986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470a0305a31d21a44a22b524d24c2b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blood: 2
 --- !u!1001 &5185690314392315658
 PrefabInstance:
   m_ObjectHideFlags: 0

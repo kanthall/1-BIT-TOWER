@@ -6,6 +6,7 @@ public class WizardProjectiles : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 1f;
     [SerializeField] int damage = 2;
+    float timeToDestroyProjectiles = 1f;
 
     void Update()
     {
@@ -15,6 +16,7 @@ public class WizardProjectiles : MonoBehaviour
     private void Move()
     {
         transform.Translate(Vector3.right * Time.deltaTime * projectileSpeed);
+        Destroy(gameObject, timeToDestroyProjectiles);
     }
 
     private void OnTriggerEnter2D(Collider2D otherCollider)

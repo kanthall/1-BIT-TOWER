@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8168801368881212191}
   - component: {fileID: 4322351101221220473}
   - component: {fileID: 5469236788132654543}
+  - component: {fileID: -7194833746655828731}
   m_Layer: 8
   m_Name: Prefab_bat
   m_TagString: Enemy
@@ -265,6 +266,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-7194833746655828731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7501588899334910321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470a0305a31d21a44a22b524d24c2b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blood: 1
 --- !u!1001 &1433839422301492551
 PrefabInstance:
   m_ObjectHideFlags: 0

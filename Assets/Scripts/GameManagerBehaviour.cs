@@ -6,12 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerBehaviour : MonoBehaviour
 {
-    [SerializeField] Text bloodLabel;
-    public GameObject[] healthIndicator;
+    [SerializeField] public Text bloodLabel;
 
     private void Start()
     {
-        Gold = 200;
+        Gold = 50;
     }
 
     private int gold;
@@ -27,6 +26,4 @@ public class GameManagerBehaviour : MonoBehaviour
             bloodLabel.GetComponent<Text>().text = "" + gold;
         }
     }
-
-   
 }
