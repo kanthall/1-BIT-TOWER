@@ -1603,7 +1603,7 @@ TextureImporter:
     second: colored_transparent_532
   - first:
       213: -1597119605757690509
-    second: colored_transparent_533
+    second: _castle_tower
   - first:
       213: 6002523892572869874
     second: colored_transparent_534
@@ -14157,15 +14157,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_533
+      name: _castle_tower
       rect:
         serializedVersion: 2
         x: 119
         y: 237
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
