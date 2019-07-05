@@ -598,19 +598,19 @@ TextureImporter:
     second: colored_transparent_197
   - first:
       213: -1634386940223633645
-    second: colored_transparent_198
+    second: _water_flowers1
   - first:
       213: -4343436406771531980
-    second: colored_transparent_199
+    second: _water_flowers2
   - first:
       213: 8208436769420484140
-    second: colored_transparent_200
+    second: _water_flowers3
   - first:
       213: 7984024147963596094
-    second: colored_transparent_201
+    second: _water_flowers4
   - first:
       213: -6736938611800550061
-    second: colored_transparent_202
+    second: _water_flowers5
   - first:
       213: 9203193653626896872
     second: colored_transparent_203
@@ -7122,15 +7122,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_198
+      name: _water_flowers1
       rect:
         serializedVersion: 2
         x: 221
         y: 424
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7143,15 +7143,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_199
+      name: _water_flowers2
       rect:
         serializedVersion: 2
         x: 238
         y: 424
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7164,15 +7164,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_200
+      name: _water_flowers3
       rect:
         serializedVersion: 2
         x: 255
         y: 424
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7185,15 +7185,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_201
+      name: _water_flowers4
       rect:
         serializedVersion: 2
         x: 272
         y: 424
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7206,15 +7206,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_202
+      name: _water_flowers5
       rect:
         serializedVersion: 2
         x: 289
         y: 424
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

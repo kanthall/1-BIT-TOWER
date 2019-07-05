@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &565269098496145888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 565269098496145693}
+  - component: {fileID: 565269098496145890}
+  m_Layer: 0
+  m_Name: Flowers seeder1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &565269098496145693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565269098496145888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.04, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &565269098496145890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565269098496145888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f481688d108cd6445b0b4f08955ea0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xMin: -3.4
+  xMax: 3.23
+  yMin: -1.87
+  yMax: -1.02
+  numberOfObjects: 50
+  theGoodies:
+  - {fileID: 1636339747913202612, guid: 2791c39355548e64382ba3d2793f7993, type: 3}
+  - {fileID: 2370343841015324782, guid: 080b1e5cb03af7f41935cbbb5018b9eb, type: 3}
+  - {fileID: 5724730075383965019, guid: def95ec0a40e2b647a4d918e2671f45d, type: 3}
+  - {fileID: 245813260011508155, guid: e928e3c49b79d7a4e9d8b3e9bb5aa777, type: 3}
+  - {fileID: 2933675939529495185, guid: 488073de7de29124faedb881b5512d52, type: 3}

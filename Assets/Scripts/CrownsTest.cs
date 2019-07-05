@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 public class CrownsTest : MonoBehaviour
 {
     [SerializeField] int health;
-    [SerializeField] GameObject[] crown;
-    float delayInSeconds = 2;
+
+    [SerializeField] List<GameObject> crowns = new List<GameObject>();
+
+    float delayInSeconds = 10;
 
     void Start()
     {
-        crown = GameObject.FindGameObjectsWithTag("Crown");
-        health = crown.Length;
+        health = crowns.Count;
     }
 
     // Update is called once per frame
@@ -29,7 +30,9 @@ public class CrownsTest : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         health -= 1;
-        
+        crowns.RemoveAt(crowns.Count - 1);
+        //usuwanie za każdą kolizję do dodania
+        Destroy(GameObject.FindWithTag("Crown"));
     }
 
     IEnumerator WaitAndLoad()
