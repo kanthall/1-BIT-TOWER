@@ -109,7 +109,7 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   serializedVersion: 2
   m_Size: {x: 0.14093256, y: 0.08049543}
   m_EdgeRadius: 0
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 1
   health: 0
-  scoreValue: 150
+  scoreValue: 5
   deathParticle: {fileID: 4691589010909807673, guid: 34f8f3fa15baa7c46a3d389b936adf8e,
     type: 3}
   bloodParticle: {fileID: 3315457047935365390, guid: c06a2fd460b172c4299f4e413844c094,

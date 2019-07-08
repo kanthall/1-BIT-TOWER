@@ -2,37 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CrownsTest : MonoBehaviour
 {
     [SerializeField] int health;
-
+    [SerializeField] public Text healthValue;
     [SerializeField] List<GameObject> crowns = new List<GameObject>();
 
-    float delayInSeconds = 10;
+    private CameraShake cameraShake;
+
+    float delayInSeconds = 2;
 
     void Start()
     {
+        cameraShake = Camera.main.GetComponent<CameraShake>();
+
         health = crowns.Count;
+        healthValue.GetComponent<Text>().text = "" + health;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (health <= 0)
         {
-            Debug.Log("KONIEC");
-
             StartCoroutine(WaitAndLoad());
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        cameraShake.Shake();
+
         health -= 1;
-        crowns.RemoveAt(crowns.Count - 1);
-        //usuwanie za każdą kolizję do dodania
-        Destroy(GameObject.FindWithTag("Crown"));
+        healthValue.text = health.ToString();
+
+        if (crowns.Count != 0)
+        {
+            GameObject selectedCrown = crowns[crowns.Count - 1];
+            selectedCrown.SetActive(false);
+            crowns.Remove(selectedCrown);
+        }
+        else
+        {
+            Debug.Log("Empty list! No more crowns!");
+        }
     }
 
     IEnumerator WaitAndLoad()

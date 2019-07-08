@@ -8,7 +8,7 @@ public class EnemyHealth : MonoBehaviour
     [Header("Enemy Stats")]
     [SerializeField] float startHealth = 100;
     [SerializeField] float health;
-    [SerializeField] int scoreValue = 150;
+    [SerializeField] int scoreValue = 10;
 
     [Header("Visual & sound")]
     [SerializeField] GameObject deathParticle;
@@ -42,6 +42,7 @@ public class EnemyHealth : MonoBehaviour
             showDeathParticle();
             showBloodParticle();
             Destroy(gameObject);
+            FindObjectOfType<ScoreDisplay>().AddToScore(scoreValue);
         }
     }
 
