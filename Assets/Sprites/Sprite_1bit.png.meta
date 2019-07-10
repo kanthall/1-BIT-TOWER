@@ -4,16 +4,16 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 4285185840188377049
-    second: colored_transparent_0
+    second: _brow_bush
   - first:
       213: 8355749346602332410
-    second: colored_transparent_1
+    second: _cemetary_road2
   - first:
       213: 3230059895664381876
     second: colored_transparent_2
   - first:
       213: 8960789074176448079
-    second: colored_transparent_3
+    second: _cemetary_road1
   - first:
       213: -6224410429619551159
     second: _bush1
@@ -94,22 +94,22 @@ TextureImporter:
     second: colored_transparent_29
   - first:
       213: 7012289439761142941
-    second: colored_transparent_30
+    second: _tree1
   - first:
       213: 3196515013777646341
-    second: colored_transparent_31
+    second: _tree2
   - first:
       213: -3859473554422040895
-    second: colored_transparent_32
+    second: _tree3
   - first:
       213: -338000179085604362
-    second: colored_transparent_33
+    second: _tree4
   - first:
       213: -3642816118374106938
-    second: colored_transparent_34
+    second: _tree5
   - first:
       213: 7332873149968316432
-    second: colored_transparent_35
+    second: _tree6
   - first:
       213: -579871948696398449
     second: colored_transparent_36
@@ -187,7 +187,7 @@ TextureImporter:
     second: colored_transparent_60
   - first:
       213: 1814022987706627916
-    second: colored_transparent_61
+    second: _water_plant
   - first:
       213: -8535787223667022238
     second: colored_transparent_62
@@ -196,16 +196,16 @@ TextureImporter:
     second: colored_transparent_63
   - first:
       213: -4898900238198668091
-    second: colored_transparent_64
+    second: _tree7
   - first:
       213: 6250332748129571689
-    second: colored_transparent_65
+    second: _tree8
   - first:
       213: 389170956350422424
-    second: colored_transparent_66
+    second: _rocks1
   - first:
       213: -1452130443855094781
-    second: colored_transparent_67
+    second: _dead_tree
   - first:
       213: 2230114389170036791
     second: colored_transparent_68
@@ -295,10 +295,10 @@ TextureImporter:
     second: colored_transparent_96
   - first:
       213: -8953713608573161094
-    second: colored_transparent_97
+    second: _bone_fence1
   - first:
       213: 8499847940956134456
-    second: colored_transparent_98
+    second: _bone_fence2
   - first:
       213: -2147785383088473143
     second: _road16
@@ -652,10 +652,10 @@ TextureImporter:
     second: _golem
   - first:
       213: -5166301371170382352
-    second: colored_transparent_216
+    second: _sign1
   - first:
       213: -515568720839805702
-    second: colored_transparent_217
+    second: _sign2
   - first:
       213: 2322448276218110722
     second: colored_transparent_218
@@ -862,7 +862,7 @@ TextureImporter:
     second: colored_transparent_285
   - first:
       213: -2283754515110227567
-    second: colored_transparent_286
+    second: _doors
   - first:
       213: -5053746334913765363
     second: colored_transparent_287
@@ -1132,13 +1132,13 @@ TextureImporter:
     second: colored_transparent_375
   - first:
       213: 1365348798683009431
-    second: colored_transparent_376
+    second: _red_roof1
   - first:
       213: 6227070181989899096
-    second: colored_transparent_377
+    second: _red_roof2
   - first:
       213: -129443377866182726
-    second: colored_transparent_378
+    second: _red_roof3
   - first:
       213: -1785301031342707090
     second: colored_transparent_379
@@ -1303,13 +1303,13 @@ TextureImporter:
     second: colored_transparent_432
   - first:
       213: 4085755842862649546
-    second: colored_transparent_433
+    second: _tombstone1
   - first:
       213: -4343018161714169769
-    second: colored_transparent_434
+    second: _tombstone2
   - first:
       213: 8536000797703785580
-    second: colored_transparent_435
+    second: _tombstone3
   - first:
       213: -1468430053901446991
     second: colored_transparent_436
@@ -1417,7 +1417,7 @@ TextureImporter:
     second: colored_transparent_470
   - first:
       213: 2956398733484953730
-    second: colored_transparent_471
+    second: _cemetary_wall
   - first:
       213: 7290773615788488110
     second: colored_transparent_472
@@ -1612,7 +1612,7 @@ TextureImporter:
     second: colored_transparent_535
   - first:
       213: 6840478278385239773
-    second: colored_transparent_536
+    second: _white_walls
   - first:
       213: 1562681099333468740
     second: colored_transparent_537
@@ -2290,16 +2290,16 @@ TextureImporter:
     second: colored_transparent_761
   - first:
       213: 2612250399047052799
-    second: colored_transparent_762
+    second: _units_allow1
   - first:
       213: 8552414154612974163
-    second: colored_transparent_763
+    second: _units_allow2
   - first:
       213: 3234567666439043443
-    second: colored_transparent_764
+    second: _units_allow3
   - first:
       213: -2665598875169542699
-    second: colored_transparent_765
+    second: _units_allow4
   - first:
       213: 8999224924686165275
     second: colored_transparent_766
@@ -2964,7 +2964,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: colored_transparent_0
+      name: _brow_bush
       rect:
         serializedVersion: 2
         x: 17
@@ -2985,15 +2985,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_1
+      name: _cemetary_road2
       rect:
         serializedVersion: 2
         x: 34
         y: 526
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3027,15 +3027,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_3
+      name: _cemetary_road1
       rect:
         serializedVersion: 2
         x: 68
         y: 526
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3594,15 +3594,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_30
+      name: _tree1
       rect:
         serializedVersion: 2
         x: 0
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3615,15 +3615,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_31
+      name: _tree2
       rect:
         serializedVersion: 2
         x: 17
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3636,15 +3636,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_32
+      name: _tree3
       rect:
         serializedVersion: 2
         x: 34
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3657,15 +3657,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_33
+      name: _tree4
       rect:
         serializedVersion: 2
         x: 51
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3678,15 +3678,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_34
+      name: _tree5
       rect:
         serializedVersion: 2
         x: 68
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3699,15 +3699,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_35
+      name: _tree6
       rect:
         serializedVersion: 2
         x: 85
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3769,8 +3769,8 @@ TextureImporter:
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3790,8 +3790,8 @@ TextureImporter:
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3811,8 +3811,8 @@ TextureImporter:
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3832,8 +3832,8 @@ TextureImporter:
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3853,8 +3853,8 @@ TextureImporter:
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4245,15 +4245,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_61
+      name: _water_plant
       rect:
         serializedVersion: 2
         x: 0
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4308,15 +4308,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_64
+      name: _tree7
       rect:
         serializedVersion: 2
         x: 51
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4329,15 +4329,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_65
+      name: _tree8
       rect:
         serializedVersion: 2
         x: 68
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4350,15 +4350,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_66
+      name: _rocks1
       rect:
         serializedVersion: 2
         x: 85
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4371,15 +4371,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_67
+      name: _dead_tree
       rect:
         serializedVersion: 2
         x: 102
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4420,8 +4420,8 @@ TextureImporter:
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4441,8 +4441,8 @@ TextureImporter:
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4462,8 +4462,8 @@ TextureImporter:
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4483,8 +4483,8 @@ TextureImporter:
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4504,8 +4504,8 @@ TextureImporter:
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5001,15 +5001,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_97
+      name: _bone_fence1
       rect:
         serializedVersion: 2
         x: 85
         y: 475
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5022,15 +5022,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_98
+      name: _bone_fence2
       rect:
         serializedVersion: 2
         x: 102
         y: 475
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5071,8 +5071,8 @@ TextureImporter:
         y: 475
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5092,8 +5092,8 @@ TextureImporter:
         y: 475
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5113,8 +5113,8 @@ TextureImporter:
         y: 475
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5134,8 +5134,8 @@ TextureImporter:
         y: 475
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5155,8 +5155,8 @@ TextureImporter:
         y: 475
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7500,15 +7500,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_216
+      name: _sign1
       rect:
         serializedVersion: 2
         x: 0
         y: 407
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7521,15 +7521,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_217
+      name: _sign2
       rect:
         serializedVersion: 2
         x: 17
         y: 407
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -8970,15 +8970,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_286
+      name: _doors
       rect:
         serializedVersion: 2
         x: 136
         y: 373
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10860,15 +10860,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_376
+      name: _red_roof1
       rect:
         serializedVersion: 2
         x: 85
         y: 322
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10881,15 +10881,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_377
+      name: _red_roof2
       rect:
         serializedVersion: 2
         x: 102
         y: 322
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10902,15 +10902,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_378
+      name: _red_roof3
       rect:
         serializedVersion: 2
         x: 119
         y: 322
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -12057,15 +12057,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_433
+      name: _tombstone1
       rect:
         serializedVersion: 2
         x: 0
         y: 288
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -12078,15 +12078,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_434
+      name: _tombstone2
       rect:
         serializedVersion: 2
         x: 17
         y: 288
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -12099,15 +12099,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_435
+      name: _tombstone3
       rect:
         serializedVersion: 2
         x: 34
         y: 288
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -12855,15 +12855,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_471
+      name: _cemetary_wall
       rect:
         serializedVersion: 2
         x: 119
         y: 271
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -14220,7 +14220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_536
+      name: _white_walls
       rect:
         serializedVersion: 2
         x: 170
@@ -18966,15 +18966,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_762
+      name: _units_allow1
       rect:
         serializedVersion: 2
         x: 323
         y: 118
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -18987,15 +18987,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_763
+      name: _units_allow2
       rect:
         serializedVersion: 2
         x: 340
         y: 118
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -19008,15 +19008,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_764
+      name: _units_allow3
       rect:
         serializedVersion: 2
         x: 357
         y: 118
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -19029,15 +19029,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_765
+      name: _units_allow4
       rect:
         serializedVersion: 2
         x: 374
         y: 118
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

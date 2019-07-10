@@ -6,18 +6,19 @@ using UnityEngine.UI;
 
 public class CrownsTest : MonoBehaviour
 {
+    [Header("Crowns display")]
     [SerializeField] int health;
     [SerializeField] public Text healthValue;
+
+    [Header("Elements in the list")]
     [SerializeField] List<GameObject> crowns = new List<GameObject>();
-
+    
     private CameraShake cameraShake;
-
     float delayInSeconds = 2;
 
     void Start()
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
-
         health = crowns.Count;
         healthValue.GetComponent<Text>().text = "" + health;
     }

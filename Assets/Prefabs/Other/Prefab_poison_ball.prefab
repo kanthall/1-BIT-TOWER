@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 7
   m_Sprite: {fileID: -4070014318422356730, guid: 87035176e12a2a74f806ef3ef6f41d5f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -143,7 +143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpeed: 1
   damage: 1
-  timeToDestroyProjectiles: 1
 --- !u!50 &4513448888475374299
 Rigidbody2D:
   serializedVersion: 4

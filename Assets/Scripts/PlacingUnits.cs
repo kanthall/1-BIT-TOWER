@@ -16,6 +16,8 @@ public class PlacingUnits : MonoBehaviour
         unitsManager = FindObjectOfType<UnitsManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         gameManagerBehaviour = FindObjectOfType<GameManagerBehaviour>();
+
+        spriteRenderer.material.color = Color.gray;
     }
 
     private void OnMouseUp()
@@ -44,7 +46,7 @@ public class PlacingUnits : MonoBehaviour
         if (!isEmpty)
             return;
 
-        spriteRenderer.material.color = new Color32(255, 177, 177, 255);
+        spriteRenderer.material.color = new Color32(230, 72, 46, 255);
     }
 
     private void OnMouseExit()
@@ -55,7 +57,7 @@ public class PlacingUnits : MonoBehaviour
         }
         else
         { 
-        spriteRenderer.material.color = Color.white;
+        spriteRenderer.material.color = Color.gray;
         }
     }
 }
