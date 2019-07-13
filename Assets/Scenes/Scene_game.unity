@@ -13250,6 +13250,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3568885828400794108, guid: dc12b16e934e4f64594f8491f78e00b3,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3568885828400794108, guid: dc12b16e934e4f64594f8491f78e00b3,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3568885828400794108, guid: dc12b16e934e4f64594f8491f78e00b3,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc12b16e934e4f64594f8491f78e00b3, type: 3}
 --- !u!4 &695077963 stripped
@@ -34837,7 +34852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveValue: {fileID: 990709566}
-  wave: 1
+  startingWave: 1
 --- !u!1 &1982503256
 GameObject:
   m_ObjectHideFlags: 0

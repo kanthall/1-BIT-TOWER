@@ -9,12 +9,21 @@ public class Blood : MonoBehaviour
 
     private void OnMouseUp()
     {
-        var next = FindObjectOfType<GameManagerBehaviour>();
+        if (gameObject.CompareTag("Enemy"))
+        {
+            return;
+        }
+        else
+        {
+            var next = FindObjectOfType<GameManagerBehaviour>();
 
-        next.Gold += blood;
-        Destroy(gameObject);
+            next.Gold += blood;
+            Destroy(gameObject);
 
-        GameObject deathVFXObject = Instantiate(bloodFading, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+            GameObject deathVFXObject = Instantiate(bloodFading, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
+
 }
+

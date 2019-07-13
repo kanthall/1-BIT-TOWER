@@ -25,19 +25,6 @@ public class EnemySpawner : MonoBehaviour
     {
 
         CountDownAndShoot(); 
-        /*
-        while (spawn)
-        {
-            CountDownAndShoot();
-            spawned++;
-
-            if (spawned >= 5)
-            {
-                spawn = false;
-                break;
-            }
-
-        }*/
     }
 
     private void CountDownAndShoot()

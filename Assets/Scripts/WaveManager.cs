@@ -29,5 +29,4 @@ public class WaveManager : MonoBehaviour
     {
         wave += 1;
     }
-
 }
