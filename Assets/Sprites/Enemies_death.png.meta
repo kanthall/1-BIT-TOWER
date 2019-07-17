@@ -14,6 +14,42 @@ TextureImporter:
   - first:
       213: -1891855120789479077
     second: death_3
+  - first:
+      213: -592462947671146302
+    second: Enemies_death_0
+  - first:
+      213: 6598230050263196297
+    second: Enemies_death_1
+  - first:
+      213: 1739550039296215696
+    second: Enemies_death_2
+  - first:
+      213: 7172629130755269733
+    second: Enemies_death_3
+  - first:
+      213: -6783410498159430924
+    second: Enemies_death_4
+  - first:
+      213: -8826318867375285374
+    second: Enemies_death_5
+  - first:
+      213: 5018512451318981747
+    second: Enemies_death_6
+  - first:
+      213: 7623198893437818642
+    second: Enemies_death_7
+  - first:
+      213: 237629514423414529
+    second: Enemies_death_8
+  - first:
+      213: -818025825210169080
+    second: Enemies_death_9
+  - first:
+      213: 7743117485815024310
+    second: Enemies_death_10
+  - first:
+      213: -7315385706402187040
+    second: Enemies_death_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -57,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 512
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: death_0
+      name: Enemies_death_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 170
         y: 0
-        width: 14
-        height: 12
+        width: 170
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9a2a87d1903bf44a92e381821d1fa5e
-      internalID: -9192638271177797499
+      spriteID: 1e100ed2e3e8d2a41afec26fac080e0a
+      internalID: -592462947671146302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_1
+      name: Enemies_death_1
       rect:
         serializedVersion: 2
-        x: 14
+        x: 680
         y: 0
-        width: 14
-        height: 12
+        width: 170
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 885c25fb6eb36594eba13670ff4dffc7
-      internalID: 8559509556701815258
+      spriteID: 6baa9faf7528034489716e44bb047e99
+      internalID: 6598230050263196297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_2
+      name: Enemies_death_2
       rect:
         serializedVersion: 2
-        x: 28
+        x: 1190
         y: 0
-        width: 14
-        height: 12
+        width: 170
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +188,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73c248449bfe5fa4d8d005793de2c3f0
-      internalID: -5286180679089938723
+      spriteID: 36670054ba4ab6f46b6eea10ab10847f
+      internalID: 1739550039296215696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_3
+      name: Enemies_death_3
       rect:
         serializedVersion: 2
-        x: 42
+        x: 1700
         y: 0
-        width: 14
-        height: 12
+        width: 170
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +209,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e69db4cfd46d07b438690e9101cdef4f
-      internalID: -1891855120789479077
+      spriteID: c2d0bab0f15194c469f878e2fe376e30
+      internalID: 7172629130755269733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies_death_4
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 0
+        width: 170
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ff033c6cf85f44283dae09b52835f2
+      internalID: -6783410498159430924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies_death_5
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 170
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e318dd20d15f2488f8ecb5bd5e4ba0
+      internalID: -8826318867375285374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies_death_6
+      rect:
+        serializedVersion: 2
+        x: 3230
+        y: 0
+        width: 170
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b8d4163ad95cc46b3f48410b0cc432
+      internalID: 5018512451318981747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies_death_7
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 0
+        width: 170
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11e90b1b6668654582e11c69c2ba282
+      internalID: 7623198893437818642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies_death_8
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 0
+        width: 170
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff4db2914191dc449592847b8241b61
+      internalID: 237629514423414529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies_death_9
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 0
+        width: 170
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8104e21d0f2503442a5aac1c240c495c
+      internalID: -818025825210169080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies_death_10
+      rect:
+        serializedVersion: 2
+        x: 5270
+        y: 0
+        width: 170
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d41277d2ee542d489948bab884f3fa8
+      internalID: 7743117485815024310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies_death_11
+      rect:
+        serializedVersion: 2
+        x: 5780
+        y: 0
+        width: 170
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d0926ff4eed9d4b881b97a25e40896
+      internalID: -7315385706402187040
       vertices: []
       indices: 
       edges: []

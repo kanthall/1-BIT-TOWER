@@ -52,7 +52,6 @@ public class CrownsTest : MonoBehaviour
 
     IEnumerator WaitAndLoad()
     {
-
         yield return new WaitForSeconds(delayInSeconds);
         SceneManager.LoadScene("Scene_game_over");
     }
