@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum UnitType { NONE, WIZARD, KNIGHT, BERZERKER, MAGE }
+public enum UnitType { NONE, WIZARD, KNIGHT, BERZERKER }
 
 public class UnitsManager : MonoBehaviour
 {
@@ -10,7 +10,6 @@ public class UnitsManager : MonoBehaviour
     public GameObject wizardPrefab;
     public GameObject knightPrefab;
     public GameObject berzerkerPrefab;
-    public GameObject magePrefab;
 
     [Header("Particles")]
     public GameObject instantiateParticle;
@@ -42,9 +41,6 @@ public class UnitsManager : MonoBehaviour
                 break;
             case UnitType.BERZERKER:
                 unitPrefab = berzerkerPrefab;
-                break;
-            case UnitType.MAGE:
-                unitPrefab = magePrefab;
                 break;
         }
 
