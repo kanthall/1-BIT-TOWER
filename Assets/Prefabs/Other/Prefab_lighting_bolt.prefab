@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1872976391551684141}
   - component: {fileID: 1872976391551684130}
   - component: {fileID: 1872976391551684143}
+  - component: {fileID: 7228950056414088475}
   m_Layer: 0
   m_Name: Prefab_lighting_bolt
   m_TagString: Untagged
@@ -127,3 +128,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2771045, y: 0.10527253}
   m_EdgeRadius: 0
+--- !u!114 &7228950056414088475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872976391551684131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9799292b859fe1244995cd54810d325b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpeed: 1.5
+  damage: 3
