@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Spawner
   - Crown
+  - CrownTrigger
   layers:
   - Default
   - TransparentFX

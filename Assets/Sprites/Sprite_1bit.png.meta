@@ -268,7 +268,7 @@ TextureImporter:
     second: colored_transparent_87
   - first:
       213: 4557314541613224106
-    second: colored_transparent_88
+    second: _mage
   - first:
       213: -685975748938286714
     second: _berzerker
@@ -4812,15 +4812,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_88
+      name: _mage
       rect:
         serializedVersion: 2
         x: 459
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

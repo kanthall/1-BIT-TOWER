@@ -10,8 +10,10 @@ public class StolenCrown : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("done");
-        stolenCrown.GetComponent<SpriteRenderer>().enabled = true;
+        if (collision.gameObject.CompareTag("CrownTrigger"))
+        {
+            stolenCrown.GetComponent<SpriteRenderer>().enabled = true;
+        }
     }
     
 }
