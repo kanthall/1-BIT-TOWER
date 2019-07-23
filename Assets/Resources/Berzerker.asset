@@ -16,3 +16,4 @@ MonoBehaviour:
   unitCost: 5
   unitLife: 5
   key: Berzerker
+  tooltip: 1hp, 1dmg

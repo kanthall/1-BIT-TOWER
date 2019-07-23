@@ -153,3 +153,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placingSound: {fileID: 8300000, guid: 1c38f1b7c60eb984fbbcfa12176f100e, type: 3}
   placingSoundVolume: 1
+  noUnitSelectedSound: {fileID: 8300000, guid: 959dce88de07a6e488b48263f1f85936, type: 3}
+  noUnitSelectedSoundVolume: 0.25

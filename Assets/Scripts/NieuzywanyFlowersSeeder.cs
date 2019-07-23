@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlowersSeeder : MonoBehaviour
+public class NieuzywanyFlowersSeeder : MonoBehaviour
 {
     // the range of X cordinate
     [Header("X Spawn Range")]

@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 public class PlacingUnits : MonoBehaviour
 {
@@ -7,9 +9,15 @@ public class PlacingUnits : MonoBehaviour
     private SpriteRenderer spriteRenderer = null;
     private bool isEmpty = true;
 
-    [Header("Sound")]
+    [Header("Placing Sound")]
     [SerializeField] AudioClip placingSound;
     [SerializeField] [Range(0, 1)] float placingSoundVolume = 1f;
+
+    [Header("No Unit Selected Sound")]
+    [SerializeField] AudioClip noUnitSelectedSound;
+    [SerializeField] [Range(0, 1)] float noUnitSelectedSoundVolume = 1f;
+
+    private NoUnitSelected noUnitSelected;
 
     private void Start()
     {
@@ -18,12 +26,15 @@ public class PlacingUnits : MonoBehaviour
         gameManagerBehaviour = FindObjectOfType<GameManagerBehaviour>();
 
         spriteRenderer.material.color = Color.gray;
+
+        noUnitSelected = FindObjectOfType<NoUnitSelected>();
     }
 
     private void OnMouseUp()
     {
         if (!isEmpty || unitsManager.CurrentUnitType == UnitType.NONE)
         {
+            StartCoroutine(NoUnitSelected());
             return;
         }
 
@@ -33,6 +44,11 @@ public class PlacingUnits : MonoBehaviour
             //zmiana koloru blood text
             gameManagerBehaviour.bloodLabel.color = Color.red;
             return;
+        }
+        else
+        {
+            //zmiana koloru blood text
+            gameManagerBehaviour.bloodLabel.color = Color.white;
         }
 
         unitsManager.InstantiateUnit(gameObject.transform);
@@ -59,5 +75,13 @@ public class PlacingUnits : MonoBehaviour
         { 
         spriteRenderer.material.color = Color.gray;
         }
+    }
+
+    IEnumerator NoUnitSelected()
+    {
+        AudioSource.PlayClipAtPoint(noUnitSelectedSound, Camera.main.transform.position, noUnitSelectedSoundVolume);
+        noUnitSelected.noUnitSelectedText.enabled = true;
+        yield return new WaitForSeconds(3);
+        noUnitSelected.noUnitSelectedText.enabled = false;
     }
 }

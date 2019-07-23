@@ -15,9 +15,11 @@ public class UnitsManager : MonoBehaviour
     [Header("Particles")]
     public GameObject instantiateParticle;
 
+    [Header("Various")]
+    [SerializeField] public int currentUnitPrice = -1;
     private GameManagerBehaviour gameManagerBehaviour = null;
     private UnitType currentUnitType = UnitType.WIZARD;
-    [SerializeField] public int currentUnitPrice = -1;
+    
     private List<Units> unitsButtons = new List<Units>();
 
     public UnitType CurrentUnitType {  get { return currentUnitType; } }

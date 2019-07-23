@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Mage
   m_EditorClassIdentifier: 
   prefab: {fileID: 4792422528474287201, guid: fa47a4723cc42084ab2da822a469b75f, type: 3}
-  unitCost: 10
+  unitCost: 15
   unitLife: 10
   key: Mage
+  tooltip: tooltip

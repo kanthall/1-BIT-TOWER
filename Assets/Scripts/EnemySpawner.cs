@@ -24,10 +24,10 @@ public class EnemySpawner : MonoBehaviour
     void Update()
     {
 
-        CountDownAndShoot(); 
+        CountDownAndSpawn(); 
     }
 
-    private void CountDownAndShoot()
+    private void CountDownAndSpawn()
     {
         if (spawn == true)
         {
@@ -56,6 +56,4 @@ public class EnemySpawner : MonoBehaviour
         var newObject = Instantiate(array, transform.position, Quaternion.identity);
         newObject.transform.parent = gameObject.transform;
     }
-
-   
 }
