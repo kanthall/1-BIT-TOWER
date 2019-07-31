@@ -22,14 +22,18 @@ public class WizardShooting : MonoBehaviour
     [Header("Death")]
     [SerializeField] GameObject deathParticle;
 
+    [Header("Animation")]
+    [SerializeField] Animator animator;
+
     //public Transform wizard;
     //public Transform enemy;
 
     void Start()
     {
         Shooting();
-       // wizard = GameObject.FindGameObjectWithTag("Wizard").transform;
-       // enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
+        animator = gameObject.GetComponent<Animator>();
+        // wizard = GameObject.FindGameObjectWithTag("Wizard").transform;
+        // enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
     }
 
     void Update()
@@ -49,14 +53,19 @@ public class WizardShooting : MonoBehaviour
 
         CountDownAndShoot();
     }
-      
+
     private void CountDownAndShoot()
     {
         timeBeforeFirstShoot -= Time.deltaTime;
-        if (timeBeforeFirstShoot <= 0f)
+        
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Shooting();
-            timeBeforeFirstShoot = maxTimeBetweenShots;
+            if (timeBeforeFirstShoot <= 0f)
+            {
+                animator.SetTrigger("Shoot");
+                Shooting();
+                timeBeforeFirstShoot = maxTimeBetweenShots;
+            }
         }
     }
 
