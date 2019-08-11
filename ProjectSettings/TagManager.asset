@@ -9,6 +9,7 @@ TagManager:
   - Spawner
   - Crown
   - CrownTrigger
+  - Unit
   layers:
   - Default
   - TransparentFX

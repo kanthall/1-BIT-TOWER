@@ -25,48 +25,35 @@ public class WizardShooting : MonoBehaviour
     [Header("Animation")]
     [SerializeField] Animator animator;
 
-    //public Transform wizard;
-    //public Transform enemy;
-
     void Start()
     {
-        Shooting();
         animator = gameObject.GetComponent<Animator>();
-        // wizard = GameObject.FindGameObjectWithTag("Wizard").transform;
-        // enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
     }
 
     void Update()
     {
-        /*float differenceY = System.Math.Abs(wizard.transform.position.y - enemy.transform.position.y);
-
-        Debug.Log(differenceY);
-
-        if ((differenceY) < 0.17f)
-        {
-            CountDownAndShoot();
-        }
-        else
-        {
-           return;
-        }*/
-
-        CountDownAndShoot();
+        
     }
 
-    private void CountDownAndShoot()
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        timeBeforeFirstShoot -= Time.deltaTime;
-        
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
+            timeBeforeFirstShoot -= Time.deltaTime;
+
             if (timeBeforeFirstShoot <= 0f)
             {
-                animator.SetTrigger("Shoot");
                 Shooting();
+                animator.SetTrigger("Shoot");
+                Debug.Log("ssssss");
                 timeBeforeFirstShoot = maxTimeBetweenShots;
             }
-        }
+            else
+            {
+                animator.ResetTrigger("Shoot");
+                
+            }
+        } 
     }
 
     private void Shooting()

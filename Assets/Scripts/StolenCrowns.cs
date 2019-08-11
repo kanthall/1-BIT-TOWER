@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StolenCrown : MonoBehaviour
+public class StolenCrowns : MonoBehaviour
 {
     [SerializeField] GameObject stolenCrown;
 

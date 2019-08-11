@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 7859885101970319478}
   - component: {fileID: 2845894957378558527}
   - component: {fileID: 7923534052146014178}
+  - component: {fileID: -3819350254876787015}
+  - component: {fileID: 7948214384151311767}
   m_Layer: 8
   m_Name: Prefab_squid
   m_TagString: Enemy
@@ -102,7 +104,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.079883486, y: -0.08518951}
+  m_Offset: {x: 0.076155365, y: -0.09057461}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 1}
@@ -113,7 +115,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13930088, y: 0.13020492}
+  m_Size: {x: 0.14675713, y: 0.09789443}
   m_EdgeRadius: 0
 --- !u!50 &-676040164017427201
 Rigidbody2D:
@@ -150,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSpeedModicifator: 0
   enemyMoveSpeed: 0.1
+  isMoving: 1
 --- !u!114 &-7220247195418846244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +300,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stolenCrown: {fileID: 3904921677780470302}
+--- !u!95 &-3819350254876787015
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3864371862078414986}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b80b50cc99bcc7f46a8799024eb1cfa4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7948214384151311767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3864371862078414986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1541493989e140143aa950a005465c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: -3819350254876787015}
+  firstAttackTime: 1
+  timeBetweenAttacks: 2
+  attack: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
+  enemyMove: 1
 --- !u!1001 &2401334772139698817
 PrefabInstance:
   m_ObjectHideFlags: 0

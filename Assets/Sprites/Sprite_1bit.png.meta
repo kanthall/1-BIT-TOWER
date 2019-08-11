@@ -646,7 +646,7 @@ TextureImporter:
     second: colored_transparent_213
   - first:
       213: -352614613653852854
-    second: colored_transparent_214
+    second: _skeleton
   - first:
       213: -5471062261667242350
     second: _golem
@@ -7458,15 +7458,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_214
+      name: _skeleton
       rect:
         serializedVersion: 2
         x: 493
         y: 424
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

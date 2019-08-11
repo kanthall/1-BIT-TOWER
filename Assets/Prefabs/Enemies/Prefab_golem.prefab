@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -5746023289033436313}
   - component: {fileID: 3527169393162007353}
   - component: {fileID: 5334461303939183449}
+  - component: {fileID: 1127110092186633418}
   m_Layer: 8
   m_Name: Prefab_golem
   m_TagString: Enemy
@@ -150,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSpeedModicifator: 0
   enemyMoveSpeed: 0.05
+  isMoving: 1
 --- !u!114 &-5506370324480841870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +299,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stolenCrown: {fileID: 8995042489404738661}
+--- !u!95 &1127110092186633418
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7448180306381164526}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cbaa191b34118194c903ca34ab9cef75, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &3428759392570010045
 PrefabInstance:
   m_ObjectHideFlags: 0

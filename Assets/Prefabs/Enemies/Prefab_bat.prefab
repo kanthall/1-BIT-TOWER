@@ -16,7 +16,8 @@ GameObject:
   - component: {fileID: 4322351101221220473}
   - component: {fileID: 5469236788132654543}
   - component: {fileID: -7194833746655828731}
-  - component: {fileID: 6352173183487873319}
+  - component: {fileID: 7579610989142435808}
+  - component: {fileID: 5795059227400736337}
   m_Layer: 8
   m_Name: Prefab_bat
   m_TagString: Enemy
@@ -36,7 +37,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8905536516946605419}
-  - {fileID: 3071808469540829725}
+  - {fileID: 4405309062373806103}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -149,7 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveSpeedModicifator: 0
-  enemyMoveSpeed: 0.1
+  enemyMoveSpeed: 0.2
+  isMoving: 1
 --- !u!114 &4322351101221220473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +174,7 @@ MonoBehaviour:
   hitSound: {fileID: 8300000, guid: a6ec053a868997a4681db456da4b17dd, type: 3}
   bloodSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
   projectileSoundVolume: 1
-  healthBar: {fileID: 4196459060790897785}
+  healthBar: {fileID: 3296456322789459571}
 --- !u!82 &5469236788132654543
 AudioSource:
   m_ObjectHideFlags: 0
@@ -284,7 +286,7 @@ MonoBehaviour:
   blood: 1
   bloodFading: {fileID: 3315457047935365390, guid: c06a2fd460b172c4299f4e413844c094,
     type: 3}
---- !u!114 &6352173183487873319
+--- !u!114 &7579610989142435808
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -297,7 +299,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stolenCrown: {fileID: 5028086318426018624}
---- !u!1001 &3188365903794018230
+--- !u!95 &5795059227400736337
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7501588899334910321}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf4db45faa951d04b9a0508b189bccb0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &4304549689287638460
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -416,17 +437,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da41eab665dce04d8882179252d1fce, type: 3}
---- !u!224 &3071808469540829725 stripped
+--- !u!224 &4405309062373806103 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 476845422696492459, guid: 7da41eab665dce04d8882179252d1fce,
     type: 3}
-  m_PrefabInstance: {fileID: 3188365903794018230}
+  m_PrefabInstance: {fileID: 4304549689287638460}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4196459060790897785 stripped
+--- !u!114 &3296456322789459571 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1586261773151189967, guid: 7da41eab665dce04d8882179252d1fce,
     type: 3}
-  m_PrefabInstance: {fileID: 3188365903794018230}
+  m_PrefabInstance: {fileID: 4304549689287638460}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
