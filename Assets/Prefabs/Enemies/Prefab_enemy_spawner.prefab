@@ -48,8 +48,7 @@ MonoBehaviour:
   - {fileID: 2019632099307947733, guid: 6827526ec36eabb4ba9e7ad122b37eb8, type: 3}
   - {fileID: 7448180306381164526, guid: 2785ce9b94771a84a9a5e045b331041a, type: 3}
   - {fileID: 3864371862078414986, guid: 76afbf56821328c44b95693ef0591221, type: 3}
-  - {fileID: 1783311623462524682, guid: 12eb2f187243d6a47a606e2cef848f3e, type: 3}
   timeBeforeSpawn: 0
   time: 2
   spawn: 1
-  unitsToSpawn: 0
+  spawned: 0

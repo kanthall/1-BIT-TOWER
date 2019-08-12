@@ -4179,6 +4179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 235690035}
   - component: {fileID: 235690036}
+  - component: {fileID: 235690037}
   m_Layer: 0
   m_Name: _river_bottom_center
   m_TagString: Untagged
@@ -4249,6 +4250,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &235690037
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235690034}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aae26b660dc2bc744a8724a10bda8c0d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &238156549
 GameObject:
   m_ObjectHideFlags: 0
@@ -11156,6 +11176,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083284599, guid: e1908ffdb0aefdc4090f7ceaa94dbef0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1908ffdb0aefdc4090f7ceaa94dbef0, type: 3}
