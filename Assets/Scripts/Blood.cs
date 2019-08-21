@@ -20,7 +20,7 @@ public class Blood : MonoBehaviour
             next.Gold += blood;
             Destroy(gameObject);
 
-            GameObject deathVFXObject = Instantiate(bloodFading, transform.position, Quaternion.identity);
+            GameObject deathVfxObject = Instantiate(bloodFading, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

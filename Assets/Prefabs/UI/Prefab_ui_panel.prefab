@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1856888552}
   - component: {fileID: 1856888551}
   m_Layer: 0
-  m_Name: _wizard
+  m_Name: _mage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,10 +67,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 9171691068313895546, guid: 42d456fdfee73194eb95ed9b7412aa27,
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 6547117541946366506, guid: 2245371a79b313046b223d6c2affab8c,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.98039216, g: 0.6901961, b: 0.23529412, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 3372099625552571320}
   - component: {fileID: 1978655782823827530}
   m_Layer: 0
-  m_Name: InfoBoxWizard
+  m_Name: InfoBoxMage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ Transform:
   m_GameObject: {fileID: 3372099625552571318}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.15, y: -0.18571445, z: 0}
-  m_LocalScale: {x: 0.71428573, y: 0.71428573, z: 1}
+  m_LocalScale: {x: 1.06, y: 1.06, z: 1}
   m_Children: []
   m_Father: {fileID: 3372099625939001897}
   m_RootOrder: 1
@@ -150,7 +150,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 2dc3f06be1daad842997c1a8c024b003, type: 3}
+  m_Sprite: {fileID: -4804603286184142772, guid: b5bb454132858af458e5f3600afa3836,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -178,14 +179,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.84, y: 1.84}
+    oldSize: {x: 1.7, y: 1.7}
     newSize: {x: 1.92, y: 1.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.84, y: 1.84}
+  m_Size: {x: 1.7, y: 1.7}
   m_EdgeRadius: 0
 --- !u!114 &1978655782823827530
 MonoBehaviour:
@@ -199,8 +200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af03bba9626ef1a49acc6731295b3f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitType: 1
-  price: 10
+  unitType: 4
+  price: 15
 --- !u!1 &3372099625939001899
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8882444692275153975}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15, y: -1.488, z: 0}
+  m_LocalPosition: {x: -0.15, y: -1.471, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
   m_Father: {fileID: 3372099625939001897}

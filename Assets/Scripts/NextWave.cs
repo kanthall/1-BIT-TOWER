@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NextWave : MonoBehaviour
 {
-    public void spawnNextWave()
+    public void SpawnNextWave()
     {
          EnemySpawner[] enemySpawners = FindObjectsOfType<EnemySpawner>();
 

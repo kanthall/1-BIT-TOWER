@@ -13,16 +13,16 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(WaitAndLoad());
     }
 
-    IEnumerator WaitAndLoad()
+    private IEnumerator WaitAndLoad()
     {
 
         yield return new WaitForSeconds(delayInSeconds);
-        SceneManager.LoadScene("Scene_game_over");
+        SceneManager.LoadScene("3Scene_game_over");
     }
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("Scene_game");
+        SceneManager.LoadScene("2Scene_game");
         //FindObjectOfType<GameSession>().ResetGame();
     }
 

@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class EnemyHealth : MonoBehaviour
 {
     [Header("Enemy Stats")]
-    [SerializeField] float startHealth = 100;
+    [SerializeField] public string unitName;
+    [SerializeField] public float startHealth = 100;
     [SerializeField] float health;
     [SerializeField] int scoreValue = 10;
 
@@ -20,11 +21,8 @@ public class EnemyHealth : MonoBehaviour
     [Header("Healthbar")]
     [SerializeField] Image healthBar;
 
-    AudioSource audioSource; 
-
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         health = startHealth;
     }
 
@@ -39,21 +37,20 @@ public class EnemyHealth : MonoBehaviour
         if (health <= 0)
         {
             Camera.main.GetComponent<CameraShake>().Shake();
-            showDeathParticle();
-            showBloodParticle();
+            ShowDeathParticle();
+            ShowBloodParticle();
             Destroy(gameObject);
             FindObjectOfType<ScoreDisplay>().AddToScore(scoreValue);
         }
     }
 
-    private void showDeathParticle()
+    private void ShowDeathParticle()
     {
         if (!deathParticle) { return; }
-        GameObject deathVFXObject = Instantiate(deathParticle, transform.position, Quaternion.identity);
-        Destroy(deathVFXObject, 0.5f);
+        var deathVfxObject = Instantiate(deathParticle, transform.position, Quaternion.identity);
+        Destroy(deathVfxObject, 0.5f);
     }
-
-    private void showBloodParticle()
+    private void ShowBloodParticle()
     {
         if (!bloodParticle)
         {

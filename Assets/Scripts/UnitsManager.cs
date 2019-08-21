@@ -75,7 +75,7 @@ public class UnitsManager : MonoBehaviour
             { 
             gameManagerBehaviour.Gold = gameManagerBehaviour.Gold - currentUnitPrice;
             }
-    }
+         }
     }
 
     public void AddUnitButton(Units unitBtn)

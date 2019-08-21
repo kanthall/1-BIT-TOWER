@@ -1102,10 +1102,10 @@ TextureImporter:
     second: colored_transparent_365
   - first:
       213: 5019825589526725133
-    second: colored_transparent_366
+    second: _attack_particle
   - first:
       213: 2742929206619112933
-    second: colored_transparent_367
+    second: _death_particle
   - first:
       213: -1943800708291766849
     second: colored_transparent_368
@@ -1114,7 +1114,7 @@ TextureImporter:
     second: colored_transparent_369
   - first:
       213: 4270625097817564832
-    second: colored_transparent_370
+    second: _unit_attack
   - first:
       213: 8216982342956982097
     second: _tower
@@ -10650,15 +10650,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_366
+      name: _attack_particle
       rect:
         serializedVersion: 2
         x: 442
         y: 339
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10671,15 +10671,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_367
+      name: _death_particle
       rect:
         serializedVersion: 2
         x: 459
         y: 339
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10734,15 +10734,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_370
+      name: _unit_attack
       rect:
         serializedVersion: 2
         x: 510
         y: 339
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

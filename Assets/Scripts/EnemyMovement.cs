@@ -18,15 +18,13 @@ public class EnemyMovement : MonoBehaviour
         if (isMoving == true)
         {
             Move();
+            //Debug.Log("move");
         }
         else if (isMoving == false)
         {
-            Debug.Log("no move");
+            //Debug.Log("no move");
             return;
         }
-
-
-
     }
 
     private void Move()

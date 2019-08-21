@@ -143,6 +143,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpeed: 1
   damage: 1
+  hitPrefab: {fileID: 1701549305882985841, guid: 3542dd349a60c234c85d3dc320b00096,
+    type: 3}
 --- !u!50 &4513448888475374299
 Rigidbody2D:
   serializedVersion: 4

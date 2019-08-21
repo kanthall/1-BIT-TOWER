@@ -29,7 +29,7 @@ AnimationClip:
       value: {fileID: 3631758834142563100, guid: c201c7501b0b9574f941fbbed74bcd0d,
         type: 3}
     attribute: m_Sprite
-    path: 
+    path: Prefab_berzerker_sprite
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 3
@@ -40,7 +40,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 4130253276
       attribute: 0
       script: {fileID: 0}
       typeID: 212

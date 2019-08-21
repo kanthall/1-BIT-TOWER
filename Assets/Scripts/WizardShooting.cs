@@ -16,12 +16,6 @@ public class WizardShooting : MonoBehaviour
     [SerializeField] AudioClip projectileSound;
     [SerializeField] [Range(0, 1)] float projectileSoundVolume = 0.50f;
 
-    [SerializeField] AudioClip deathSound;
-    [SerializeField] [Range(0, 1)] float deathSoundVolume = 0.75f;
-
-    [Header("Death")]
-    [SerializeField] GameObject deathParticle;
-
     [Header("Animation")]
     [SerializeField] Animator animator;
 
@@ -45,13 +39,12 @@ public class WizardShooting : MonoBehaviour
             {
                 Shooting();
                 animator.SetTrigger("Shoot");
-                Debug.Log("ssssss");
+                Debug.Log("shoot");
                 timeBeforeFirstShoot = maxTimeBetweenShots;
             }
             else
             {
                 animator.ResetTrigger("Shoot");
-                
             }
         } 
     }
