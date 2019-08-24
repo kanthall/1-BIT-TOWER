@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,10 +30,15 @@ public class UnitsManager : MonoBehaviour
         gameManagerBehaviour = FindObjectOfType<GameManagerBehaviour>();
         currentUnitType = UnitType.NONE;
     }
+    
+    private void Update()
+    {
+        UnitsByButtons();
+    }
 
     public void InstantiateUnit(Transform unitPlace)
     {
-        GameObject unitPrefab = null;
+       GameObject unitPrefab = null;
 
         switch (currentUnitType)
         {
@@ -97,6 +103,29 @@ public class UnitsManager : MonoBehaviour
                 else
                     btn.GetSpriteRenderer.color = Color.white;
             }
+        }
+    }
+
+    private void UnitsByButtons()
+    {
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            SelectUnitButton(UnitType.BERZERKER, 2);
+        }
+        
+        if (Input.GetKey(KeyCode.Alpha2))
+        {
+            SelectUnitButton(UnitType.KNIGHT, 5);
+        }
+        
+        if (Input.GetKey(KeyCode.Alpha3))
+        {
+            SelectUnitButton(UnitType.WIZARD, 10);
+        }
+        
+        if (Input.GetKey(KeyCode.Alpha4))
+        {
+            SelectUnitButton(UnitType.MAGE, 15);
         }
     }
 }
