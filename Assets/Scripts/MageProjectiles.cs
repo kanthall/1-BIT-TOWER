@@ -7,6 +7,7 @@ public class MageProjectiles : MonoBehaviour
     [SerializeField] float projectileSpeed = 1f;
     [SerializeField] int damage = 2;
     float timeToDestroyProjectiles = 1f;
+    [SerializeField] private GameObject hitPrefab;
 
     void Update()
     {
@@ -15,7 +16,7 @@ public class MageProjectiles : MonoBehaviour
 
     private void Move()
     {
-        transform.Translate(Vector3.right * Time.deltaTime * projectileSpeed);
+        transform.Translate( Time.deltaTime * projectileSpeed * Vector3.right);
         Destroy(gameObject, timeToDestroyProjectiles);
     }
 
@@ -28,6 +29,9 @@ public class MageProjectiles : MonoBehaviour
         {
             health.DealDamage(damage);
             Destroy(gameObject);
+
+            var hit = Instantiate(hitPrefab, health.transform.position, Quaternion.identity);
+            Destroy(hit, 0.5f); 
         }
     }
 }

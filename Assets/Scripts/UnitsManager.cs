@@ -33,7 +33,7 @@ public class UnitsManager : MonoBehaviour
     
     private void Update()
     {
-        UnitsByButtons();
+        UnitsShortcuts();
     }
 
     public void InstantiateUnit(Transform unitPlace)
@@ -106,26 +106,26 @@ public class UnitsManager : MonoBehaviour
         }
     }
 
-    private void UnitsByButtons()
+    private void UnitsShortcuts()
     {
-        if (Input.GetKey(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SelectUnitButton(UnitType.BERZERKER, 2);
         }
         
-        if (Input.GetKey(KeyCode.Alpha2))
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SelectUnitButton(UnitType.KNIGHT, 5);
         }
         
-        if (Input.GetKey(KeyCode.Alpha3))
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             SelectUnitButton(UnitType.WIZARD, 10);
         }
         
-        if (Input.GetKey(KeyCode.Alpha4))
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             SelectUnitButton(UnitType.MAGE, 15);
-        }
+        } 
     }
 }
