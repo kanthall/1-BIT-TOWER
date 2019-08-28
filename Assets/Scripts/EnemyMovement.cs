@@ -29,7 +29,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void Move()
     {
-        transform.Translate(Vector3.left * Time.deltaTime * enemyMoveSpeed * waveSpeedModicifator);
+        transform.Translate(waveSpeedModicifator * Time.deltaTime * enemyMoveSpeed * Vector3.left);
     }
 
 

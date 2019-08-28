@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8815665730404700410}
   - component: {fileID: 1364789935}
   - component: {fileID: -7507419198621391329}
+  - component: {fileID: 5710249716194599024}
   m_Layer: 0
   m_Name: Prefab_knight
   m_TagString: Untagged
@@ -115,10 +116,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ad7f80db9652c145966e1fbe67733be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 3
+  startHealth: 4
+  healthBar: {fileID: 2547344074369523785}
+  deathSoundVolume: 0.75
   deathParticle: {fileID: 4932603299850224586, guid: ca1a652ee76e38648a9d140342d29372,
     type: 3}
-  healthBar: {fileID: 2547344074369523785}
+--- !u!114 &5710249716194599024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148159689196226553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e1319fa79ac21947ab588e116651e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1364789935}
+  firstAttackTime: 2
+  timeBetweenAttacks: 3
+  attackSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
+  attackSoundVolume: 0.5
+  attackPower: 3
+  attackParticle: {fileID: 4586509936800099380, guid: 4ca5b4f6ef43bf343a15819755840b52,
+    type: 3}
 --- !u!1 &7251928643709947998
 GameObject:
   m_ObjectHideFlags: 0
