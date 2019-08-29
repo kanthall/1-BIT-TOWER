@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3337653002991183734}
   - component: {fileID: 2068709971787450337}
   m_Layer: 0
-  m_Name: _cemetary_wall
+  m_Name: Prefab_cemetary_wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 9
   m_Sprite: {fileID: 2956398733484953730, guid: 42d456fdfee73194eb95ed9b7412aa27,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

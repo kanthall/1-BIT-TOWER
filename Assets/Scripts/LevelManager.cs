@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,7 +9,7 @@ public class LevelManager : MonoBehaviour
 {
     
 
-    [SerializeField] float delayInSeconds = 4f;
+    [SerializeField] float delayInSeconds = 20f;
 
     public void LoadGameOver()
     {
@@ -17,7 +18,6 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator WaitAndLoad()
     {
-
         yield return new WaitForSeconds(delayInSeconds);
         SceneManager.LoadScene("3Scene_game_over");
     }

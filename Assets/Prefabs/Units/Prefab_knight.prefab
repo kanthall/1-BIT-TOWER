@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ad7f80db9652c145966e1fbe67733be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 4
+  startHealth: 30
   healthBar: {fileID: 2547344074369523785}
   deathSoundVolume: 0.75
   deathParticle: {fileID: 4932603299850224586, guid: ca1a652ee76e38648a9d140342d29372,

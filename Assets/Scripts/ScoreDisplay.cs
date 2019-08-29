@@ -35,7 +35,8 @@ public class ScoreDisplay : MonoBehaviour
 
     void Update()
     {
-        scoreText.text = "SCORE" + " - " + GetScore().ToString();
+        scoreText.text = "SCORE" + " - " + GetScore().ToString(); 
+        SavePoints();
     }
 
     public int GetScore()
@@ -52,5 +53,14 @@ public class ScoreDisplay : MonoBehaviour
     public void AddToScore(int scoreValue)
     {
         score += scoreValue;
+    }
+
+    public void SavePoints()
+    {
+        if (GetScore() > PlayerPrefs.GetInt("Highscore", 0))
+        {
+            PlayerPrefs.SetInt("Highscore", GetScore());
+            PlayerPrefs.Save();
+        }
     }
 }
