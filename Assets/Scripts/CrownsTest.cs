@@ -14,9 +14,7 @@ public class CrownsTest : MonoBehaviour
     [SerializeField] List<GameObject> crowns = new List<GameObject>();
     
     private CameraShake cameraShake;
-    float delayInSeconds = 2;
-
-    void Start()
+ void Start()
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
         health = crowns.Count;
@@ -27,7 +25,7 @@ public class CrownsTest : MonoBehaviour
     {
         if (health <= 0)
         {
-            StartCoroutine(WaitAndLoad());
+            FindObjectOfType<LevelManager>().LoadGameOver();
         }
     }
 
@@ -48,12 +46,6 @@ public class CrownsTest : MonoBehaviour
         {
             Debug.Log("Empty list! No more crowns!");
         }
-    }
-
-    IEnumerator WaitAndLoad()
-    {
-        yield return new WaitForSeconds(delayInSeconds);
-        SceneManager.LoadScene("3Scene_game_over");
     }
 }
 

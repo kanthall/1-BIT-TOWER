@@ -60,6 +60,7 @@
           <e p="PlacingUnits.cs" t="Include" />
           <e p="RowEnabling.cs" t="Include" />
           <e p="ScoreDisplay.cs" t="Include" />
+          <e p="ShowHighScore.cs" t="Include" />
           <e p="Shredder.cs" t="Include" />
           <e p="StatsText.cs" t="Include" />
           <e p="StolenCrowns.cs" t="Include" />
@@ -73,7 +74,6 @@
           <e p="WizardProjectiles.cs" t="Include" />
           <e p="WizardShooting.cs" t="Include" />
         </e>
-        <e p="ShowHighScore.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

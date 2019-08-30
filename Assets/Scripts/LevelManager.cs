@@ -3,16 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    public Animator animator;
+    [SerializeField] float delayInSeconds = 0.5f;
     
-
-    [SerializeField] float delayInSeconds = 20f;
-
-    public void LoadGameOver()
+    public void LoadGameOver()        
     {
+        animator.SetTrigger("FadeOut");
         StartCoroutine(WaitAndLoad());
     }
 
@@ -25,7 +26,6 @@ public class LevelManager : MonoBehaviour
     public void LoadGame()
     {
         SceneManager.LoadScene("2Scene_game");
-        //FindObjectOfType<GameSession>().ResetGame();
     }
 
     public void LoadMenu()
@@ -34,7 +34,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void QuitGame()
-    {
+    {      
         Application.Quit();
     }
 
