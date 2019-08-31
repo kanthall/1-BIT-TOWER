@@ -99,7 +99,7 @@ public class UnitsManager : MonoBehaviour
             if (btn != null)
             {
                 if (btn.GetUnitType == unitType)
-                    btn.GetSpriteRenderer.color = new Color32(230, 72, 46, 255);
+                    btn.GetSpriteRenderer.color = new Color32(21, 55, 73, 255);
                 else
                     btn.GetSpriteRenderer.color = Color.white;
             }

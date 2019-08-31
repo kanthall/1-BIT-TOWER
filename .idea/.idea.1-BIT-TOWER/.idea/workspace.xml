@@ -56,7 +56,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnitsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MageProjectiles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NextWave.cs" />
@@ -64,6 +63,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CrownsTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnitsManager.cs" />
       </list>
     </option>
   </component>
