@@ -256,7 +256,7 @@ MonoBehaviour:
   startHealth: 5
   healthBar: {fileID: 8970678255893903831}
   deathSoundVolume: 0.75
-  deathParticle: {fileID: 1675399601984102473, guid: 9899629755b802f439654256f8db5e2b,
+  deathParticle: {fileID: 567038031811761236, guid: 689497a882afebb43a5de854fdd44992,
     type: 3}
 --- !u!82 &-5090738545438997874
 AudioSource:

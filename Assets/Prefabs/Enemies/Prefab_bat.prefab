@@ -268,6 +268,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stolenCrown: {fileID: 5028086318426018624}
+  stealSound: {fileID: 8300000, guid: cd5945fc93b5a8c48bd74d2a91fb2c68, type: 3}
+  stealSoundVolume: 1
 --- !u!114 &8168801368881212191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,12 +655,12 @@ PrefabInstance:
     - target: {fileID: 8341329819337419147, guid: e555c12f1e5162344906f32b967020bc,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.137
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 8341329819337419147, guid: e555c12f1e5162344906f32b967020bc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.207
+      value: 0.295
       objectReference: {fileID: 0}
     - target: {fileID: 8341329819337419147, guid: e555c12f1e5162344906f32b967020bc,
         type: 3}

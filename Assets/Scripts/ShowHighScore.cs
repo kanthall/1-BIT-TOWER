@@ -12,5 +12,7 @@ public class ShowHighScore : MonoBehaviour
     {
         temp = PlayerPrefs.GetInt("Highscore", 999);
         highscore.text = temp.ToString();
+        
+        //PlayerPrefs.DeleteKey("Highscore");
     }
 }

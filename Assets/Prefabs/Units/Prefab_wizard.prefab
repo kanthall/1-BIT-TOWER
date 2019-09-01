@@ -198,9 +198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 4
   healthBar: {fileID: 1415216778630365263}
-  deathSound: {fileID: 8300000, guid: 1fad4666612308b44addccec39151d72, type: 3}
   deathSoundVolume: 0.75
-  deathParticle: {fileID: 1675399601984102473, guid: 9899629755b802f439654256f8db5e2b,
+  deathParticle: {fileID: 6581906583552249297, guid: fb75110e15070b54cac725df015fcd92,
     type: 3}
 --- !u!82 &7044370596376847969
 AudioSource:

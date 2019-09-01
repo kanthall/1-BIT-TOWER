@@ -139,10 +139,10 @@ TextureImporter:
     second: colored_transparent_44
   - first:
       213: 3570614798714054478
-    second: colored_transparent_45
+    second: _12+2
   - first:
       213: -5013108540688810345
-    second: colored_transparent_46
+    second: _+2
   - first:
       213: -7434935413091810409
     second: colored_transparent_47
@@ -256,7 +256,7 @@ TextureImporter:
     second: colored_transparent_83
   - first:
       213: 8313020336747008895
-    second: colored_transparent_84
+    second: _x
   - first:
       213: -5115762970353063933
     second: colored_transparent_85
@@ -331,7 +331,7 @@ TextureImporter:
     second: colored_transparent_108
   - first:
       213: 6808276730122825524
-    second: colored_transparent_109
+    second: _12+
   - first:
       213: 6155446371587048924
     second: colored_transparent_110
@@ -3909,15 +3909,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_45
+      name: _12+2
       rect:
         serializedVersion: 2
         x: 255
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3930,15 +3930,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_46
+      name: _+2
       rect:
         serializedVersion: 2
         x: 272
         y: 509
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4728,15 +4728,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_84
+      name: _x
       rect:
         serializedVersion: 2
         x: 391
         y: 492
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5239,8 +5239,8 @@ TextureImporter:
         y: 475
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5253,15 +5253,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_109
+      name: _12+
       rect:
         serializedVersion: 2
         x: 289
         y: 475
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

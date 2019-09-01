@@ -14,7 +14,8 @@ public class CrownsTest : MonoBehaviour
     [SerializeField] List<GameObject> crowns = new List<GameObject>();
     
     private CameraShake cameraShake;
- void Start()
+ 
+    void Start()
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
         health = crowns.Count;
