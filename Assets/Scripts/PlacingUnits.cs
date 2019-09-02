@@ -48,7 +48,7 @@ public class PlacingUnits : MonoBehaviour
         else
         {
             //zmiana koloru blood text
-            gameManagerBehaviour.bloodLabel.color = Color.white;
+            gameManagerBehaviour.bloodLabel.color = Color.red;
         }
 
         unitsManager.InstantiateUnit(gameObject.transform);
