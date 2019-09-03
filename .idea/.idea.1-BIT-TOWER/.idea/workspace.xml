@@ -30,7 +30,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseOverEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyAttack.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoUnitSelected.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoUnitSelected.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WizardShooting.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8D698932-951A-4E31-9934-E354A7F087B4/ca/763ebbbe/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
@@ -65,13 +65,10 @@
         <option value="$PROJECT_DIR$/Assets/ShowHighScore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NoUnitSelected.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnitsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CrownsTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StolenCrowns.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShowHighScore.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlacingUnits.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomCRT.cs" />
@@ -81,6 +78,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ScanlinesShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Outliner.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpriteOutliner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnitsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NoUnitSelected.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlacingUnits.cs" />
       </list>
     </option>
   </component>

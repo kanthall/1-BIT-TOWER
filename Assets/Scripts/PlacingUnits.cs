@@ -80,10 +80,12 @@ public class PlacingUnits : MonoBehaviour
     IEnumerator NoUnitSelected()
     {
         AudioSource.PlayClipAtPoint(noUnitSelectedSound, Camera.main.transform.position, noUnitSelectedSoundVolume);
-        noUnitSelected.noUnitSelectedText.enabled = true;
+        noUnitSelected.noUnitSelectedText1.enabled = true;
+        noUnitSelected.noUnitSelectedText2.enabled = true;
         noUnitSelected.noUnitSelectedImage.enabled = true;
         yield return new WaitForSeconds(1);
-        noUnitSelected.noUnitSelectedText.enabled = false;
+        noUnitSelected.noUnitSelectedText1.enabled = false;
+        noUnitSelected.noUnitSelectedText2.enabled = false;
         noUnitSelected.noUnitSelectedImage.enabled = false;
     }
 }

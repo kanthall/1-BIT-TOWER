@@ -1396,7 +1396,7 @@ TextureImporter:
     second: colored_transparent_463
   - first:
       213: 4454272235711392498
-    second: colored_transparent_464
+    second: _skull
   - first:
       213: -7980208453577813187
     second: colored_transparent_465
@@ -12708,15 +12708,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_464
+      name: _skull
       rect:
         serializedVersion: 2
         x: 0
         y: 271
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

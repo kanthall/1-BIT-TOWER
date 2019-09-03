@@ -12,6 +12,11 @@ public class UnitsManager : MonoBehaviour
     public GameObject knightPrefab;
     public GameObject berzerkerPrefab;
     public GameObject magePrefab;
+    
+    [Header("Selected Unit Sound")]
+    [SerializeField] AudioClip selectedUnitSound;
+    [SerializeField] [Range(0, 1)] float selectedUnitSoundVolume = 1f;
+
 
     [Header("Particles")]
     public GameObject instantiateParticle;
@@ -99,7 +104,10 @@ public class UnitsManager : MonoBehaviour
             if (btn != null)
             {
                 if (btn.GetUnitType == unitType)
-                    btn.GetSpriteRenderer.color = new Color32(0, 255, 11, 255);    
+                {
+                    btn.GetSpriteRenderer.color = new Color32(0, 255, 11, 255);
+                    AudioSource.PlayClipAtPoint(selectedUnitSound, Camera.main.transform.position, selectedUnitSoundVolume);
+                }
                 else
                     btn.GetSpriteRenderer.color = Color.white;
             }

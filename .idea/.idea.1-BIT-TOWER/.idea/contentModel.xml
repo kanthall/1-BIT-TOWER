@@ -40,33 +40,10 @@
             </e>
           </e>
         </e>
-        <e p="BBShaders" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="CyclePostEffects.cs" t="Include" />
-            <e p="PostEffect.cs" t="Include" />
-            <e p="Spin.cs" t="Include" />
-          </e>
-          <e p="shaders" t="Include">
-            <e p="ChromaticShaders" t="Include">
-              <e p="Chromatic_PostEffect_Flicker.shader" t="Include" />
-              <e p="Chromatic_PostEffect_Static.shader" t="Include" />
-              <e p="Chromatic_Transparent.shader" t="Include" />
-            </e>
-            <e p="ColorClampShaders" t="Include">
-              <e p="ColorClamp_PostEffect_Flicker.shader" t="Include" />
-              <e p="ColorClamp_PostEffect_Static.shader" t="Include" />
-              <e p="ColorClamp_Transparent.shader" t="Include" />
-            </e>
-            <e p="InversionShaders" t="Include">
-              <e p="Invert_PostEffect_Flicker.shader" t="Include" />
-              <e p="Invert_PostEffect_Static.shader" t="Include" />
-              <e p="Invert_Transparent.shader" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="Scripts" t="Include">
           <e p="Blood.cs" t="Include" />
           <e p="CameraShake.cs" t="Include" />
+          <e p="Chromatic_PostEffect_Static.shader" t="Include" />
           <e p="CrownsTest.cs" t="Include" />
           <e p="CrownsTrigger.cs" t="Include" />
           <e p="EnemyAttack.cs" t="Include" />
@@ -82,6 +59,7 @@
           <e p="NieuzywanyFlowersSeeder.cs" t="Include" />
           <e p="NoUnitSelected.cs" t="Include" />
           <e p="PlacingUnits.cs" t="Include" />
+          <e p="PostEffect.cs" t="Include" />
           <e p="RowEnabling.cs" t="Include" />
           <e p="ScanlinesEffect.cs" t="Include" />
           <e p="ScanlinesShader.shader" t="Include" />
@@ -99,26 +77,6 @@
           <e p="WaveManager.cs" t="Include" />
           <e p="WizardProjectiles.cs" t="Include" />
           <e p="WizardShooting.cs" t="Include" />
-        </e>
-        <e p="UB" t="Include">
-          <e p="Simple2dWeatherEffects" t="Include">
-            <e p="LWRP" t="Include">
-              <e p="D2Fogs.shader" t="Include" />
-              <e p="D2FogsNoiseTex.shader" t="Include" />
-              <e p="D2FogsNoiseTexPE.cs" t="Include" />
-              <e p="D2FogsNoiseTexPESecond.cs" t="Include" />
-              <e p="D2FogsPE.cs" t="Include" />
-              <e p="D2FogsPESecond.cs" t="Include" />
-              <e p="EffectBase.cs" t="Include" />
-            </e>
-            <e p="Standard" t="Include">
-              <e p="D2Fogs.shader" t="Include" />
-              <e p="D2FogsNoiseTex.shader" t="Include" />
-              <e p="D2FogsNoiseTexPE.cs" t="Include" />
-              <e p="D2FogsPE.cs" t="Include" />
-              <e p="EffectBase.cs" t="Include" />
-            </e>
-          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
