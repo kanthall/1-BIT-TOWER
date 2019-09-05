@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1364789935}
-  firstAttackTime: 2
+  firstAttackTime: 3
   timeBetweenAttacks: 3
   attackSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
   attackSoundVolume: 0.5

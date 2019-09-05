@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     public Animator animator;
-    [SerializeField] float delayInSeconds = 0.5f;
+    [SerializeField] float delayInSeconds = 3f;
     
     public void LoadGameOver()        
     {

@@ -9,8 +9,7 @@ public class WizardShooting : MonoBehaviour
     [SerializeField] GameObject wand;
 
     [SerializeField] float timeBeforeFirstShoot;
-    [SerializeField] float minTimeBetweenShots = 0.2f;
-    [SerializeField] float maxTimeBetweenShots = 1f;
+    [SerializeField] float timeBetweenShots = 1f;
 
     [Header("Music")]
     [SerializeField] AudioClip projectileSound;
@@ -24,11 +23,6 @@ public class WizardShooting : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
     }
 
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -40,7 +34,7 @@ public class WizardShooting : MonoBehaviour
                 Shooting();
                 animator.SetTrigger("Shoot");
                 Debug.Log("shoot");
-                timeBeforeFirstShoot = maxTimeBetweenShots;
+                timeBeforeFirstShoot = timeBetweenShots;
             }
             else
             {

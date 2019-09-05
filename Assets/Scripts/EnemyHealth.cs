@@ -14,9 +14,12 @@ public class EnemyHealth : MonoBehaviour
     [Header("Visual & sound")]
     [SerializeField] GameObject deathParticle;
     [SerializeField] GameObject bloodParticle;
-    [SerializeField] AudioClip hitSound;
     [SerializeField] AudioClip bloodSound;
-    [SerializeField] [Range(0, 1)] float projectileSoundVolume = 0.50f;
+    [SerializeField] [Range(0, 1)] float bloodSoundVolume = 0.50f;
+    
+    [Header("Sound type for hit")]
+    [SerializeField] AudioClip punchSound;
+
 
     [Header("Healthbar")]
     [SerializeField] Image healthBar;
@@ -32,7 +35,7 @@ public class EnemyHealth : MonoBehaviour
 
         healthBar.fillAmount = health / startHealth;
 
-        AudioSource.PlayClipAtPoint(hitSound, Camera.main.transform.position, projectileSoundVolume);
+   //tutaj był dźwięk uderzania
 
         if (health <= 0)
         {
@@ -59,7 +62,7 @@ public class EnemyHealth : MonoBehaviour
         else
         {
             GameObject bloodObject = Instantiate(bloodParticle, transform.position, Quaternion.identity);
-            AudioSource.PlayClipAtPoint(bloodSound, Camera.main.transform.position, projectileSoundVolume);
+            AudioSource.PlayClipAtPoint(bloodSound, Camera.main.transform.position, bloodSoundVolume);
             Destroy(bloodObject, 3f);
         }
     }

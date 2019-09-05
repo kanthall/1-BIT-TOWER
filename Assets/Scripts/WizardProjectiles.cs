@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class WizardProjectiles : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 1f;
     [SerializeField] int damage = 2;
-    [SerializeField] GameObject hitPrefab;
     float timeToDestroyProjectiles = 1f;
+    [SerializeField] private GameObject hitPrefab;
+    
+    [SerializeField] AudioClip projectileSound;
+    [SerializeField] [Range(0, 1)] private float projectileSoundVolume;
 
     void Update()
     {
@@ -16,7 +20,7 @@ public class WizardProjectiles : MonoBehaviour
 
     private void Move()
     {
-        transform.Translate(Time.deltaTime * projectileSpeed * Vector3.right);
+        transform.Translate( Time.deltaTime * projectileSpeed * Vector3.right);
         Destroy(gameObject, timeToDestroyProjectiles);
     }
 
@@ -29,9 +33,11 @@ public class WizardProjectiles : MonoBehaviour
         {
             health.DealDamage(damage);
             Destroy(gameObject);
-
+            Debug.Log("test");
+            AudioSource.PlayClipAtPoint(projectileSound, Camera.main.transform.position, projectileSoundVolume);
+            
             var hit = Instantiate(hitPrefab, health.transform.position, Quaternion.identity);
             Destroy(hit, 0.5f); 
-        }  
+        }
     }
 }

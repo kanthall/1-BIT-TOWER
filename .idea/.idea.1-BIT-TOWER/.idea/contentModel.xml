@@ -40,11 +40,16 @@
             </e>
           </e>
         </e>
+        <e p="Kenney" t="Include">
+          <e p="Particle samples" t="Include">
+            <e p="License.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Blood.cs" t="Include" />
           <e p="CameraShake.cs" t="Include" />
           <e p="Chromatic_PostEffect_Static.shader" t="Include" />
-          <e p="CrownsTest.cs" t="Include" />
+          <e p="CrownsStealing.cs" t="Include" />
           <e p="CrownsTrigger.cs" t="Include" />
           <e p="EnemyAttack.cs" t="Include" />
           <e p="EnemyHealth.cs" t="Include" />
@@ -52,7 +57,7 @@
           <e p="EnemySpawner.cs" t="Include" />
           <e p="GameManagerBehaviour.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
-          <e p="MageProjectiles.cs" t="Include" />
+          <e p="MageFireball.cs" t="Include" />
           <e p="MouseOverEnemy.cs" t="Include" />
           <e p="MusicPlayer.cs" t="Include" />
           <e p="NextWave.cs" t="Include" />

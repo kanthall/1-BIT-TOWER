@@ -138,13 +138,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7912849576431769338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e423fd2ed9a38dd4984cf9a18712869d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9799292b859fe1244995cd54810d325b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpeed: 1
-  damage: 1
-  hitPrefab: {fileID: 1701549305882985841, guid: 3542dd349a60c234c85d3dc320b00096,
+  damage: 2
+  hitPrefab: {fileID: 943742849456270114, guid: a833c77ae8c78004493996026057d8a2,
     type: 3}
+  projectileSound: {fileID: 8300000, guid: c9fd24b4590fdd84182a596914a92578, type: 3}
+  projectileSoundVolume: 0.533
 --- !u!50 &4513448888475374299
 Rigidbody2D:
   serializedVersion: 4
