@@ -82,9 +82,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/NextWave.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MageFireball.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WizardShooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WizardProjectiles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WizardShooting.cs" />
       </list>
     </option>
   </component>
@@ -93,7 +93,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

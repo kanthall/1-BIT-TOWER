@@ -40,11 +40,6 @@
             </e>
           </e>
         </e>
-        <e p="Kenney" t="Include">
-          <e p="Particle samples" t="Include">
-            <e p="License.txt" t="Include" />
-          </e>
-        </e>
         <e p="Scripts" t="Include">
           <e p="Blood.cs" t="Include" />
           <e p="CameraShake.cs" t="Include" />

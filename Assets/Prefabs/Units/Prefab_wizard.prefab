@@ -130,12 +130,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaaa223a096060446b650eb4617c7858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wizardProjectile: {fileID: 7912849576431769338, guid: 5bba7866d53e8944087cba603d183631,
+  wizardProjectile: {fileID: 4591142482946015597, guid: 85ab2ba31682fca4e9c1e40ea154ee43,
     type: 3}
   wand: {fileID: 117333369}
   timeBeforeFirstShoot: 1
-  minTimeBetweenShots: 0.5
-  maxTimeBetweenShots: 2
+  timeBetweenShots: 1
   projectileSound: {fileID: 8300000, guid: 72d38edde990ef64189e0893737bb98e, type: 3}
   projectileSoundVolume: 0.25
   animator: {fileID: 4441583328139430113}

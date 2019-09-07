@@ -304,7 +304,7 @@ MonoBehaviour:
   attackSound: {fileID: 8300000, guid: a6ec053a868997a4681db456da4b17dd, type: 3}
   attackSoundVolume: 1
   attackPower: 2
-  attackParticle: {fileID: 6355544557456191305, guid: ccc8da50825283d4aa4082a73351e81e,
+  attackParticle: {fileID: 1404681256839616, guid: 3640199bf9dc32f4da57c37d57581f57,
     type: 3}
 --- !u!1001 &2538545311080926863
 PrefabInstance:

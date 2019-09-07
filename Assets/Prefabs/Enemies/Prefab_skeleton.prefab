@@ -208,7 +208,7 @@ MonoBehaviour:
   attackSound: {fileID: 8300000, guid: 1c38f1b7c60eb984fbbcfa12176f100e, type: 3}
   attackSoundVolume: 0.5
   attackPower: 4
-  attackParticle: {fileID: 9219763168202642784, guid: 76e7ceb39d222844a9451adbfe869490,
+  attackParticle: {fileID: 4586509936800099380, guid: 4ca5b4f6ef43bf343a15819755840b52,
     type: 3}
 --- !u!114 &316326444486480101
 MonoBehaviour:
@@ -230,9 +230,9 @@ MonoBehaviour:
     type: 3}
   bloodParticle: {fileID: 3315457047935365390, guid: c06a2fd460b172c4299f4e413844c094,
     type: 3}
-  hitSound: {fileID: 8300000, guid: a6ec053a868997a4681db456da4b17dd, type: 3}
   bloodSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
-  projectileSoundVolume: 0.5
+  bloodSoundVolume: 0.5
+  punchSound: {fileID: 0}
   healthBar: {fileID: 1324156783522839561}
 --- !u!114 &316326444486480102
 MonoBehaviour:

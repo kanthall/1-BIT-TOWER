@@ -33,7 +33,6 @@ public class WizardProjectiles : MonoBehaviour
         {
             health.DealDamage(damage);
             Destroy(gameObject);
-            Debug.Log("test");
             AudioSource.PlayClipAtPoint(projectileSound, Camera.main.transform.position, projectileSoundVolume);
             
             var hit = Instantiate(hitPrefab, health.transform.position, Quaternion.identity);

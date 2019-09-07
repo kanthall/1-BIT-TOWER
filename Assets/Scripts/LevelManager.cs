@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Xml.Linq;
+﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
@@ -43,4 +39,23 @@ public class LevelManager : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
+    
+    private void Update()
+    {
+        Restart();
+    }
+    
+    private void Restart()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            LoadGame();
+        }
+        else
+        {
+            return;
+        }
+    }
+    
+    
 }
