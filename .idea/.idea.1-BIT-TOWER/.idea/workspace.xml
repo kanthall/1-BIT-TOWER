@@ -79,12 +79,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/NoUnitSelected.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlacingUnits.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CrownsStealing.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NextWave.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MageFireball.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WizardShooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WizardProjectiles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NextWave.cs" />
       </list>
     </option>
   </component>

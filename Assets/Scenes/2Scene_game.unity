@@ -8313,6 +8313,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaveSound: {fileID: 8300000, guid: bedc8cb978a961a458f0f631f539e12c, type: 3}
   nextWaveVolume: 0.2
+  timeBetweenWaves: 3
+  spawnAllowed: 1
+  button: {fileID: 1029797619}
 --- !u!4 &454407772
 Transform:
   m_ObjectHideFlags: 0
@@ -18313,7 +18316,7 @@ GameObject:
   - component: {fileID: 960322839}
   - component: {fileID: 960322838}
   m_Layer: 5
-  m_Name: Start_button
+  m_Name: Restart_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19588,9 +19591,9 @@ MonoBehaviour:
     m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 1}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 0.5
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
