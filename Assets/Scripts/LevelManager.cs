@@ -39,6 +39,16 @@ public class LevelManager : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
+
+    public void LoadBestiary()
+    {
+        SceneManager.LoadScene("5Scene_bestiary");
+    }
+
+    public void LoadCredits()
+    {
+        SceneManager.LoadScene("4Scene_credits");
+    }
     
     private void Update()
     {
@@ -56,6 +66,4 @@ public class LevelManager : MonoBehaviour
             return;
         }
     }
-    
-    
 }

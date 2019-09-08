@@ -18,12 +18,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StolenCrowns.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WaveConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScanlinesShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NextWave.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StatsText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitHealth.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,7 +38,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManagerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Other/Prefab_placing_particle.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NieuzywanyFlowersSeeder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WizardProjectiles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlacingUnits.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,7 +60,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/ShowHighScore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CrownsTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StolenCrowns.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShowHighScore.cs" />
@@ -77,14 +74,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SpriteOutliner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnitsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NoUnitSelected.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlacingUnits.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CrownsStealing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MageFireball.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WizardShooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WizardProjectiles.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WaveConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NextWave.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NoMoreMoneyForTheRow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RowEnabling.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlacingUnits.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManagerBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -93,7 +95,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

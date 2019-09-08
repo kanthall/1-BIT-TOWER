@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 
@@ -43,6 +39,7 @@ public class NextWave : MonoBehaviour
             
             timeBetweenWaves = 3;
             spawnAllowed = false;
+            
             EnemySpawner[] enemySpawners = FindObjectsOfType<EnemySpawner>();
 
             audioSource.PlayOneShot(nextWaveSound, nextWaveVolume);

@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class RowEnabling : MonoBehaviour
 {
@@ -12,9 +14,140 @@ public class RowEnabling : MonoBehaviour
     [SerializeField] List<GameObject> row5 = new List<GameObject>();
     [SerializeField] List<GameObject> row6 = new List<GameObject>();
 
-    List<GameObject> rowlist = new List<GameObject>();
-
+    private GameManagerBehaviour gameManagerBehaviour = null;
+    private PlacingUnits placingUnits;
+    private int rowPrice = 10;
+    [SerializeField] int rowsToBuy = 6;
+    [SerializeField] GameObject rowsButton;
+    
     void Start()
+    {
+        RowsDisabling();
+        gameManagerBehaviour = FindObjectOfType<GameManagerBehaviour>();
+        placingUnits = GetComponent<PlacingUnits>();
+    }
+
+    public void BuyRow()
+    {
+        if (rowsToBuy > 0)
+        {
+            if (gameManagerBehaviour.Gold > rowPrice)
+            {
+                if (rowsToBuy == 6)
+                {
+                    if (gameManagerBehaviour.Gold <= 0)
+                    {
+                        return;
+                    }
+
+                    Debug.Log("Row bought 1");
+                    gameManagerBehaviour.Gold -= rowPrice;
+
+                    foreach (GameObject box in row1)
+                    {
+                        box.SetActive(true);
+                    }
+
+                    rowsToBuy -= 1;
+                }
+                else if (rowsToBuy == 5)
+                {
+                    if (gameManagerBehaviour.Gold <= 0)
+                    {
+                        return;
+                    }
+
+                    Debug.Log("Row bought 2");
+                    gameManagerBehaviour.Gold -= rowPrice;
+
+                    foreach (GameObject box in row2)
+                    {
+                        box.SetActive(true);
+                    }
+
+                    rowsToBuy -= 1;
+                }
+                else if (rowsToBuy == 4)
+                {
+                    if (gameManagerBehaviour.Gold <= 0)
+                    {
+                        return;
+                    }
+
+                    Debug.Log("Row bought 3");
+                    gameManagerBehaviour.Gold -= rowPrice;
+
+                    foreach (GameObject box in row3)
+                    {
+                        box.SetActive(true);
+                    }
+
+                    rowsToBuy -= 1;
+                }
+                else if (rowsToBuy == 3)
+                {
+                    if (gameManagerBehaviour.Gold <= 0)
+                    {
+                        return;
+                    }
+
+                    Debug.Log("Row bought 4");
+                    gameManagerBehaviour.Gold -= rowPrice;
+
+                    foreach (GameObject box in row4)
+                    {
+                        box.SetActive(true);
+                    }
+
+                    rowsToBuy -= 1;
+                }
+                else if (rowsToBuy == 2)
+                {
+                    if (gameManagerBehaviour.Gold <= 0)
+                    {
+                        return;
+                    }
+
+                    Debug.Log("Row bought 5");
+                    gameManagerBehaviour.Gold -= rowPrice;
+
+                    foreach (GameObject box in row5)
+                    {
+                        box.SetActive(true);
+                    }
+
+                    rowsToBuy -= 1;
+                }
+                else if (rowsToBuy == 1)
+                {
+                    if (gameManagerBehaviour.Gold <= 0)
+                    {
+                        return;
+                    }
+
+                    Debug.Log("Row bought 6");
+                    gameManagerBehaviour.Gold -= rowPrice;
+
+                    foreach (GameObject box in row6)
+                    {
+                        box.SetActive(true);
+                    }
+
+                    rowsToBuy -= 1;
+                }
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (rowsToBuy == 0)
+        {
+            rowsButton.GetComponent<Button>().interactable = false;
+        }
+    }
+
+    private void RowsDisabling()
     {
         foreach (GameObject box in row1)
         {
@@ -39,25 +172,6 @@ public class RowEnabling : MonoBehaviour
         foreach (GameObject box in row6)
         {
             box.SetActive(false);
-        }
-    }
-
-
-    void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.UpArrow))
-        {
-            foreach (GameObject box in row1)
-            {
-                box.SetActive(false);
-            }
-        }
-        else if (Input.GetKeyUp(KeyCode.DownArrow))
-        {
-            foreach (GameObject box in row1)
-            {
-                box.SetActive(true);
-            }
         }
     }
 }

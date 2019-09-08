@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class PlacingUnits : MonoBehaviour
 {
@@ -16,9 +17,14 @@ public class PlacingUnits : MonoBehaviour
     [Header("No Unit Selected Sound")]
     [SerializeField] AudioClip noUnitSelectedSound;
     [SerializeField] [Range(0, 1)] float noUnitSelectedSoundVolume = 1f;
+    
+    [Header("No More Money Sound")]
+    [SerializeField] AudioClip noMoreMoneySound;
+    [SerializeField] [Range(0, 1)] float noMoreMoneySoundVolume = 1f;
 
     private NoUnitSelected noUnitSelected;
-
+    private NoMoreMoney noMoreMoney;
+    
     private void Start()
     {
         unitsManager = FindObjectOfType<UnitsManager>();
@@ -28,6 +34,7 @@ public class PlacingUnits : MonoBehaviour
         spriteRenderer.material.color = Color.gray;
 
         noUnitSelected = FindObjectOfType<NoUnitSelected>();
+        noMoreMoney = FindObjectOfType<NoMoreMoney>();
     }
 
     private void OnMouseUp()
@@ -43,12 +50,8 @@ public class PlacingUnits : MonoBehaviour
         {
             //zmiana koloru blood text
             gameManagerBehaviour.bloodLabel.color = Color.red;
+            StartCoroutine("NoMoreMoney");
             return;
-        }
-        else
-        {
-            //zmiana koloru blood text
-            gameManagerBehaviour.bloodLabel.color = Color.red;
         }
 
         unitsManager.InstantiateUnit(gameObject.transform);
@@ -87,5 +90,17 @@ public class PlacingUnits : MonoBehaviour
         noUnitSelected.noUnitSelectedText1.enabled = false;
         noUnitSelected.noUnitSelectedText2.enabled = false;
         noUnitSelected.noUnitSelectedImage.enabled = false;
+    }
+    
+    IEnumerator NoMoreMoney()
+    {
+        AudioSource.PlayClipAtPoint(noMoreMoneySound, Camera.main.transform.position, noMoreMoneySoundVolume);
+        noMoreMoney.noMoneyText1.enabled = true;
+        noMoreMoney.noMoneyText2.enabled = true;
+        noMoreMoney.noMoneyTextImage.enabled = true;
+        yield return new WaitForSeconds(1);
+        noMoreMoney.noMoneyText1.enabled = false;
+        noMoreMoney.noMoneyText2.enabled = false;
+        noMoreMoney.noMoneyTextImage.enabled = false;
     }
 }

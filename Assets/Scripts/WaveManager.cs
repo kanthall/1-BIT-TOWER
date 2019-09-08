@@ -8,6 +8,7 @@ public class WaveManager : MonoBehaviour
     [SerializeField] Text waveValue;
     [SerializeField] int startingWave = 1;
     private int wave;
+    [SerializeField] private List<WaveConfig> waveConfigs;
 
     private void Start()
     {
