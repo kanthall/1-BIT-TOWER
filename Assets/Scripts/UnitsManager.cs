@@ -128,12 +128,12 @@ public class UnitsManager : MonoBehaviour
         
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            SelectUnitButton(UnitType.WIZARD, 10);
+            SelectUnitButton(UnitType.WIZARD, 15);
         }
         
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            SelectUnitButton(UnitType.MAGE, 15);
+            SelectUnitButton(UnitType.MAGE, 25);
         } 
     }
 }

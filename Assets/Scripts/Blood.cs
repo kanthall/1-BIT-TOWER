@@ -21,7 +21,7 @@ public class Blood : MonoBehaviour
             Destroy(gameObject);
 
             GameObject deathVfxObject = Instantiate(bloodFading, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            Destroy(deathVfxObject, 3f);
         }
     }
 

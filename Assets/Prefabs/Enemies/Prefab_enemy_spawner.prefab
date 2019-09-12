@@ -51,5 +51,5 @@ MonoBehaviour:
   - {fileID: 316326444486480103, guid: 943fcdf0356bb0147b572bbd813a9e84, type: 3}
   timeBeforeSpawn: 0
   time: 2
-  spawn: 1
+  spawn: 0
   unitsToSpawn: 0

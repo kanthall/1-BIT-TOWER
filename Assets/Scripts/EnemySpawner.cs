@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -13,8 +11,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] float time;
 
     [Header("Spawn")]
-    [SerializeField] public bool spawn = true;
-    [SerializeField] public int unitsToSpawn = 0;
+    [SerializeField] public bool spawn = false;
+    [SerializeField] public int unitsToSpawn;
 
     private void Start()
     {
@@ -23,13 +21,12 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-
         CountDownAndSpawn(); 
     }
 
-    private void CountDownAndSpawn()
+    public void CountDownAndSpawn()
     {
-        if (spawn == true)
+        if (spawn)
         {
             time -= Time.deltaTime;
 
@@ -42,7 +39,6 @@ public class EnemySpawner : MonoBehaviour
                 if (unitsToSpawn == 1)
                 {
                     spawn = false;
-                    return;
                 }
             }
         }

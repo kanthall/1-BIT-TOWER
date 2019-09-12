@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
-
 public class NextWave : MonoBehaviour
 {
     private AudioSource audioSource;
@@ -10,7 +8,7 @@ public class NextWave : MonoBehaviour
     [SerializeField] float timeBetweenWaves;
     [SerializeField] private bool spawnAllowed;
     [SerializeField] GameObject button;
-    
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -33,6 +31,9 @@ public class NextWave : MonoBehaviour
 
     public void SpawnNextWave()
     {
+        var spawner = FindObjectOfType<EnemySpawner>();
+        spawner.spawn = true;
+        
         if (spawnAllowed)
         {
             button.GetComponent<Button>().interactable = false;

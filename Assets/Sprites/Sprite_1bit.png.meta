@@ -1189,7 +1189,7 @@ TextureImporter:
     second: colored_transparent_394
   - first:
       213: 2655727225772817827
-    second: colored_transparent_395
+    second: _arrow1
   - first:
       213: -2323962080543687416
     second: colored_transparent_396
@@ -2927,7 +2927,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -11259,15 +11259,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_395
+      name: _arrow1
       rect:
         serializedVersion: 2
         x: 408
         y: 322
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

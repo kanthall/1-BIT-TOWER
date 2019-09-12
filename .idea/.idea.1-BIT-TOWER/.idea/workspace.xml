@@ -18,6 +18,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StolenCrowns.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WaveConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D2403586-DE7C-4D53-B2AF-7253DAFB43C4/a4/492e16ec/ClickSelector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NextWave.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,10 +41,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Other/Prefab_placing_particle.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WizardProjectiles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoMoreMoney.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tutorial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlacingUnits.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../GameJamGame/Assets/Scripts/MonsterBullet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shredder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScanlinesEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MageFireball.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D2403586-DE7C-4D53-B2AF-7253DAFB43C4/db/6c1f5629/ReorderableList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitsParams.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Blood.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,21 +77,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ScanlinesShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Outliner.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpriteOutliner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnitsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NoUnitSelected.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CrownsStealing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MageFireball.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WizardShooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WizardProjectiles.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WaveConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NextWave.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NoMoreMoneyForTheRow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RowEnabling.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlacingUnits.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManagerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/../GameJamGame/Assets/Scripts/MonsterBullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Blood.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RowEnabling.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NextWave.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tutorial.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnitsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlacingUnits.cs" />
       </list>
     </option>
   </component>
