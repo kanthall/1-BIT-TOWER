@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -15,15 +13,9 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        if (isMoving == true)
+        if (isMoving)
         {
             Move();
-            //Debug.Log("move");
-        }
-        else if (isMoving == false)
-        {
-            //Debug.Log("no move");
-            return;
         }
     }
 
@@ -31,8 +23,6 @@ public class EnemyMovement : MonoBehaviour
     {
         transform.Translate(waveSpeedModicifator * Time.deltaTime * enemyMoveSpeed * Vector3.left);
     }
-
-
 
     private void WavesDiff()
     {

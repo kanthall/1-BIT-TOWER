@@ -40,7 +40,6 @@ public class NextWave : MonoBehaviour
             
             timeBetweenWaves = 3;
             spawnAllowed = false;
-            
             EnemySpawner[] enemySpawners = FindObjectsOfType<EnemySpawner>();
 
             audioSource.PlayOneShot(nextWaveSound, nextWaveVolume);

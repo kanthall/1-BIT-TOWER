@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 781928146928e0e4aa11b748121854e6, type: 3}
-  m_Name: Wave3
+  m_Name: Wave1
   m_EditorClassIdentifier: 
   enemyHealthMultiplayer: 0
+  timeBetweenSpawns: 0.5
+  spawnRandomFactor: 0.3
+  moveSpeed: 2
   waveNumber: 1
   unitsToSpawn:
   - {fileID: 6249041821588456142, guid: e5c2d92e340df4548b820286ffe4ee11, type: 3}

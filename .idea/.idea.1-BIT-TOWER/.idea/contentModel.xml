@@ -40,13 +40,10 @@
             </e>
           </e>
         </e>
-        <e p="Effects" t="Include">
-          <e p="Chromatic_PostEffect_Static.shader" t="Include" />
-          <e p="ScanlinesShader.shader" t="Include" />
-        </e>
         <e p="Scripts" t="Include">
           <e p="Blood.cs" t="Include" />
           <e p="CameraShake.cs" t="Include" />
+          <e p="Chromatic_PostEffect_Static.shader" t="Include" />
           <e p="CrownsStealing.cs" t="Include" />
           <e p="CrownsTrigger.cs" t="Include" />
           <e p="EnemyAttack.cs" t="Include" />
@@ -65,11 +62,13 @@
           <e p="PostEffect.cs" t="Include" />
           <e p="RowEnabling.cs" t="Include" />
           <e p="ScanlinesEffect.cs" t="Include" />
+          <e p="ScanlinesShader.shader" t="Include" />
           <e p="ScoreDisplay.cs" t="Include" />
           <e p="ShowHighScore.cs" t="Include" />
           <e p="Shredder.cs" t="Include" />
           <e p="StatsText.cs" t="Include" />
           <e p="StolenCrowns.cs" t="Include" />
+          <e p="Tutorial.cs" t="Include" />
           <e p="UnitAttack.cs" t="Include" />
           <e p="UnitHealth.cs" t="Include" />
           <e p="Units.cs" t="Include" />
@@ -80,7 +79,6 @@
           <e p="WizardProjectiles.cs" t="Include" />
           <e p="WizardShooting.cs" t="Include" />
         </e>
-        <e p="Tutorial.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class RowEnabling : MonoBehaviour
@@ -19,12 +16,18 @@ public class RowEnabling : MonoBehaviour
     private int rowPrice = 10;
     [SerializeField] int rowsToBuy = 6;
     [SerializeField] GameObject rowsButton;
+
+    [Header("Sound")] 
+    [SerializeField] private AudioClip buyingSound;
+    [SerializeField] [Range(0, 1)] float buyingSoundVolume = 0.75f;
+    private AudioSource audio;
     
     void Start()
     {
         RowsDisabling();
         gameManagerBehaviour = FindObjectOfType<GameManagerBehaviour>();
         placingUnits = GetComponent<PlacingUnits>();
+        audio = GetComponent<AudioSource>();
     }
 
     public void BuyRow()
@@ -46,6 +49,7 @@ public class RowEnabling : MonoBehaviour
                     foreach (GameObject box in row1)
                     {
                         box.SetActive(true);
+                        audio.PlayOneShot(buyingSound, buyingSoundVolume);
                     }
 
                     rowsToBuy -= 1;
@@ -63,6 +67,7 @@ public class RowEnabling : MonoBehaviour
                     foreach (GameObject box in row2)
                     {
                         box.SetActive(true);
+                        audio.PlayOneShot(buyingSound, buyingSoundVolume);
                     }
 
                     rowsToBuy -= 1;
@@ -80,6 +85,7 @@ public class RowEnabling : MonoBehaviour
                     foreach (GameObject box in row3)
                     {
                         box.SetActive(true);
+                        audio.PlayOneShot(buyingSound, buyingSoundVolume);
                     }
 
                     rowsToBuy -= 1;
@@ -97,6 +103,7 @@ public class RowEnabling : MonoBehaviour
                     foreach (GameObject box in row4)
                     {
                         box.SetActive(true);
+                        audio.PlayOneShot(buyingSound, buyingSoundVolume);
                     }
 
                     rowsToBuy -= 1;
@@ -114,6 +121,7 @@ public class RowEnabling : MonoBehaviour
                     foreach (GameObject box in row5)
                     {
                         box.SetActive(true);
+                        audio.PlayOneShot(buyingSound, buyingSoundVolume);
                     }
 
                     rowsToBuy -= 1;
@@ -131,6 +139,7 @@ public class RowEnabling : MonoBehaviour
                     foreach (GameObject box in row6)
                     {
                         box.SetActive(true);
+                        audio.PlayOneShot(buyingSound, buyingSoundVolume);
                     }
 
                     rowsToBuy -= 1;
@@ -175,4 +184,3 @@ public class RowEnabling : MonoBehaviour
         }
     }
 }
-

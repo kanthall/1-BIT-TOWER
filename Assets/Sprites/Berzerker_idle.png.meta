@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 5566d7ebea88b2740a5da23868c7993e
+guid: 851ebcaaa4a68924fb0ee6663f2084d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7609486996209228562
-    second: particles_0
+      213: -3243338049312854714
+    second: Berzerker_idle_0
   - first:
-      213: -576354014268724891
-    second: particles_1
+      213: -5200544169823716876
+    second: Berzerker_idle_1
   - first:
-      213: 5597564248131343736
-    second: particles_2
-  - first:
-      213: -449137561210389587
-    second: particles_3
+      213: 3631758834142563100
+    second: Berzerker_idle_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -55,9 +52,9 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  alignment: 1
+  spritePivot: {x: 0, y: 1}
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,85 +93,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: particles_0
+      name: Berzerker_idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 17
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84e2e2b9d35cc574b8b7e7fc9cf834b0
-      internalID: -7609486996209228562
+      spriteID: d6e628c22c934cb4dabd16e7aba0eeb1
+      internalID: -3243338049312854714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: particles_1
+      name: Berzerker_idle_1
       rect:
         serializedVersion: 2
-        x: 512
+        x: 17
         y: 0
-        width: 512
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 17
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7aada20e2afff4a4893ba2eea2b82f60
-      internalID: -576354014268724891
+      spriteID: a00de3b27789078439986a261e2040f1
+      internalID: -5200544169823716876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: particles_2
+      name: Berzerker_idle_2
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 34
         y: 0
-        width: 512
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 17
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da05ba7bacbc84546bab4f7164dfb8a4
-      internalID: 5597564248131343736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: particles_3
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 512
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7eb40335614e2db4a9fe7785d12b1654
-      internalID: -449137561210389587
+      spriteID: 6d96fbaf00ee9ee49805070923f8f5e2
+      internalID: 3631758834142563100
       vertices: []
       indices: 
       edges: []
@@ -182,7 +158,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 04c2aea249615db47b7a44e3ab6a7a4c
+    spriteID: 419d9e9894ede56409747992ba8c5128
     internalID: 0
     vertices: []
     indices: 

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class WaveManager : MonoBehaviour
@@ -8,7 +6,6 @@ public class WaveManager : MonoBehaviour
     [SerializeField] Text waveValue;
     [SerializeField] int startingWave;
     private int wave;
-    [SerializeField] private List<WaveConfig> waveConfigs;
 
     [Header("Wave button text")]
     [SerializeField] private Text startText;

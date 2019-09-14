@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blood: 3
-  bloodFading: {fileID: 3315457047935365390, guid: c06a2fd460b172c4299f4e413844c094,
+  bloodFading: {fileID: 1967047115873555042, guid: 07be2fb070deea145924deed3d2d8bbc,
     type: 3}
 --- !u!114 &1370829776626947399
 MonoBehaviour:
@@ -400,7 +400,7 @@ MonoBehaviour:
   scoreValue: 15
   deathParticle: {fileID: 2287292577351045251, guid: b4cb7d74e86843443b4c86e266b8c15a,
     type: 3}
-  bloodParticle: {fileID: 3315457047935365390, guid: c06a2fd460b172c4299f4e413844c094,
+  bloodParticle: {fileID: 3315457047935365390, guid: 5751a28d5416388419fd38b7f75f4e5c,
     type: 3}
   bloodSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
   bloodSoundVolume: 0.5
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: -7299471148335195214}
-  firstAttackTime: 2
+  firstAttackTime: 1.5
   timeBetweenAttacks: 1.5
   attackSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
   attackSoundVolume: 0.5

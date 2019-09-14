@@ -1,0 +1,279 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (c:/BuildAgent/work/5ff2f6c26000d570/src/hotspot/share/runtime/safepoint.cpp:917), pid=4520, tid=16936
+#  fatal error: Illegal threadstate encountered: 4
+#
+# JRE version: OpenJDK Runtime Environment (11.0.3+12) (build 11.0.3+12-b304.25)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.3+12-b304.25, mixed mode, sharing, tiered, compressed oops, concurrent mark sweep gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: exit -Xms128m -Xmx1500m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf -Dkotlinx.coroutines.debug=off -Djb.vmOptionsFile=G:\JetBrains\JetBrains Rider 2019.2\bin\rider64.exe.vmoptions -Djava.library.path=G:\JetBrains\JetBrains Rider 2019.2\jbr\\bin;G:\JetBrains\JetBrains Rider 2019.2\jbr\\bin\server -Didea.platform.prefix=Rider -Dide.native.launcher=true -Didea.class.before.app=com.jetbrains.rider.protocol.EarlyBackendStarter -Didea.log.config.file=log.xml -Didea.jre.check=true -Dide.native.launcher=true -Didea.paths.selector=Rider2019.2 -XX:ErrorFile=C:\Users\PaweB\java_error_in_rider_%p.log -XX:HeapDumpPath=C:\Users\PaweB\java_error_in_rider.hprof 
+
+Host: AMD Ryzen 7 2700X Eight-Core Processor         , 16 cores, 15G,  Windows 10 , 64 bit Build 18362 (10.0.18362.329)
+Time: Thu Sep 12 23:53:13 2019 ?rodkowoeuropejski czas letni elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000001be41800):  JavaThread "WinLauncher external command processing thread" [_thread_in_native, id=16936, stack(0x000000001c720000,0x000000001c820000)]
+
+Stack: [0x000000001c720000,0x000000001c820000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x5da77a]
+V  [jvm.dll+0x70b9c9]
+V  [jvm.dll+0x70cee8]
+V  [jvm.dll+0x70d567]
+V  [jvm.dll+0x23db44]
+V  [jvm.dll+0x63d181]
+V  [jvm.dll+0xfbc4b]
+V  [jvm.dll+0x6d1c43]
+V  [jvm.dll+0x132201]
+V  [jvm.dll+0x3b147f]
+C  [rider64.exe+0x4b17]
+C  [rider64.exe+0x5a6c]
+C  [rider64.exe+0x5da6]
+C  [KERNEL32.DLL+0x17bd4]
+C  [ntdll.dll+0x6cee1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000000001abfa840, length=11, elements={
+0x0000000002a3b800, 0x000000001aa78800, 0x000000001aa7a800, 0x000000001aa93800,
+0x000000001aa95000, 0x000000001aa96000, 0x000000001aa9e000, 0x000000001aa9f000,
+0x000000001abcf800, 0x000000001be41800, 0x000000001abfb000
+}
+
+Java Threads: ( => current thread )
+  0x0000000002a3b800 JavaThread "main" [_thread_in_vm, id=532, stack(0x0000000000050000,0x0000000000150000)]
+  0x000000001aa78800 JavaThread "Reference Handler" daemon [_thread_blocked, id=4904, stack(0x000000001b510000,0x000000001b610000)]
+  0x000000001aa7a800 JavaThread "Finalizer" daemon [_thread_blocked, id=1912, stack(0x000000001b610000,0x000000001b710000)]
+  0x000000001aa93800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=18276, stack(0x000000001b820000,0x000000001b920000)]
+  0x000000001aa95000 JavaThread "Attach Listener" daemon [_thread_blocked, id=17860, stack(0x000000001b920000,0x000000001ba20000)]
+  0x000000001aa96000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=15608, stack(0x000000001ba20000,0x000000001bb20000)]
+  0x000000001aa9e000 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=14364, stack(0x000000001bb20000,0x000000001bc20000)]
+  0x000000001aa9f000 JavaThread "Sweeper thread" daemon [_thread_blocked, id=11844, stack(0x000000001bc20000,0x000000001bd20000)]
+  0x000000001abcf800 JavaThread "Service Thread" daemon [_thread_blocked, id=15388, stack(0x000000001bd20000,0x000000001be20000)]
+=>0x000000001be41800 JavaThread "WinLauncher external command processing thread" [_thread_in_native, id=16936, stack(0x000000001c720000,0x000000001c820000)]
+  0x000000001abfb000 JavaThread "Common-Cleaner" daemon [_thread_blocked, id=17052, stack(0x000000001c820000,0x000000001c920000)]
+
+Other Threads:
+  0x000000001aa73800 VMThread "VM Thread" [stack: 0x000000001b410000,0x000000001b510000] [id=14068]
+  0x000000001abd0800 WatcherThread [stack: 0x000000001c620000,0x000000001c720000] [id=5400]
+  0x0000000002a4c000 GCTaskThread "GC Thread#0" [stack: 0x00000000023d0000,0x00000000024d0000] [id=16316]
+  0x0000000002ae5800 ConcurrentGCThread "CMS Main Thread" [stack: 0x000000001a710000,0x000000001a810000] [id=8196]
+  0x0000000002ae3800 GCTaskThread "CMS Thread#0" [stack: 0x0000000019820000,0x0000000019920000] [id=13508]
+
+Threads with active compile tasks:
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x00000000a2400000, size: 1500 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000800000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000840000000
+
+Heap:
+ par new generation   total 39296K, used 4300K [0x00000000a2400000, 0x00000000a4ea0000, 0x00000000c1800000)
+  eden space 34944K,  12% used [0x00000000a2400000, 0x00000000a28333d0, 0x00000000a4620000)
+  from space 4352K,   0% used [0x00000000a4620000, 0x00000000a4620000, 0x00000000a4a60000)
+  to   space 4352K,   0% used [0x00000000a4a60000, 0x00000000a4a60000, 0x00000000a4ea0000)
+ concurrent mark-sweep generation total 87424K, used 0K [0x00000000c1800000, 0x00000000c6d60000, 0x0000000100000000)
+ Metaspace       used 1268K, capacity 4877K, committed 5120K, reserved 1056768K
+  class space    used 100K, capacity 437K, committed 512K, reserved 1048576K
+
+Card table byte_map: [0x00000000024d0000,0x00000000027c0000] _byte_map_base: 0x0000000001fbe000
+
+Marking Bits: (CMSBitMap*) 0x000000001667ae60
+ Bits: [0x0000000016870000, 0x0000000017810000)
+
+Mod Union Table: (CMSBitMap*) 0x000000001667af00
+ Bits: [0x0000000002190000, 0x00000000021ce800)
+
+Polling page: 0x0000000000540000
+
+Metaspace:
+
+Usage:
+  Non-class:      4.34 MB capacity,     1.14 MB ( 26%) used,     3.19 MB ( 74%) free+waste,     1.69 KB ( <1%) overhead. 
+      Class:    437.00 KB capacity,   100.97 KB ( 23%) used,   334.84 KB ( 77%) free+waste,     1.19 KB ( <1%) overhead. 
+       Both:      4.76 MB capacity,     1.24 MB ( 26%) used,     3.52 MB ( 74%) free+waste,     2.88 KB ( <1%) overhead. 
+
+Virtual space:
+  Non-class space:        8.00 MB reserved,       4.50 MB ( 56%) committed 
+      Class space:        1.00 GB reserved,     512.00 KB ( <1%) committed 
+             Both:        1.01 GB reserved,       5.00 MB ( <1%) committed 
+
+Chunk freelists:
+   Non-Class:  40.00 KB
+       Class:  11.00 KB
+        Both:  51.00 KB
+
+CodeHeap 'non-profiled nmethods': size=120064Kb used=52Kb max_used=52Kb free=120011Kb
+ bounds [0x000000000e380000, 0x000000000e5f0000, 0x00000000158c0000]
+CodeHeap 'profiled nmethods': size=120000Kb used=259Kb max_used=259Kb free=119740Kb
+ bounds [0x0000000006e50000, 0x00000000070c0000, 0x000000000e380000]
+CodeHeap 'non-nmethods': size=5696Kb used=1053Kb max_used=1061Kb free=4643Kb
+ bounds [0x00000000068c0000, 0x0000000006b30000, 0x0000000006e50000]
+ total_blobs=606 nmethods=209 adapters=246
+ compilation: enabled
+              stopped_count=0, restarted_count=0
+ full_count=0
+
+Compilation events (10 events):
+Event: 0.054 Thread 0x000000001aa9e000  103       3       java.util.zip.ZipUtils::CENHOW (9 bytes)
+Event: 0.054 Thread 0x000000001aa9e000 nmethod 103 0x0000000006e75010 code [0x0000000006e751c0, 0x0000000006e753b8]
+Event: 0.054 Thread 0x000000001aa9e000  104       3       java.util.zip.ZipUtils::CENEXT (9 bytes)
+Event: 0.054 Thread 0x000000001aa9e000 nmethod 104 0x0000000006e75510 code [0x0000000006e756c0, 0x0000000006e758b8]
+Event: 0.054 Thread 0x000000001aa9e000  105       3       java.util.zip.ZipUtils::CENCOM (9 bytes)
+Event: 0.054 Thread 0x000000001aa9e000 nmethod 105 0x0000000006e75a10 code [0x0000000006e75bc0, 0x0000000006e75db8]
+Event: 0.054 Thread 0x000000001aa9e000  112       3       java.lang.StringLatin1::lastIndexOf (40 bytes)
+Event: 0.054 Thread 0x000000001aa96000 nmethod 110 0x000000000e386310 code [0x000000000e3864a0, 0x000000000e386578]
+Event: 0.054 Thread 0x000000001aa96000  111       4       java.util.zip.ZipFile$Source::addEntry (33 bytes)
+Event: 0.054 Thread 0x000000001aa9e000 nmethod 112 0x0000000006e75f10 code [0x0000000006e760e0, 0x0000000006e764f8]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (1 events):
+Event: 0.035 Thread 0x0000000002a3b800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000000e385158 method=java.lang.String.hashCode()I @ 14 c2
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.050 loading class javax/swing/JComponent done
+Event: 0.050 loading class javax/swing/text/JTextComponent done
+Event: 0.050 loading class javax/swing/JEditorPane done
+Event: 0.050 loading class javax/swing/JTextPane done
+Event: 0.051 loading class java/awt/Frame
+Event: 0.051 loading class java/awt/Window
+Event: 0.051 loading class java/awt/Window done
+Event: 0.051 loading class java/awt/Frame done
+Event: 0.051 loading class com/intellij/util/ArrayUtilRt
+Event: 0.051 loading class com/intellij/util/ArrayUtilRt done
+
+
+Dynamic libraries:
+0x0000000140000000 - 0x0000000140148000 	G:\JetBrains\JetBrains Rider 2019.2\bin\rider64.exe
+0x00007ffd75fc0000 - 0x00007ffd761b0000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffd74230000 - 0x00007ffd742e2000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffd73340000 - 0x00007ffd735e3000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffd74e50000 - 0x00007ffd74fe3000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffd73670000 - 0x00007ffd73691000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffd75d40000 - 0x00007ffd75d66000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffd73170000 - 0x00007ffd73304000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffd736a0000 - 0x00007ffd7373e000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffd737a0000 - 0x00007ffd7389a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffd74c70000 - 0x00007ffd74d13000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffd75ca0000 - 0x00007ffd75d3e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffd75330000 - 0x00007ffd753c7000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffd74b50000 - 0x00007ffd74c70000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffd753d0000 - 0x00007ffd75ab5000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffd72fd0000 - 0x00007ffd7301a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffd74aa0000 - 0x00007ffd74b49000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffd74ff0000 - 0x00007ffd75326000 	C:\WINDOWS\System32\combase.dll
+0x00007ffd735f0000 - 0x00007ffd73670000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffd738a0000 - 0x00007ffd7401e000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ffd72f00000 - 0x00007ffd72f1f000 	C:\WINDOWS\System32\profapi.dll
+0x00007ffd72e90000 - 0x00007ffd72eda000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ffd72e60000 - 0x00007ffd72e70000 	C:\WINDOWS\System32\UMPDC.dll
+0x00007ffd74df0000 - 0x00007ffd74e42000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffd72e70000 - 0x00007ffd72e81000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ffd74020000 - 0x00007ffd74037000 	C:\WINDOWS\System32\cryptsp.dll
+0x00007ffd75f20000 - 0x00007ffd75f4e000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffd298d0000 - 0x00007ffd2a387000 	G:\JetBrains\JetBrains Rider 2019.2\jbr\bin\server\jvm.dll
+0x00007ffd74620000 - 0x00007ffd74628000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffd693e0000 - 0x00007ffd69404000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffd6c5c0000 - 0x00007ffd6c5ca000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffd5edf0000 - 0x00007ffd5ee06000 	C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll
+0x00007ffd6f460000 - 0x00007ffd6f469000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffd75df0000 - 0x00007ffd75e5f000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffd693b0000 - 0x00007ffd693dd000 	C:\WINDOWS\SYSTEM32\winmmbase.dll
+0x00007ffd6c030000 - 0x00007ffd6c041000 	G:\JetBrains\JetBrains Rider 2019.2\jbr\bin\verify.dll
+0x00007ffd716f0000 - 0x00007ffd718e4000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffd6b270000 - 0x00007ffd6b29a000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffd5f2b0000 - 0x00007ffd5f2d9000 	G:\JetBrains\JetBrains Rider 2019.2\jbr\bin\java.dll
+0x00007ffd6b310000 - 0x00007ffd6b327000 	G:\JetBrains\JetBrains Rider 2019.2\jbr\bin\zip.dll
+0x00007ffd6f450000 - 0x00007ffd6f45b000 	G:\JetBrains\JetBrains Rider 2019.2\jbr\bin\jimage.dll
+0x00007ffd6acf0000 - 0x00007ffd6ad0a000 	G:\JetBrains\JetBrains Rider 2019.2\jbr\bin\net.dll
+0x00007ffd6a060000 - 0x00007ffd6a150000 	C:\WINDOWS\SYSTEM32\WINHTTP.dll
+0x00007ffd62800000 - 0x00007ffd629d6000 	C:\WINDOWS\SYSTEM32\urlmon.dll
+0x00007ffd62cf0000 - 0x00007ffd62f96000 	C:\WINDOWS\SYSTEM32\iertutil.dll
+0x00007ffd728a0000 - 0x00007ffd728ac000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
+0x00007ffd726d0000 - 0x00007ffd72737000 	C:\WINDOWS\system32\mswsock.dll
+0x00007ffd6a440000 - 0x00007ffd6a454000 	G:\JetBrains\JetBrains Rider 2019.2\jbr\bin\nio.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;G:\JetBrains\JetBrains Rider 2019.2\bin;C:\WINDOWS\SYSTEM32;G:\JetBrains\JetBrains Rider 2019.2\jbr\bin\server;G:\JetBrains\JetBrains Rider 2019.2\jbr\bin
+
+VM Arguments:
+jvm_args: exit -Xms128m -Xmx1500m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf -Dkotlinx.coroutines.debug=off -Djb.vmOptionsFile=G:\JetBrains\JetBrains Rider 2019.2\bin\rider64.exe.vmoptions -Djava.library.path=G:\JetBrains\JetBrains Rider 2019.2\jbr\\bin;G:\JetBrains\JetBrains Rider 2019.2\jbr\\bin\server -Didea.platform.prefix=Rider -Dide.native.launcher=true -Didea.class.before.app=com.jetbrains.rider.protocol.EarlyBackendStarter -Didea.log.config.file=log.xml -Didea.jre.check=true -Dide.native.launcher=true -Didea.paths.selector=Rider2019.2 -XX:ErrorFile=C:\Users\PaweB\java_error_in_rider_%p.log -XX:HeapDumpPath=C:\Users\PaweB\java_error_in_rider.hprof 
+java_command: <unknown>
+java_class_path (initial): G:\JetBrains\JetBrains Rider 2019.2\lib\bootstrap.jar;G:\JetBrains\JetBrains Rider 2019.2\lib\extensions.jar;G:\JetBrains\JetBrains Rider 2019.2\lib\util.jar;G:\JetBrains\JetBrains Rider 2019.2\lib\jdom.jar;G:\JetBrains\JetBrains Rider 2019.2\lib\log4j.jar;G:\JetBrains\JetBrains Rider 2019.2\lib\trove4j.jar;G:\JetBrains\JetBrains Rider 2019.2\lib\jna.jar
+Launcher Type: generic
+
+[Global flags]
+     intx CICompilerCount                          = 2                                         {product} {command line}
+    ccstr ErrorFile                                = C:\Users\PaweB\java_error_in_rider_%p.log            {product} {command line}
+     bool HeapDumpOnOutOfMemoryError               = true                                   {manageable} {command line}
+    ccstr HeapDumpPath                             = C:\Users\PaweB\java_error_in_rider.hprof         {manageable} {command line}
+   size_t InitialHeapSize                          = 134217728                                 {product} {command line}
+   size_t MaxHeapSize                              = 1572864000                                {product} {command line}
+   size_t MaxNewSize                               = 524288000                                 {product} {ergonomic}
+    uintx MaxTenuringThreshold                     = 6                                         {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 196608                                    {product} {ergonomic}
+   size_t NewSize                                  = 44695552                                  {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5824844                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122916698                              {pd product} {ergonomic}
+   size_t OldSize                                  = 89522176                                  {product} {ergonomic}
+     bool OmitStackTraceInFastThrow                = false                                     {product} {command line}
+    uintx ProfiledCodeHeapSize                     = 122916698                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {command line}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     intx SoftRefLRUPolicyMSPerMB                  = 50                                        {product} {command line}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseConcMarkSweepGC                       = true                                      {product} {command line}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NGX;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Pawe³\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Pawe³\AppData\Local\Programs\Python\Python37-32\;C:\Users\Pawe³\AppData\Local\Microsoft\WindowsApps;C:\Users\Pawe³\AppData\Local\GitHubDesktop\bin;C:\Users\Pawe³\AppData\Local\Microsoft\WindowsApps;
+USERNAME=Pawe³
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 18362 (10.0.18362.329)
+
+CPU:total 16 (initial active 16) (16 cores per cpu, 2 threads per core) family 23 model 8 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, ht, tsc, tscinvbit, tscinv, bmi1, bmi2, adx, sha, fma
+
+Memory: 4k page, system-wide physical 16304M (10988M free)
+TotalPageFile size 32688M (AvailPageFile size 24201M)
+current process WorkingSet (physical memory assigned to process): 32M, peak: 32M
+current process commit charge ("private bytes"): 231M, peak: 231M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.3+12-b304.25) for windows-amd64 JRE (11.0.3+12-b304.25), built on Jul 22 2019 16:20:34 by "" with MS VC++ 14.0 (VS2015)
+
+END.

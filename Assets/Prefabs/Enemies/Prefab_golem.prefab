@@ -70,14 +70,14 @@ SpriteRenderer:
   m_SortingOrder: 6
   m_Sprite: {fileID: -4684367385606850371, guid: 6a6ff1a7ae2bea84b88167086e5df7c7,
     type: 3}
-  m_Color: {r: 0.9411765, g: 0.65882355, b: 0.27058825, a: 1}
+  m_Color: {r: 0.21960784, g: 0.8509804, b: 0.4509804, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.17, y: 0.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7448180306381164526
@@ -186,7 +186,7 @@ SpriteRenderer:
   m_SortingOrder: 6
   m_Sprite: {fileID: -5471062261667242350, guid: 42d456fdfee73194eb95ed9b7412aa27,
     type: 3}
-  m_Color: {r: 0.9411765, g: 0.65882355, b: 0.27058825, a: 1}
+  m_Color: {r: 0.21960784, g: 0.8509804, b: 0.4509804, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blood: 5
-  bloodFading: {fileID: 3315457047935365390, guid: c06a2fd460b172c4299f4e413844c094,
+  bloodFading: {fileID: 1967047115873555042, guid: 07be2fb070deea145924deed3d2d8bbc,
     type: 3}
 --- !u!114 &5334461303939183449
 MonoBehaviour:
@@ -400,7 +400,7 @@ MonoBehaviour:
   scoreValue: 25
   deathParticle: {fileID: 2287292577351045251, guid: b4cb7d74e86843443b4c86e266b8c15a,
     type: 3}
-  bloodParticle: {fileID: 3315457047935365390, guid: c06a2fd460b172c4299f4e413844c094,
+  bloodParticle: {fileID: 3315457047935365390, guid: 5751a28d5416388419fd38b7f75f4e5c,
     type: 3}
   bloodSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
   bloodSoundVolume: 0.5
@@ -419,8 +419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1127110092186633418}
-  firstAttackTime: 2
-  timeBetweenAttacks: 4
+  firstAttackTime: 3
+  timeBetweenAttacks: 3
   attackSound: {fileID: 8300000, guid: a6ec053a868997a4681db456da4b17dd, type: 3}
   attackSoundVolume: 0.5
   attackPower: 5

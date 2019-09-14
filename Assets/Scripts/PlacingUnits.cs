@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
-using TMPro;
 
 public class PlacingUnits : MonoBehaviour
 {
-    private UnitsManager unitsManager = null;
-    private GameManagerBehaviour gameManagerBehaviour = null;
-    private SpriteRenderer spriteRenderer = null;
+    private UnitsManager unitsManager;
+    private GameManagerBehaviour gameManagerBehaviour;
+    private SpriteRenderer spriteRenderer;
     private bool isEmpty = true;
 
     [Header("Placing Sound")]
@@ -70,13 +68,9 @@ public class PlacingUnits : MonoBehaviour
 
     private void OnMouseExit()
     {
-        if (isEmpty == false) //(!isEmpty)
+        if (isEmpty)
         {
-            return;
-        }
-        else
-        { 
-        spriteRenderer.material.color = Color.gray;
+            spriteRenderer.material.color = Color.gray;
         }
     }
 
