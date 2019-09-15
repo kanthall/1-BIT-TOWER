@@ -4776,7 +4776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpeed: 1
-  damage: 3
+  damage: 2
   hitPrefab: {fileID: 1404681256839616, guid: 3640199bf9dc32f4da57c37d57581f57, type: 3}
   projectileSound: {fileID: 8300000, guid: 6e83ed85a8cffd747874b18161e26613, type: 3}
   projectileSoundVolume: 0.43

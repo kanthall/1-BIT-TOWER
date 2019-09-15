@@ -74,6 +74,7 @@
           <e p="Units.cs" t="Include" />
           <e p="UnitsManager.cs" t="Include" />
           <e p="UnitsParams.cs" t="Include" />
+          <e p="WaveCanvas.cs" t="Include" />
           <e p="WaveConfig.cs" t="Include" />
           <e p="WaveManager.cs" t="Include" />
           <e p="WizardProjectiles.cs" t="Include" />

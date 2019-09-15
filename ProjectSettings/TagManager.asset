@@ -10,6 +10,7 @@ TagManager:
   - Crown
   - CrownTrigger
   - Unit
+  - Locker
   layers:
   - Default
   - TransparentFX

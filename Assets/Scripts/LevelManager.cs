@@ -61,9 +61,5 @@ public class LevelManager : MonoBehaviour
         {
             LoadGame();
         }
-        else
-        {
-            return;
-        }
     }
 }

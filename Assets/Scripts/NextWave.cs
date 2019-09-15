@@ -9,9 +9,14 @@ public class NextWave : MonoBehaviour
     [SerializeField] private bool spawnAllowed;
     [SerializeField] GameObject button;
 
+    private WaveManager waveManager;
+    private int waveValue;
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        
+        waveManager = FindObjectOfType<WaveManager>();
+        waveValue = waveManager.GetWave();
     }
 
     private void Update()
@@ -31,6 +36,11 @@ public class NextWave : MonoBehaviour
 
     public void SpawnNextWave()
     {
+        if (waveValue >= 2)
+        {
+            
+        }
+        
         var spawner = FindObjectOfType<EnemySpawner>();
         spawner.spawn = true;
         

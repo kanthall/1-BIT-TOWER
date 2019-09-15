@@ -329,6 +329,9 @@ MonoBehaviour:
   bloodSoundVolume: 0.5
   punchSound: {fileID: 0}
   healthBar: {fileID: 3296456322789459571}
+  waveCanvas: {fileID: 8684639584856589407, guid: c1d9204865f0a4348ab27cc6635bd60b,
+    type: 3}
+  isLocked: 0
 --- !u!114 &6797280393578552206
 MonoBehaviour:
   m_ObjectHideFlags: 0

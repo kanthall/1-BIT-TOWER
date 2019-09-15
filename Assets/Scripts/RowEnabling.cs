@@ -60,8 +60,7 @@ public class RowEnabling : MonoBehaviour
                     {
                         return;
                     }
-
-                    Debug.Log("Row bought 2");
+                    
                     gameManagerBehaviour.Gold -= rowPrice;
 
                     foreach (GameObject box in row2)
@@ -79,7 +78,6 @@ public class RowEnabling : MonoBehaviour
                         return;
                     }
 
-                    Debug.Log("Row bought 3");
                     gameManagerBehaviour.Gold -= rowPrice;
 
                     foreach (GameObject box in row3)
@@ -97,7 +95,6 @@ public class RowEnabling : MonoBehaviour
                         return;
                     }
 
-                    Debug.Log("Row bought 4");
                     gameManagerBehaviour.Gold -= rowPrice;
 
                     foreach (GameObject box in row4)
@@ -115,7 +112,6 @@ public class RowEnabling : MonoBehaviour
                         return;
                     }
 
-                    Debug.Log("Row bought 5");
                     gameManagerBehaviour.Gold -= rowPrice;
 
                     foreach (GameObject box in row5)
@@ -133,7 +129,6 @@ public class RowEnabling : MonoBehaviour
                         return;
                     }
 
-                    Debug.Log("Row bought 6");
                     gameManagerBehaviour.Gold -= rowPrice;
 
                     foreach (GameObject box in row6)

@@ -17,13 +17,21 @@ public class EnemyHealth : MonoBehaviour
     
     [Header("Sound type for hit")]
     [SerializeField] AudioClip punchSound;
-
-
+    
     [Header("Healthbar")]
     [SerializeField] Image healthBar;
 
+    [Header("Wave modificator")]
+    [SerializeField] public bool isLocked;
+    private WaveManager waveManager;
+    private int waveValue;
     private void Start()
     {
+        waveManager = FindObjectOfType<WaveManager>();
+        waveValue = waveManager.GetWave();
+
+        HealthMod();
+
         health = startHealth;
     }
 
@@ -57,11 +65,58 @@ public class EnemyHealth : MonoBehaviour
         {
             return;
         }
-        else
+        
+        GameObject bloodObject = Instantiate(bloodParticle, transform.position, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(bloodSound, Camera.main.transform.position, bloodSoundVolume);
+        Destroy(bloodObject, 3f);
+    }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Locker"))
         {
-            GameObject bloodObject = Instantiate(bloodParticle, transform.position, Quaternion.identity);
-            AudioSource.PlayClipAtPoint(bloodSound, Camera.main.transform.position, bloodSoundVolume);
-            Destroy(bloodObject, 3f);
+            isLocked = true;
         }
     }
+
+    private void HealthMod()
+    {
+        if (isLocked == false && waveValue == 2)
+        {
+            startHealth += 5;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+        
+        if (isLocked == false && waveValue == 3)
+        {
+            startHealth += 7;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+        
+        if (isLocked == false && waveValue == 4)
+        {
+            startHealth += 10;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+        
+        if (isLocked == false && waveValue == 5)
+        {
+            startHealth += 12;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+        
+        if (isLocked == false && waveValue == 6)
+        {
+            startHealth += 15;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+        
+        if (isLocked == false && waveValue == 7)
+        {
+            startHealth += 17;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+    }
+
+   
 }

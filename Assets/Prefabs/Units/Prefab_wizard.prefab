@@ -133,8 +133,8 @@ MonoBehaviour:
   wizardProjectile: {fileID: 4591142482946015597, guid: 85ab2ba31682fca4e9c1e40ea154ee43,
     type: 3}
   wand: {fileID: 117333369}
-  timeBeforeFirstShoot: 1
-  timeBetweenShots: 1
+  timeBeforeFirstShoot: 1.5
+  timeBetweenShots: 1.5
   projectileSound: {fileID: 8300000, guid: 72d38edde990ef64189e0893737bb98e, type: 3}
   projectileSoundVolume: 0.25
   animator: {fileID: 4441583328139430113}

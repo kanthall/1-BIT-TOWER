@@ -31,7 +31,6 @@ public class WizardShooting : MonoBehaviour
             {
                 Shooting();
                 animator.SetTrigger("Shoot");
-                Debug.Log("shoot");
                 timeBeforeFirstShoot = timeBetweenShots;
             }
             else
