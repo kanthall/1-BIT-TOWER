@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/3Scene_game_over.unity
     guid: f7458a33531c56149a811ddac4307972
   - enabled: 1
-    path: Assets/Scenes/4Scene_credits.unity
-    guid: 8cec38e19d245b24ab888589b1653dec
-  - enabled: 1
     path: Assets/Scenes/5Scene_bestiary.unity
     guid: 71d7d53e0a4d3704da2f4b6318c61926
+  - enabled: 1
+    path: Assets/Scenes/4Scene_credits.unity
+    guid: 9c49d6b687babe7449fe4035e4dc14cf
   m_configObjects: {}

@@ -238,4 +238,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1311396956}
-  delayInSeconds: 4
+  delayInSeconds: 3

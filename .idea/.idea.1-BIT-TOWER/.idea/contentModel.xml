@@ -50,6 +50,7 @@
           <e p="EnemyHealth.cs" t="Include" />
           <e p="EnemyMovement.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
+          <e p="FakeParallax.cs" t="Include" />
           <e p="GameManagerBehaviour.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
           <e p="MageFireball.cs" t="Include" />
