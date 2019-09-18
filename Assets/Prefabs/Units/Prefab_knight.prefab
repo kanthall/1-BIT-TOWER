@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1364789935}
   - component: {fileID: -7507419198621391329}
   - component: {fileID: 5710249716194599024}
-  - component: {fileID: -7882904272437217934}
   - component: {fileID: 5895366365127999349}
   m_Layer: 0
   m_Name: Prefab_knight
@@ -144,32 +143,6 @@ MonoBehaviour:
   attackPower: 3
   attackParticle: {fileID: 1404681256839616, guid: 3640199bf9dc32f4da57c37d57581f57,
     type: 3}
---- !u!61 &-7882904272437217934
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148159689196226553}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.085, y: -0.085}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 1}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!61 &5895366365127999349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -320,7 +293,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.087, y: -0.08}
+  m_Offset: {x: 0.087, y: -0.075503975}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -331,7 +304,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.175, y: 0.05}
+  m_Size: {x: 0.17499998, y: 0.13212746}
   m_EdgeRadius: 0
 --- !u!1001 &3844512078740642694
 PrefabInstance:

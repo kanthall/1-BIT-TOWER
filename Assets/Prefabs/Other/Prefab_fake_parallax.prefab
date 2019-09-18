@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4989964674780960439}
   - component: {fileID: 4989964674780960438}
   m_Layer: 0
-  m_Name: FakeParallax
+  m_Name: Prefab_fake_parallax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,5 +46,5 @@ MonoBehaviour:
   target: {fileID: 0}
   closeTrees: {fileID: 0}
   midTrees: {fileID: 0}
-  speedMod: 1.5
+  speedMod: 2
   topMargin: 0.02

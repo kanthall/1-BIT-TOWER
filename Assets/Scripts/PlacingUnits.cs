@@ -22,17 +22,21 @@ public class PlacingUnits : MonoBehaviour
 
     private NoUnitSelected noUnitSelected;
     private NoMoreMoney noMoreMoney;
+    private BoxCollider2D box2d;
     
     private void Start()
     {
         unitsManager = FindObjectOfType<UnitsManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
         gameManagerBehaviour = FindObjectOfType<GameManagerBehaviour>();
 
         spriteRenderer.material.color = Color.gray;
 
         noUnitSelected = FindObjectOfType<NoUnitSelected>();
         noMoreMoney = FindObjectOfType<NoMoreMoney>();
+
+        box2d = GetComponent<BoxCollider2D>();
     }
 
     private void OnMouseUp()
@@ -46,14 +50,13 @@ public class PlacingUnits : MonoBehaviour
         //zablokowane ustawianie jednostki wartości liczby
         if (gameManagerBehaviour.Gold - unitsManager.currentUnitPrice <= 0)
         {
-            //zmiana koloru blood text
-            gameManagerBehaviour.bloodLabel.color = Color.red;
             StartCoroutine("NoMoreMoney");
             return;
         }
 
         unitsManager.InstantiateUnit(gameObject.transform);
         spriteRenderer.enabled = false;
+        
         isEmpty = false;
         AudioSource.PlayClipAtPoint(placingSound, Camera.main.transform.position, placingSoundVolume);
     }

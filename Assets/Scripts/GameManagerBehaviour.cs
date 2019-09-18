@@ -4,10 +4,11 @@ using UnityEngine.UI;
 public class GameManagerBehaviour : MonoBehaviour
 {
     [SerializeField] public Text bloodLabel;
+    [SerializeField] int money;
 
     private void Start()
     {
-        Gold = 50;
+        Gold = money;
     }
 
     private int gold;

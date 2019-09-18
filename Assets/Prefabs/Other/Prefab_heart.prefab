@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8119765467252929654}
   - component: {fileID: -4523854852880996047}
   - component: {fileID: 1074060174558485336}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Prefab_heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_Sprite: {fileID: -2686863939782890072, guid: 42d456fdfee73194eb95ed9b7412aa27,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -110,7 +110,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08264062, y: -0.07403982}
+  m_Offset: {x: 0.085, y: -0.085}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 1}
@@ -121,5 +121,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13776201, y: 0.11978948}
+  m_Size: {x: 0.17, y: 0.17}
   m_EdgeRadius: 0
