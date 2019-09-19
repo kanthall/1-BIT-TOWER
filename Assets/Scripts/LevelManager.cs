@@ -53,6 +53,7 @@ public class LevelManager : MonoBehaviour
     private void Update()
     {
         Restart();
+        Escape();
     }
     
     private void Restart()
@@ -60,6 +61,14 @@ public class LevelManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             LoadGame();
+        }
+    }
+
+    private void Escape()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            LoadMenu();
         }
     }
 }

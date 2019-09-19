@@ -24,23 +24,17 @@ public class NextWave : MonoBehaviour
       if (timeBetweenWaves > 0)
       {
           timeBetweenWaves -= Time.deltaTime;
-      }
 
-      if (timeBetweenWaves < 0)
-      {
-          spawnAllowed = true;
-          button.GetComponent<Button>().interactable = true;
-      }
-      SpawnByTheKey();
+            if (timeBetweenWaves < 0)
+            {
+                spawnAllowed = true;
+                button.GetComponent<Button>().interactable = true;
+            }
+        }
     }
 
     public void SpawnNextWave()
     {
-        if (waveValue >= 2)
-        {
-            
-        }
-        
         var spawner = FindObjectOfType<EnemySpawner>();
         spawner.spawn = true;
         
@@ -48,7 +42,7 @@ public class NextWave : MonoBehaviour
         {
             button.GetComponent<Button>().interactable = false;
             
-            timeBetweenWaves = 3;
+            timeBetweenWaves = 10;
             spawnAllowed = false;
             EnemySpawner[] enemySpawners = FindObjectsOfType<EnemySpawner>();
 
@@ -60,14 +54,6 @@ public class NextWave : MonoBehaviour
                 enemySpawners[i].spawn = true;
             }
             FindObjectOfType<WaveManager>().AddToWaveCounter();
-        }
-    }
-
-    private void SpawnByTheKey()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SpawnNextWave();
         }
     }
 }

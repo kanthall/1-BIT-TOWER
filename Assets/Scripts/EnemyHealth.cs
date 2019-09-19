@@ -81,82 +81,101 @@ public class EnemyHealth : MonoBehaviour
 
     private void HealthMod()
     {
+        
+
         if (isLocked == false && waveValue == 2)
         {
             startHealth += 1;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
-        
+
         if (isLocked == false && waveValue == 3)
         {
             startHealth += 3;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
-        
+
         if (isLocked == false && waveValue == 4)
         {
             startHealth += 5;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
-        
+
         if (isLocked == false && waveValue == 5)
         {
-            startHealth += 6;
+            startHealth += 7;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
-        
+
         if (isLocked == false && waveValue == 6)
-        {
-            startHealth += 8;
-            FindObjectOfType<WaveCanvas>().ShowWarning();
-        }
-        
-        if (isLocked == false && waveValue == 7)
         {
             startHealth += 9;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
 
-        if (isLocked == false && waveValue == 8)
+        if (isLocked == false && waveValue == 7)
         {
             startHealth += 11;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
 
+        if (isLocked == false && waveValue == 8)
+        {
+            startHealth += 13;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
         if (isLocked == false && waveValue == 9)
         {
-            startHealth += 12;
+            startHealth += 15;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
 
         if (isLocked == false && waveValue == 10)
         {
-            startHealth += 14;
+            startHealth += 17;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
 
         if (isLocked == false && waveValue == 11)
         {
-            startHealth += 16;
+            startHealth += 19;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
 
         if (isLocked == false && waveValue == 12)
         {
-            startHealth += 17;
+            startHealth += 21;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
 
         if (isLocked == false && waveValue == 13)
         {
-            startHealth += 19;
+            startHealth += 23;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
 
         if (isLocked == false && waveValue >= 14)
         {
-            startHealth += 22;
+            startHealth += 25;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
+
+        /**
+
+        if (isLocked == false)
+        {
+            for (waveValue = 1; waveValue >= 5; waveValue++)
+            {
+                int mod = 2;
+
+                startHealth += mod;
+                FindObjectOfType<WaveCanvas>().ShowWarning();
+
+                mod++;
+            }
+        }
+
+        **/
     }
 }

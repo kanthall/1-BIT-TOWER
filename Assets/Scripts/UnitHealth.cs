@@ -18,10 +18,7 @@ public class UnitHealth : MonoBehaviour
 
     private void Start()
     {
-        health = startHealth;
-
-        
-        
+        health = startHealth;    
     }
 
     public void TakeDamage(int damage)
