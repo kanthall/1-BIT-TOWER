@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveSpeedModicifator: 0
-  enemyMoveSpeed: 0.05
+  enemyMoveSpeed: 0.075
   isMoving: 1
 --- !u!114 &-5506370324480841870
 MonoBehaviour:
@@ -406,6 +406,7 @@ MonoBehaviour:
   bloodSoundVolume: 0.5
   punchSound: {fileID: 0}
   healthBar: {fileID: 4149765987654062706}
+  isLocked: 0
 --- !u!114 &2868044723884871890
 MonoBehaviour:
   m_ObjectHideFlags: 0

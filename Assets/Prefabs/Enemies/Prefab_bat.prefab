@@ -199,9 +199,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingLayerID: -1050581293
+  m_SortingLayer: 1
+  m_SortingOrder: 100
   m_Sprite: {fileID: 6679372753758989229, guid: 42d456fdfee73194eb95ed9b7412aa27,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
@@ -329,8 +329,6 @@ MonoBehaviour:
   bloodSoundVolume: 0.5
   punchSound: {fileID: 0}
   healthBar: {fileID: 3296456322789459571}
-  waveCanvas: {fileID: 8684639584856589407, guid: c1d9204865f0a4348ab27cc6635bd60b,
-    type: 3}
   isLocked: 0
 --- !u!114 &6797280393578552206
 MonoBehaviour:

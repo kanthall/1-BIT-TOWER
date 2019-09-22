@@ -857,5 +857,20 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1729662160}
+    - target: {fileID: 4450077031743112157, guid: eec11d8becd2a6246aeef61428bd265b,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450077031743112157, guid: eec11d8becd2a6246aeef61428bd265b,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450077031743112157, guid: eec11d8becd2a6246aeef61428bd265b,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eec11d8becd2a6246aeef61428bd265b, type: 3}

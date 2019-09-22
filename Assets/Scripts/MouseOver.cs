@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class MouseOverEnemy : MonoBehaviour
+public class MouseOver : MonoBehaviour
 {
     [SerializeField] public Canvas statsCanvas;
     private bool statsVisible;

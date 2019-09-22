@@ -5,7 +5,7 @@ public class UnitHealth : MonoBehaviour
 {
     [Header("Health")]
     float health = 100;
-    [SerializeField] float startHealth;
+    [SerializeField] public float startHealth;
  
     [Header("Healthbar")]
     [SerializeField] Image healthBar;
@@ -13,6 +13,7 @@ public class UnitHealth : MonoBehaviour
     [Header("Death")]
     [SerializeField] [Range(0, 1)] float deathSoundVolume = 0.75f;
     [SerializeField] GameObject deathParticle;
+    [SerializeField] public string unitName;
 
     private GameObject parent;
 

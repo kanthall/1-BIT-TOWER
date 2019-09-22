@@ -155,27 +155,64 @@ public class EnemyHealth : MonoBehaviour
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
 
-        if (isLocked == false && waveValue >= 14)
+        if (isLocked == false && waveValue == 14)
         {
             startHealth += 25;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
 
-        /**
-
-        if (isLocked == false)
+        if (isLocked == false && waveValue == 15)
         {
-            for (waveValue = 1; waveValue >= 5; waveValue++)
-            {
-                int mod = 2;
-
-                startHealth += mod;
-                FindObjectOfType<WaveCanvas>().ShowWarning();
-
-                mod++;
-            }
+            startHealth += 27;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
         }
 
-        **/
+        if (isLocked == false && waveValue == 16)
+        {
+            startHealth += 29;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 17)
+        {
+            startHealth += 35;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 18)
+        {
+            startHealth += 40;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 19)
+        {
+            startHealth += 50;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 20)
+        {
+            startHealth += 60;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 21)
+        {
+            startHealth += 70;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 22)
+        {
+            startHealth += 80;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 23)
+        {
+            startHealth += 90;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
     }
 }

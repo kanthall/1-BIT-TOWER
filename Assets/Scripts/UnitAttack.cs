@@ -7,7 +7,7 @@ public class UnitAttack : MonoBehaviour
     [SerializeField] private float timeBetweenAttacks;
     [SerializeField] private AudioClip attackSound;
     [SerializeField] [Range(0, 1)] float attackSoundVolume = 0.50f;
-    [SerializeField] int attackPower;
+    [SerializeField] public int attackPower;
     [SerializeField] GameObject attackParticle;
     
     private void Start()

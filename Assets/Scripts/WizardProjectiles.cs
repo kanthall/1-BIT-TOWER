@@ -3,7 +3,7 @@
 public class WizardProjectiles : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 1f;
-    [SerializeField] int damage = 2;
+    [SerializeField] public int damage = 2;
     float timeToDestroyProjectiles = 1f;
     [SerializeField] private GameObject hitPrefab;
     
