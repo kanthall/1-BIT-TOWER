@@ -21,6 +21,9 @@ using Steamworks;
 //
 [DisallowMultipleComponent]
 public class SteamManager : MonoBehaviour {
+
+    public bool steamEnabled;
+
 	protected static SteamManager s_instance;
 	protected static SteamManager Instance {
 		get {
@@ -48,6 +51,9 @@ public class SteamManager : MonoBehaviour {
 	}
 
 	protected virtual void Awake() {
+
+        if(steamEnabled) { 
+
 		// Only one instance of SteamManager at a time!
 		if (s_instance != null) {
 			Destroy(gameObject);
@@ -81,7 +87,8 @@ public class SteamManager : MonoBehaviour {
 			// Once you get a Steam AppID assigned by Valve, you need to replace AppId_t.Invalid with it and
 			// remove steam_appid.txt from the game depot. eg: "(AppId_t)480" or "new AppId_t(480)".
 			// See the Valve documentation for more information: https://partner.steamgames.com/doc/sdk/api#initialization_and_shutdown
-			if (SteamAPI.RestartAppIfNecessary(AppId_t.Invalid)) {
+			if (SteamAPI.RestartAppIfNecessary(new AppId_t(1158770))) 
+            {
 				Application.Quit();
 				return;
 			}
@@ -110,7 +117,14 @@ public class SteamManager : MonoBehaviour {
 		}
 
 		s_EverInitialized = true;
-	}
+
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
 
 	// This should only ever get called on first load and after an Assembly reload, You should never Disable the Steamworks Manager yourself.
 	protected virtual void OnEnable() {
@@ -130,19 +144,19 @@ public class SteamManager : MonoBehaviour {
 		}
 	}
 
-	// OnApplicationQuit gets called too early to shutdown the SteamAPI.
-	// Because the SteamManager should be persistent and never disabled or destroyed we can shutdown the SteamAPI here.
-	// Thus it is not recommended to perform any Steamworks work in other OnDestroy functions as the order of execution can not be garenteed upon Shutdown. Prefer OnDisable().
-	protected virtual void OnDestroy() {
-		if (s_instance != this) {
-			return;
-		}
+    // OnApplicationQuit gets called too early to shutdown the SteamAPI.
+    // Because the SteamManager should be persistent and never disabled or destroyed we can shutdown the SteamAPI here.
+    // Thus it is not recommended to perform any Steamworks work in other OnDestroy functions as the order of execution can not be garenteed upon Shutdown. Prefer OnDisable().
+    protected virtual void OnDestroy() {
+        if (s_instance != this) {
+            return;
+        }
 
-		s_instance = null;
+        s_instance = null;
 
-		if (!m_bInitialized) {
-			return;
-		}
+        if (!m_bInitialized) {
+            return;
+        }
 
 		SteamAPI.Shutdown();
 	}

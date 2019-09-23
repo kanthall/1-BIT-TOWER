@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -2271482417218376740}
   - component: {fileID: 6329155197615830443}
   m_Layer: 0
-  m_Name: Fireball
+  m_Name: Prefab_fireball_particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4776,7 +4776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpeed: 1
-  damage: 3
+  damage: 4
   hitPrefab: {fileID: 1404681256839616, guid: 3640199bf9dc32f4da57c37d57581f57, type: 3}
   projectileSound: {fileID: 8300000, guid: 16879d871f3d4654e851d01f6ff27a51, type: 3}
   projectileSoundVolume: 1

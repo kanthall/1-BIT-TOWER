@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e062d8adc3132e44a5e8ca05b152846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statsCanvas: {fileID: 0}
+  statsCanvas: {fileID: 889782980888842408}
 --- !u!114 &8809730383328730116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -638,11 +638,22 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3155035404763350591, guid: 515b10e5a8e57a8459933e0aa7edf95e,
+        type: 3}
+      propertyPath: m_Text
+      value: 4 DMG
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 515b10e5a8e57a8459933e0aa7edf95e, type: 3}
 --- !u!224 &1396214533286471663 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8030760346885779433, guid: 515b10e5a8e57a8459933e0aa7edf95e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8940388826252855302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &889782980888842408 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8091702635108571310, guid: 515b10e5a8e57a8459933e0aa7edf95e,
     type: 3}
   m_PrefabInstance: {fileID: 8940388826252855302}
   m_PrefabAsset: {fileID: 0}

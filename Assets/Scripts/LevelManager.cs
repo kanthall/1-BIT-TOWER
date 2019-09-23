@@ -6,7 +6,8 @@ public class LevelManager : MonoBehaviour
 {
     public Animator animator;
     [SerializeField] float delayInSeconds = 3f;
-    
+    public Canvas pauseCanvas;
+
     public void LoadGameOver()        
     {
         animator.SetTrigger("FadeOut");
@@ -27,6 +28,7 @@ public class LevelManager : MonoBehaviour
     public void LoadMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
 
     public void QuitGame()
@@ -68,7 +70,10 @@ public class LevelManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            LoadMenu();
+            if (SceneManager.GetActiveScene().name == "1Scene_menu")
+            {
+                Application.Quit();
+            }
         }
     }
 }
