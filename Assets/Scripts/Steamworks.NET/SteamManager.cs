@@ -12,7 +12,6 @@
 #if !DISABLESTEAMWORKS
 
 using UnityEngine;
-using System.Collections;
 using Steamworks;
 
 //
@@ -51,7 +50,7 @@ public class SteamManager : MonoBehaviour {
 	}
 
 	protected virtual void Awake() {
-
+        /*
         if(steamEnabled) { 
 
 		// Only one instance of SteamManager at a time!
@@ -59,7 +58,7 @@ public class SteamManager : MonoBehaviour {
 			Destroy(gameObject);
 			return;
 		}
-		s_instance = this;
+		s_instance = this;*/
 
 		if(s_EverInitialized) {
 			// This is almost always an error.
@@ -118,13 +117,12 @@ public class SteamManager : MonoBehaviour {
 
 		s_EverInitialized = true;
 
-        }
-        else
-        {
-            gameObject.SetActive(false);
-        }
+        //}
+        //else
+        //{
+          //  gameObject.SetActive(false);
+        //}
     }
-
 
 	// This should only ever get called on first load and after an Assembly reload, You should never Disable the Steamworks Manager yourself.
 	protected virtual void OnEnable() {

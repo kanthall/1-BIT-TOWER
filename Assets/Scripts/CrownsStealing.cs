@@ -9,7 +9,7 @@ public class CrownsStealing : MonoBehaviour
     [SerializeField] public Text healthValue;
 
     [Header("Elements in the list")]
-    [SerializeField] List<GameObject> crowns = new List<GameObject>();
+    [SerializeField] public List<GameObject> crowns = new List<GameObject>();
     
     private CameraShake cameraShake;
     private LevelManager levelManager;

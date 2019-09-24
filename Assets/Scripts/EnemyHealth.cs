@@ -25,6 +25,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] public bool isLocked;
     private WaveManager waveManager;
     private int waveValue;
+
     private void Start()
     {
         waveManager = FindObjectOfType<WaveManager>();

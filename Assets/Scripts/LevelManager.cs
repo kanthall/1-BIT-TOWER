@@ -63,6 +63,7 @@ public class LevelManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             LoadGame();
+            Time.timeScale = 1;
         }
     }
 
@@ -75,5 +76,11 @@ public class LevelManager : MonoBehaviour
                 Application.Quit();
             }
         }
+    } 
+
+    public void BackToGame()
+    {
+        Time.timeScale = 1;
+        pauseCanvas.enabled = false;
     }
 }

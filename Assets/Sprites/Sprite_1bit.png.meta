@@ -1162,7 +1162,7 @@ TextureImporter:
     second: colored_transparent_385
   - first:
       213: -5532991306527142969
-    second: colored_transparent_386
+    second: _handle2
   - first:
       213: 8323454029225656034
     second: colored_transparent_387
@@ -1249,7 +1249,7 @@ TextureImporter:
     second: colored_transparent_414
   - first:
       213: -7384563880693990344
-    second: colored_transparent_415
+    second: _handle
   - first:
       213: 6819583930434171371
     second: colored_transparent_416
@@ -1285,7 +1285,7 @@ TextureImporter:
     second: colored_transparent_426
   - first:
       213: 8059508820940005674
-    second: colored_transparent_427
+    second: _handle3
   - first:
       213: 6366566751145507098
     second: colored_transparent_428
@@ -1477,7 +1477,7 @@ TextureImporter:
     second: colored_transparent_490
   - first:
       213: 1668370872678205104
-    second: colored_transparent_491
+    second: _handle4
   - first:
       213: 4523758982718438891
     second: colored_transparent_492
@@ -11070,15 +11070,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_386
+      name: _handle2
       rect:
         serializedVersion: 2
         x: 255
         y: 322
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11679,15 +11679,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_415
+      name: _handle
       rect:
         serializedVersion: 2
         x: 221
         y: 305
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11931,15 +11931,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_427
+      name: _handle3
       rect:
         serializedVersion: 2
         x: 425
         y: 305
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -13275,15 +13275,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored_transparent_491
+      name: _handle4
       rect:
         serializedVersion: 2
         x: 459
         y: 271
         width: 17
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
