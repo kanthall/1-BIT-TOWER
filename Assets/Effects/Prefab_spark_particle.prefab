@@ -4778,7 +4778,7 @@ MonoBehaviour:
   projectileSpeed: 1
   damage: 2
   hitPrefab: {fileID: 1404681256839616, guid: 3640199bf9dc32f4da57c37d57581f57, type: 3}
-  projectileSound: {fileID: 8300000, guid: 6e83ed85a8cffd747874b18161e26613, type: 3}
+  projectileHitSound: {fileID: 8300000, guid: 6e83ed85a8cffd747874b18161e26613, type: 3}
   projectileSoundVolume: 0.43
 --- !u!61 &7522824472901200048
 BoxCollider2D:

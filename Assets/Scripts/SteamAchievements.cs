@@ -9,46 +9,54 @@ public class SteamAchievements : MonoBehaviour
     private bool unlockTest = false;
     private WaveManager waveManager;
     private int waveValue;
+    private int scoreToCompare = 10;
     CrownsStealing health;
-
-    /*
+    
      void Awake()
     {
-        script = this;
         if(!SteamManager.Initialized)
         {
             gameObject.SetActive(false);
         }
+
+        if (script != null)
+        {
+            Destroy(gameObject);
+        }
+        script = this;
+
+        DontDestroyOnLoad(gameObject);
     }
-    */
+    
     private void Start()
     {
-        Debug.Log("ready");
-
         waveManager = FindObjectOfType<WaveManager>();
         waveValue = waveManager.GetWave();
 
         health = GetComponent<CrownsStealing>();
+
     }
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.T))
         {
-            Debug.Log("testowo");
             UnlockSteamAchievement("1WildBerzerker");
         }
-
 
         if(Input.GetKeyDown(KeyCode.C))
         {
             DEBUG_LockSteamAchievement("1WildBerzerker");
         }
 
-        if(waveValue >= 2 && health.crowns.Count <= 0)
+        if(waveValue == 2 && health.crowns.Count >= 0)
         {
-            UnlockSteamAchievement(" ten z 10 falami ");
-            Debug.Log("dałeś radę");
+            UnlockSteamAchievement("6Training");
+        }
+
+        if(PlayerPrefs.GetInt("Highscore", 0) > scoreToCompare) 
+        {
+            UnlockSteamAchievement("9TheLeader");
         }
     }
     

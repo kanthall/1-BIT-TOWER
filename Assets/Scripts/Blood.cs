@@ -13,7 +13,7 @@ public class Blood : MonoBehaviour
         }
         else
         {
-            var next = FindObjectOfType<GameManagerBehaviour>();
+            var next = FindObjectOfType<Money>();
 
             next.Gold += blood;
             Destroy(gameObject);

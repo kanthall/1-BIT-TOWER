@@ -413,7 +413,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VERSION 0.4.6
+  m_Text: VERSION 0.4.7
 --- !u!222 &217636743
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1084,7 +1084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef4bffeda13d7a748973ff9204401c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steamEnabled: 0
+  steamEnabled: 1
 --- !u!4 &889550399
 Transform:
   m_ObjectHideFlags: 0
@@ -1193,32 +1193,32 @@ PrefabInstance:
     - target: {fileID: 982191108366998295, guid: 40d304a44c2d489429266b9491652808,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5949259
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 982191108366998295, guid: 40d304a44c2d489429266b9491652808,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01046493
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 982191108366998295, guid: 40d304a44c2d489429266b9491652808,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25976562
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 982191108366998295, guid: 40d304a44c2d489429266b9491652808,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 982191108366998295, guid: 40d304a44c2d489429266b9491652808,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 982191108366998295, guid: 40d304a44c2d489429266b9491652808,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 982191108366998295, guid: 40d304a44c2d489429266b9491652808,
         type: 3}
@@ -1260,8 +1260,12 @@ PrefabInstance:
       propertyPath: tracks.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 7aae98135d413a541b8aedb50011f3f8, type: 3}
-    m_RemovedComponents:
-    - {fileID: 982191108366998292, guid: 40d304a44c2d489429266b9491652808, type: 3}
+    - target: {fileID: 982191107207256803, guid: 40d304a44c2d489429266b9491652808,
+        type: 3}
+      propertyPath: musicVolume
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40d304a44c2d489429266b9491652808, type: 3}
 --- !u!1 &1511352018
 GameObject:

@@ -9,7 +9,7 @@ public class ShowHighScore : MonoBehaviour
 
     private void Start()
     {
-        temp = PlayerPrefs.GetInt("Highscore", 999);
+        temp = PlayerPrefs.GetInt("Highscore", 0);
         highscore.text = temp.ToString(); 
     }
 

@@ -21,7 +21,7 @@ public class UnitsManager : MonoBehaviour
 
     [Header("Various")]
     [SerializeField] public int currentUnitPrice = -1;
-    private GameManagerBehaviour gameManagerBehaviour = null;
+    private Money money;
     private UnitType currentUnitType = UnitType.WIZARD;
     
     private List<Units> unitsButtons = new List<Units>();
@@ -30,7 +30,7 @@ public class UnitsManager : MonoBehaviour
 
     private void Start()
     {
-        gameManagerBehaviour = FindObjectOfType<GameManagerBehaviour>();
+        money = FindObjectOfType<Money>();
         currentUnitType = UnitType.NONE;
     }
     
@@ -59,8 +59,9 @@ public class UnitsManager : MonoBehaviour
                 break;
         }
 
-        if (gameManagerBehaviour.Gold <= 0)
+        if (money.Gold <= 0)
         {
+            Debug.Log("NIE MAMY KASY");
             return;
         }
         else
@@ -75,14 +76,14 @@ public class UnitsManager : MonoBehaviour
 
             Destroy(particle.gameObject, 1.0f);
 
-            //zablokowane wyświetlanie wartości liczby
-            if ((gameManagerBehaviour.Gold - currentUnitPrice) <= 0)
+            if ((money.Gold - currentUnitPrice) < 0)
             {
+                FindObjectOfType<PlacingUnits>().StartCoroutine("NoMoreMoney");
                 return;
             }
             else
             { 
-            gameManagerBehaviour.Gold = gameManagerBehaviour.Gold - currentUnitPrice;
+            money.Gold = money.Gold - currentUnitPrice;
             }
          }
     }
@@ -126,7 +127,7 @@ public class UnitsManager : MonoBehaviour
         
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            SelectUnitButton(UnitType.WIZARD, 15);
+            SelectUnitButton(UnitType.WIZARD, 20);
         }
         
         else if (Input.GetKeyDown(KeyCode.Alpha4))

@@ -11,7 +11,7 @@ public class RowEnabling : MonoBehaviour
     [SerializeField] List<GameObject> row5 = new List<GameObject>();
     [SerializeField] List<GameObject> row6 = new List<GameObject>();
 
-    private GameManagerBehaviour gameManagerBehaviour = null;
+    private Money money = null;
     private PlacingUnits placingUnits;
     private int rowPrice = 10;
     [SerializeField] int rowsToBuy = 6;
@@ -25,7 +25,7 @@ public class RowEnabling : MonoBehaviour
     void Start()
     {
         RowsDisabling();
-        gameManagerBehaviour = FindObjectOfType<GameManagerBehaviour>();
+        money = FindObjectOfType<Money>();
         placingUnits = GetComponent<PlacingUnits>();
         audio = GetComponent<AudioSource>();
     }
@@ -34,17 +34,17 @@ public class RowEnabling : MonoBehaviour
     {
         if (rowsToBuy > 0)
         {
-            if (gameManagerBehaviour.Gold > rowPrice)
+            if (money.Gold > rowPrice)
             {
                 if (rowsToBuy == 6)
                 {
-                    if (gameManagerBehaviour.Gold <= 0)
+                    if (money.Gold <= 0)
                     {
                         return;
                     }
 
                     Debug.Log("Row bought 1");
-                    gameManagerBehaviour.Gold -= rowPrice;
+                    money.Gold -= rowPrice;
 
                     foreach (GameObject box in row1)
                     {
@@ -56,12 +56,12 @@ public class RowEnabling : MonoBehaviour
                 }
                 else if (rowsToBuy == 5)
                 {
-                    if (gameManagerBehaviour.Gold <= 0)
+                    if (money.Gold <= 0)
                     {
                         return;
                     }
                     
-                    gameManagerBehaviour.Gold -= rowPrice;
+                    money.Gold -= rowPrice;
 
                     foreach (GameObject box in row2)
                     {
@@ -73,12 +73,12 @@ public class RowEnabling : MonoBehaviour
                 }
                 else if (rowsToBuy == 4)
                 {
-                    if (gameManagerBehaviour.Gold <= 0)
+                    if (money.Gold <= 0)
                     {
                         return;
                     }
 
-                    gameManagerBehaviour.Gold -= rowPrice;
+                    money.Gold -= rowPrice;
 
                     foreach (GameObject box in row3)
                     {
@@ -90,12 +90,12 @@ public class RowEnabling : MonoBehaviour
                 }
                 else if (rowsToBuy == 3)
                 {
-                    if (gameManagerBehaviour.Gold <= 0)
+                    if (money.Gold <= 0)
                     {
                         return;
                     }
 
-                    gameManagerBehaviour.Gold -= rowPrice;
+                    money.Gold -= rowPrice;
 
                     foreach (GameObject box in row4)
                     {
@@ -107,12 +107,12 @@ public class RowEnabling : MonoBehaviour
                 }
                 else if (rowsToBuy == 2)
                 {
-                    if (gameManagerBehaviour.Gold <= 0)
+                    if (money.Gold <= 0)
                     {
                         return;
                     }
 
-                    gameManagerBehaviour.Gold -= rowPrice;
+                    money.Gold -= rowPrice;
 
                     foreach (GameObject box in row5)
                     {
@@ -124,12 +124,12 @@ public class RowEnabling : MonoBehaviour
                 }
                 else if (rowsToBuy == 1)
                 {
-                    if (gameManagerBehaviour.Gold <= 0)
+                    if (money.Gold <= 0)
                     {
                         return;
                     }
 
-                    gameManagerBehaviour.Gold -= rowPrice;
+                    money.Gold -= rowPrice;
 
                     foreach (GameObject box in row6)
                     {

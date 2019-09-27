@@ -326,6 +326,7 @@ MonoBehaviour:
   bloodSoundVolume: 0.5
   punchSound: {fileID: 0}
   healthBar: {fileID: 2901120606897207202}
+  isLocked: 0
 --- !u!114 &7948214384151311767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,7 +342,7 @@ MonoBehaviour:
   animator: {fileID: -3819350254876787015}
   firstAttackTime: 2
   timeBetweenAttacks: 2
-  attackSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
+  attackSound: {fileID: 8300000, guid: c9fd24b4590fdd84182a596914a92578, type: 3}
   attackSoundVolume: 0.5
   attackPower: 3
   attackParticle: {fileID: 4586509936800099380, guid: 4ca5b4f6ef43bf343a15819755840b52,

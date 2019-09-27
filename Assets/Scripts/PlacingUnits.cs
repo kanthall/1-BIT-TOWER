@@ -4,7 +4,7 @@ using System.Collections;
 public class PlacingUnits : MonoBehaviour
 {
     private UnitsManager unitsManager;
-    private GameManagerBehaviour gameManagerBehaviour;
+    private Money money;
     private SpriteRenderer spriteRenderer;
     private bool isEmpty = true;
 
@@ -29,7 +29,7 @@ public class PlacingUnits : MonoBehaviour
         unitsManager = FindObjectOfType<UnitsManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        gameManagerBehaviour = FindObjectOfType<GameManagerBehaviour>();
+        money = FindObjectOfType<Money>();
 
         spriteRenderer.material.color = Color.gray;
 
@@ -47,8 +47,8 @@ public class PlacingUnits : MonoBehaviour
             return;
         }
 
-        //zablokowane ustawianie jednostki wartości liczby
-        if (gameManagerBehaviour.Gold - unitsManager.currentUnitPrice <= 0)
+        //brak kasy daje komunikat
+        if (money.Gold - unitsManager.currentUnitPrice < 0)
         {
             StartCoroutine("NoMoreMoney");
             return;
