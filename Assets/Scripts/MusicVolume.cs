@@ -10,6 +10,7 @@ public class MusicVolume : MonoBehaviour
     void Start()
     {
         AudioSource = GetComponent<AudioSource>();
+        musicVolume = PlayerPrefs.GetFloat("MusicVolume", 0);
     }
 
     void Update()
@@ -20,5 +21,8 @@ public class MusicVolume : MonoBehaviour
     public void SetVolume(float vol)
     {
         musicVolume = vol;
+        PlayerPrefs.SetFloat("MusicVolume", vol);
+        Debug.Log(vol);
+        PlayerPrefs.Save();
     }
 }

@@ -1285,7 +1285,7 @@ TextureImporter:
     second: colored_transparent_426
   - first:
       213: 8059508820940005674
-    second: _handle3
+    second: _arrow_tail
   - first:
       213: 6366566751145507098
     second: colored_transparent_428
@@ -11931,7 +11931,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _handle3
+      name: _arrow_tail
       rect:
         serializedVersion: 2
         x: 425

@@ -30,8 +30,7 @@ public class SteamAchievements : MonoBehaviour
     
     private void Start()
     {
-        waveManager = FindObjectOfType<WaveManager>();
-        waveValue = waveManager.GetWave();
+     
 
         health = GetComponent<CrownsStealing>();
 

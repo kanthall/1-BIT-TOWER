@@ -10,6 +10,11 @@ public class UnitsManager : MonoBehaviour
     public GameObject knightPrefab;
     public GameObject berzerkerPrefab;
     public GameObject magePrefab;
+
+    [SerializeField]Canvas wizardStats;
+    [SerializeField]Canvas knightStats;
+    [SerializeField]Canvas berzerkStats;
+    [SerializeField]Canvas mageStats; 
     
     [Header("Selected Unit Sound")]
     [SerializeField] AudioClip selectedUnitSound;
@@ -32,6 +37,11 @@ public class UnitsManager : MonoBehaviour
     {
         money = FindObjectOfType<Money>();
         currentUnitType = UnitType.NONE;
+
+        wizardStats.enabled = false;
+        knightStats.enabled = false;
+        berzerkStats.enabled = false;
+        mageStats.enabled = false; 
     }
     
     private void Update()
@@ -93,7 +103,7 @@ public class UnitsManager : MonoBehaviour
         unitsButtons.Add(unitBtn);
     }
 
-    public void SelectUnitButton(UnitType unitType, int price)
+    public void SelectUnitButton(UnitType unitType, int price, Canvas statsCanvas)
     {
         currentUnitPrice = price;
         currentUnitType = unitType;
@@ -117,22 +127,22 @@ public class UnitsManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            SelectUnitButton(UnitType.BERZERKER, 2);
+            SelectUnitButton(UnitType.BERZERKER, 2, wizardStats);
         }
         
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            SelectUnitButton(UnitType.KNIGHT, 5);
+            SelectUnitButton(UnitType.KNIGHT, 5, knightStats);
         }
         
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            SelectUnitButton(UnitType.WIZARD, 20);
+            SelectUnitButton(UnitType.WIZARD, 20, wizardStats);
         }
         
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            SelectUnitButton(UnitType.MAGE, 25);
+            SelectUnitButton(UnitType.MAGE, 25, mageStats);
         } 
     }
 }

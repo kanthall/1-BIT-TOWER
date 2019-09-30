@@ -413,7 +413,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VERSION 0.4.7
+  m_Text: VERSION 0.4.9
 --- !u!222 &217636743
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1245,6 +1245,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 982191107207256803, guid: 40d304a44c2d489429266b9491652808,
+        type: 3}
+      propertyPath: musicVolume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 982191108366998294, guid: 40d304a44c2d489429266b9491652808,
         type: 3}
       propertyPath: m_Volume
@@ -1260,11 +1265,6 @@ PrefabInstance:
       propertyPath: tracks.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 7aae98135d413a541b8aedb50011f3f8, type: 3}
-    - target: {fileID: 982191107207256803, guid: 40d304a44c2d489429266b9491652808,
-        type: 3}
-      propertyPath: musicVolume
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40d304a44c2d489429266b9491652808, type: 3}
 --- !u!1 &1511352018

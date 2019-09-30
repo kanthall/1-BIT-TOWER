@@ -45,6 +45,7 @@ public class LevelManager : MonoBehaviour
     public void LoadBestiary()
     {
         SceneManager.LoadScene("5Scene_bestiary");
+        Time.timeScale = 1;
     }
 
     public void LoadCredits()
