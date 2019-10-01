@@ -19,8 +19,8 @@ GameObject:
   - component: {fileID: 4105729500114964496}
   - component: {fileID: -7220247195418846244}
   - component: {fileID: 7948214384151311767}
-  - component: {fileID: 5645544110903073684}
-  - component: {fileID: 7635582135080969677}
+  - component: {fileID: 6060278073956683206}
+  - component: {fileID: 9137978638028230203}
   m_Layer: 8
   m_Name: Prefab_squid
   m_TagString: Enemy
@@ -347,7 +347,7 @@ MonoBehaviour:
   attackPower: 3
   attackParticle: {fileID: 4586509936800099380, guid: 4ca5b4f6ef43bf343a15819755840b52,
     type: 3}
---- !u!114 &5645544110903073684
+--- !u!114 &6060278073956683206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -356,25 +356,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 3864371862078414986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35b824aae70b96a42b42a728aff63d49, type: 3}
+  m_Script: {fileID: 11500000, guid: fd34774b9da08b5469476e353434a804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsCanvas: {fileID: 7620770682895936107}
+--- !u!114 &9137978638028230203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3864371862078414986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352c0af2eacf3db4d90856e2285d86a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: {fileID: 5826482431176921237}
   unitHP: {fileID: 9087552365938266026}
   unitDMG: {fileID: 3621182035008648442}
---- !u!114 &7635582135080969677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3864371862078414986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e062d8adc3132e44a5e8ca05b152846, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statsCanvas: {fileID: 7620770682895936107}
 --- !u!1 &8825069159926626866
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,11 +629,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4410223935391841782}
     m_Modifications:
-    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_stolen_crown
-      objectReference: {fileID: 0}
     - target: {fileID: 2968957688243422900, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -689,6 +684,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_stolen_crown
+      objectReference: {fileID: 0}
     - target: {fileID: 939910584623352724, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}
       propertyPath: m_Enabled
@@ -715,11 +715,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4410223935391841782}
     m_Modifications:
-    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_enemy_healthbar
-      objectReference: {fileID: 0}
     - target: {fileID: 476845422696492459, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -824,6 +819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_enemy_healthbar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da41eab665dce04d8882179252d1fce, type: 3}

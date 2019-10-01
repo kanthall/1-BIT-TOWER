@@ -21,6 +21,7 @@ public class RowEnabling : MonoBehaviour
     [SerializeField] private AudioClip buyingSound;
     [SerializeField] [Range(0, 1)] float buyingSoundVolume = 0.75f;
     private AudioSource audio;
+    [SerializeField] GameObject child;
     
     void Start()
     {
@@ -43,7 +44,6 @@ public class RowEnabling : MonoBehaviour
                         return;
                     }
 
-                    Debug.Log("Row bought 1");
                     money.Gold -= rowPrice;
 
                     foreach (GameObject box in row1)
@@ -138,16 +138,10 @@ public class RowEnabling : MonoBehaviour
                     }
 
                     rowsToBuy -= 1;
+                    rowsButton.GetComponent<Button>().interactable = false;
+                    child.GetComponent<Text>().color = new Color32(255, 171, 171, 171);
                 }
             }
-        }
-    }
-
-    private void Update()
-    {
-        if (rowsToBuy == 0)
-        {
-            rowsButton.GetComponent<Button>().interactable = false;
         }
     }
 

@@ -98,8 +98,8 @@ GameObject:
   - component: {fileID: 8168801368881212191}
   - component: {fileID: -8476876609919398547}
   - component: {fileID: 3089094357220559174}
-  - component: {fileID: 6797280393578552206}
-  - component: {fileID: 1579777981912451764}
+  - component: {fileID: 5474298842479923807}
+  - component: {fileID: 8763603228883235728}
   m_Layer: 8
   m_Name: Prefab_bat
   m_TagString: Enemy
@@ -330,7 +330,7 @@ MonoBehaviour:
   punchSound: {fileID: 0}
   healthBar: {fileID: 3296456322789459571}
   isLocked: 0
---- !u!114 &6797280393578552206
+--- !u!114 &5474298842479923807
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -339,11 +339,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7501588899334910321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e062d8adc3132e44a5e8ca05b152846, type: 3}
+  m_Script: {fileID: 11500000, guid: fd34774b9da08b5469476e353434a804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   statsCanvas: {fileID: 2085645484292420426}
---- !u!114 &1579777981912451764
+--- !u!114 &8763603228883235728
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7501588899334910321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35b824aae70b96a42b42a728aff63d49, type: 3}
+  m_Script: {fileID: 11500000, guid: 352c0af2eacf3db4d90856e2285d86a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: {fileID: 2731446286640630196}
@@ -365,11 +365,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7501588899334910319}
     m_Modifications:
-    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_enemy_healthbar
-      objectReference: {fileID: 0}
     - target: {fileID: 476845422696492459, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -475,6 +470,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_enemy_healthbar
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da41eab665dce04d8882179252d1fce, type: 3}
 --- !u!224 &4405309062373806103 stripped
@@ -502,11 +502,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7501588899334910319}
     m_Modifications:
-    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_stolen_crown
-      objectReference: {fileID: 0}
     - target: {fileID: 2968957688243422900, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -561,6 +556,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_stolen_crown
       objectReference: {fileID: 0}
     - target: {fileID: 939910584623352724, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}

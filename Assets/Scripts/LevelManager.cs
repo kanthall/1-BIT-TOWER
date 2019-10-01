@@ -8,6 +8,18 @@ public class LevelManager : MonoBehaviour
     [SerializeField] float delayInSeconds = 3f;
     public Canvas pauseCanvas;
 
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    private void Update()
+    {
+        Restart();
+        Escape();
+    }
+
     public void LoadGameOver()        
     {
         animator.SetTrigger("FadeOut");
@@ -22,7 +34,8 @@ public class LevelManager : MonoBehaviour
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("2Scene_game");
+        Destroy(MusicPlayer.Instance.gameObject);
+        SceneManager.LoadScene("2Scene_game"); 
     }
 
     public void LoadMenu()
@@ -36,12 +49,6 @@ public class LevelManager : MonoBehaviour
         Application.Quit();
     }
 
-    private void Start()
-    {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-    }
-
     public void LoadBestiary()
     {
         SceneManager.LoadScene("5Scene_bestiary");
@@ -51,12 +58,7 @@ public class LevelManager : MonoBehaviour
     public void LoadCredits()
     {
         SceneManager.LoadScene("4Scene_credits");
-    }
-    
-    private void Update()
-    {
-        Restart();
-        Escape();
+        Time.timeScale = 1;
     }
     
     private void Restart()

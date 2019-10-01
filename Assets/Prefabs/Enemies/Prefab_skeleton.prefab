@@ -18,8 +18,8 @@ GameObject:
   - component: {fileID: 316326444486480100}
   - component: {fileID: 316326444486480101}
   - component: {fileID: 316326444486480102}
-  - component: {fileID: 4389792055747879905}
-  - component: {fileID: 6485138250970847783}
+  - component: {fileID: 7360407495649902412}
+  - component: {fileID: 9085356649867238981}
   m_Layer: 8
   m_Name: Prefab_skeleton
   m_TagString: Enemy
@@ -250,7 +250,7 @@ MonoBehaviour:
   waveSpeedModicifator: 0
   enemyMoveSpeed: 0.125
   isMoving: 1
---- !u!114 &4389792055747879905
+--- !u!114 &7360407495649902412
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -259,11 +259,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 316326444486480103}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e062d8adc3132e44a5e8ca05b152846, type: 3}
+  m_Script: {fileID: 11500000, guid: fd34774b9da08b5469476e353434a804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   statsCanvas: {fileID: 4380524413195937445}
---- !u!114 &6485138250970847783
+--- !u!114 &9085356649867238981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 316326444486480103}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35b824aae70b96a42b42a728aff63d49, type: 3}
+  m_Script: {fileID: 11500000, guid: 352c0af2eacf3db4d90856e2285d86a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: {fileID: 419687810922683483}
@@ -365,16 +365,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 316326444486480105}
     m_Modifications:
-    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_enemy_healthbar
-      objectReference: {fileID: 0}
-    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 476845422696492459, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -480,12 +470,22 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6298447871385677026, guid: 7da41eab665dce04d8882179252d1fce,
+    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_enemy_healthbar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8791876879592434063, guid: 7da41eab665dce04d8882179252d1fce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298447871385677026, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_Layer
       value: 8
@@ -517,16 +517,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 316326444486480105}
     m_Modifications:
-    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_stolen_crown
-      objectReference: {fileID: 0}
-    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 2968957688243422900, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -581,6 +571,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_stolen_crown
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 939910584623352724, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}

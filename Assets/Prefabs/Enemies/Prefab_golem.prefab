@@ -99,8 +99,8 @@ GameObject:
   - component: {fileID: -1183600346485620108}
   - component: {fileID: -5506370324480841870}
   - component: {fileID: 2868044723884871890}
-  - component: {fileID: 5329913630447847222}
-  - component: {fileID: 5080885480387283273}
+  - component: {fileID: 8198429566247028688}
+  - component: {fileID: 7187825778703016374}
   m_Layer: 8
   m_Name: Prefab_golem
   m_TagString: Enemy
@@ -427,7 +427,7 @@ MonoBehaviour:
   attackPower: 5
   attackParticle: {fileID: 4586509936800099380, guid: 4ca5b4f6ef43bf343a15819755840b52,
     type: 3}
---- !u!114 &5329913630447847222
+--- !u!114 &8198429566247028688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -436,11 +436,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7448180306381164526}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e062d8adc3132e44a5e8ca05b152846, type: 3}
+  m_Script: {fileID: 11500000, guid: fd34774b9da08b5469476e353434a804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   statsCanvas: {fileID: 5715064655500324834}
---- !u!114 &5080885480387283273
+--- !u!114 &7187825778703016374
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7448180306381164526}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35b824aae70b96a42b42a728aff63d49, type: 3}
+  m_Script: {fileID: 11500000, guid: 352c0af2eacf3db4d90856e2285d86a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: {fileID: 8527079290999624988}
@@ -629,11 +629,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2649610170332886555}
     m_Modifications:
-    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_enemy_healthbar
-      objectReference: {fileID: 0}
     - target: {fileID: 476845422696492459, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -739,6 +734,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_enemy_healthbar
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da41eab665dce04d8882179252d1fce, type: 3}
 --- !u!224 &2957597093703910422 stripped
@@ -766,11 +766,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2649610170332886555}
     m_Modifications:
-    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_stolen_crown
-      objectReference: {fileID: 0}
     - target: {fileID: 2968957688243422900, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -825,6 +820,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_stolen_crown
       objectReference: {fileID: 0}
     - target: {fileID: 939910584623352724, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}

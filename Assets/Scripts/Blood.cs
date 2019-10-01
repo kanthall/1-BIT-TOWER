@@ -6,7 +6,7 @@ public class Blood : MonoBehaviour
     [SerializeField] GameObject bloodFading;
 
     private void OnMouseUp()
-    { 
+    {
         if (gameObject.CompareTag("Enemy"))
         {
             return;
@@ -22,6 +22,5 @@ public class Blood : MonoBehaviour
             Destroy(deathVfxObject, 3f);
         }
     }
-
 }
 

@@ -1,14 +1,26 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicPlayer : MonoBehaviour
 {
     [SerializeField] AudioClip[] tracks;
-    private AudioSource audioSource;
+    [SerializeField] AudioSource audioSource;
 
-    private void Start()
+    public static MusicPlayer Instance { get { return instance; } }
+
+    private static MusicPlayer instance = null;
+
+    private void Awake()
     {
-        audioSource = FindObjectOfType<AudioSource>();
-        audioSource.loop = false;
+        if (instance)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     private void Update()

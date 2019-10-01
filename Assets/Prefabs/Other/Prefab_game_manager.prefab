@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 982191107207256803}
   m_Layer: 0
   m_Name: Prefab_game_manager
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +45,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.755
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -142,12 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracks:
-  - {fileID: 8300000, guid: 26ae30c0e0e3a104d872d173d0739a06, type: 3}
-  - {fileID: 8300000, guid: 1ffafb1298447694f9170a7af36b680f, type: 3}
   - {fileID: 8300000, guid: a81ecfca2d828fe439dbf21c2d63430b, type: 3}
-  - {fileID: 8300000, guid: 27ae48f392a67004eaa2e91cffdb77ef, type: 3}
-  - {fileID: 8300000, guid: ce4bcb6b4d973f2408c75a75c6f919b6, type: 3}
-  - {fileID: 8300000, guid: 8f31c514e38273e4da1b8c1b0a4f24f7, type: 3}
 --- !u!114 &982191107207256803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,4 +155,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a68fbcd7e9beef47ac3e91a18616f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicVolume: 0
+  musicVolume: 1

@@ -13,6 +13,10 @@ public class CrownsStealing : MonoBehaviour
     
     private CameraShake cameraShake;
     private LevelManager levelManager;
+
+    [SerializeField] Canvas crownsLost;
+
+    [SerializeField] float timer = 3; 
     
     void Start()
     {
@@ -20,13 +24,21 @@ public class CrownsStealing : MonoBehaviour
         health = crowns.Count;
         healthValue.GetComponent<Text>().text = "" + health;
         levelManager = FindObjectOfType<LevelManager>();
+
+        crownsLost.enabled = false;
     }
 
     void Update()
     {
         if (health <= 0)
         {
-            levelManager.LoadGameOver();
+            crownsLost.enabled = true;
+            timer -= Time.deltaTime;
+
+            if (timer <= 0)
+            {
+                levelManager.LoadGameOver();
+            }
         }
     }
 
@@ -42,11 +54,6 @@ public class CrownsStealing : MonoBehaviour
             GameObject selectedCrown = crowns[crowns.Count - 1];
             selectedCrown.SetActive(false);
             crowns.Remove(selectedCrown);
-        }
-        else
-        {
-            
-            Debug.Log("Empty list! No more crowns!");
         }
     }
 }
