@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class CrownsStealing : MonoBehaviour
 {
     [Header("Crowns display")]
-    [SerializeField] int health;
+    [SerializeField] public int health;
     [SerializeField] public Text healthValue;
 
     [Header("Elements in the list")]

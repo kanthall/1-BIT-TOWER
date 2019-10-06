@@ -254,7 +254,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 5
   healthBar: {fileID: 8970678255893903831}
-  deathSoundVolume: 0.75
+  deathSound: {fileID: 8300000, guid: 77b28444a1763b04e821e5da549cef77, type: 3}
+  deathSoundVolume: 0.5
   deathParticle: {fileID: 567038031811761236, guid: 689497a882afebb43a5de854fdd44992,
     type: 3}
   unitName: MAGE
@@ -267,9 +268,10 @@ AudioSource:
   m_GameObject: {fileID: 4792422528474287201}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -288249335641491322, guid: 6e6c2ead5d271c74193955e50515cb83,
+    type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

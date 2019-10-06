@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 3089094357220559174}
   - component: {fileID: 5474298842479923807}
   - component: {fileID: 8763603228883235728}
+  - component: {fileID: 175547601866993684}
   m_Layer: 8
   m_Name: Prefab_bat
   m_TagString: Enemy
@@ -255,6 +256,7 @@ MonoBehaviour:
   blood: 1
   bloodFading: {fileID: 1967047115873555042, guid: 07be2fb070deea145924deed3d2d8bbc,
     type: 3}
+  destroyTime: 0
 --- !u!114 &7579610989142435808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,8 +270,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stolenCrown: {fileID: 5028086318426018624}
-  stealSound: {fileID: 8300000, guid: 1fad4666612308b44addccec39151d72, type: 3}
-  stealSoundVolume: 1
+  stealSound: {fileID: 8300000, guid: 1843d4fc1e86bc145ba733dc0adf10b0, type: 3}
+  stealSoundVolume: 0.25
 --- !u!114 &8168801368881212191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,7 +329,7 @@ MonoBehaviour:
     type: 3}
   bloodSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
   bloodSoundVolume: 0.5
-  punchSound: {fileID: 0}
+  punchSound: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
   healthBar: {fileID: 3296456322789459571}
   isLocked: 0
 --- !u!114 &5474298842479923807
@@ -358,6 +360,103 @@ MonoBehaviour:
   unitName: {fileID: 2731446286640630196}
   unitHP: {fileID: 805759165726086795}
   unitDMG: {fileID: 5148420128365080027}
+--- !u!82 &175547601866993684
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7501588899334910321}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -288249335641491322, guid: 6e6c2ead5d271c74193955e50515cb83,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &4304549689287638460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -365,6 +464,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7501588899334910319}
     m_Modifications:
+    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_enemy_healthbar
+      objectReference: {fileID: 0}
     - target: {fileID: 476845422696492459, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -470,11 +574,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_enemy_healthbar
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da41eab665dce04d8882179252d1fce, type: 3}
 --- !u!224 &4405309062373806103 stripped
@@ -502,6 +601,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7501588899334910319}
     m_Modifications:
+    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_stolen_crown
+      objectReference: {fileID: 0}
     - target: {fileID: 2968957688243422900, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -556,11 +660,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_stolen_crown
       objectReference: {fileID: 0}
     - target: {fileID: 939910584623352724, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}

@@ -26,6 +26,8 @@ public class EnemyHealth : MonoBehaviour
     private WaveManager waveManager;
     private int waveValue;
 
+    AudioSource audioSource;
+
     private void Start()
     {
         waveManager = FindObjectOfType<WaveManager>();
@@ -34,6 +36,8 @@ public class EnemyHealth : MonoBehaviour
         HealthMod();
 
         health = startHealth;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void DealDamage(int damage)
@@ -51,6 +55,8 @@ public class EnemyHealth : MonoBehaviour
             ShowBloodParticle();
             Destroy(gameObject);
             FindObjectOfType<ScoreDisplay>().AddToScore(scoreValue);
+
+            PlayerPrefs.SetInt("EnemiesKilled", PlayerPrefs.GetInt("EnemiesKilled") + 1);
         }
     }
 
@@ -68,7 +74,7 @@ public class EnemyHealth : MonoBehaviour
         }
         
         GameObject bloodObject = Instantiate(bloodParticle, transform.position, Quaternion.identity);
-        AudioSource.PlayClipAtPoint(bloodSound, Camera.main.transform.position, bloodSoundVolume);
+        audioSource.PlayOneShot(bloodSound, bloodSoundVolume);
         Destroy(bloodObject, 3f);
     }
     
@@ -82,8 +88,6 @@ public class EnemyHealth : MonoBehaviour
 
     private void HealthMod()
     {
-        
-
         if (isLocked == false && waveValue == 2)
         {
             startHealth += 1;
@@ -213,6 +217,18 @@ public class EnemyHealth : MonoBehaviour
         if (isLocked == false && waveValue == 23)
         {
             startHealth += 90;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 24)
+        {
+            startHealth += 100;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 25)
+        {
+            startHealth += 110;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
     }

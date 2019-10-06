@@ -23,6 +23,7 @@ public class PlacingUnits : MonoBehaviour
     private NoUnitSelected noUnitSelected;
     private NoMoreMoney noMoreMoney;
     private BoxCollider2D box2d;
+    private AudioSource audioSource;
     
     private void Start()
     {
@@ -37,6 +38,7 @@ public class PlacingUnits : MonoBehaviour
         noMoreMoney = FindObjectOfType<NoMoreMoney>();
 
         box2d = GetComponent<BoxCollider2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnMouseUp()
@@ -58,7 +60,9 @@ public class PlacingUnits : MonoBehaviour
         spriteRenderer.enabled = false;
         
         isEmpty = false;
-        AudioSource.PlayClipAtPoint(placingSound, Camera.main.transform.position, placingSoundVolume);
+        audioSource.PlayOneShot(placingSound, placingSoundVolume);
+
+        PlayerPrefs.SetInt("HeroesBought", PlayerPrefs.GetInt("HeroesBought") + 1);
     }
 
     private void OnMouseOver()

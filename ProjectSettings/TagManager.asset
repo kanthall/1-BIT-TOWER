@@ -12,6 +12,7 @@ TagManager:
   - Unit
   - Locker
   - Manager
+  - Pause
   layers:
   - Default
   - TransparentFX

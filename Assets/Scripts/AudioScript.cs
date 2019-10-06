@@ -17,9 +17,6 @@ public class AudioScript : MonoBehaviour
     {
         sfx = PlayerPrefs.GetFloat("sfx_param", 0);
         sound = PlayerPrefs.GetFloat("sound_param", 0);
-
-        Debug.Log(sfx);
-        Debug.Log(sound);
     }
 
     public void SetSFXVolume(Slider slider)

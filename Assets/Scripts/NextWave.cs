@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 public class NextWave : MonoBehaviour
 {
-    private AudioSource audioSource;
+    AudioSource audioSource;
     [SerializeField] AudioClip nextWaveSound;
     [SerializeField] [Range(0, 1)] float nextWaveVolume = 1f;
     [SerializeField] float timeBetweenWaves;

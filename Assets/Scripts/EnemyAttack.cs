@@ -11,10 +11,12 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] GameObject attackParticle;
 
     private EnemyMovement enemyMovement = null;
+    AudioSource audioSource;
 
     private void Start()
     {
         enemyMovement = GetComponent<EnemyMovement>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -33,7 +35,7 @@ public class EnemyAttack : MonoBehaviour
 
             if (firstAttackTime <= 0f)
             {
-                AudioSource.PlayClipAtPoint(attackSound, new Vector3(0, 0, 0), attackSoundVolume);
+                audioSource.PlayOneShot(attackSound, attackSoundVolume);
                 firstAttackTime = timeBetweenAttacks;
 
                 animator.SetTrigger("Attack");

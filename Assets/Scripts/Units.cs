@@ -4,7 +4,7 @@ public class Units : MonoBehaviour
 {
     [SerializeField] private UnitType unitType;
     [SerializeField] private int price = 50;
-    [SerializeField] private Canvas statsCanvas;
+    //[SerializeField] private Canvas statsCanvas;
 
     private UnitsManager unitsManager = null;
     private SpriteRenderer spriteRenderer;
@@ -12,7 +12,6 @@ public class Units : MonoBehaviour
     public int Price { get { return price; } }
     public UnitType GetUnitType { get { return unitType; } }
     public SpriteRenderer GetSpriteRenderer { get { return spriteRenderer; } }
-    public Canvas GetStatsCanvas {get { return statsCanvas; } }
 
     private void Start()
     {
@@ -24,6 +23,6 @@ public class Units : MonoBehaviour
 
     private void OnMouseUp()
     {
-        unitsManager.SelectUnitButton(unitType, price, statsCanvas);
+        unitsManager.SelectUnitButton(unitType, price);
     }
 }

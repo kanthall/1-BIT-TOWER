@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -7507419198621391329}
   - component: {fileID: 5710249716194599024}
   - component: {fileID: 5895366365127999349}
+  - component: {fileID: 4660595603728333298}
   m_Layer: 0
   m_Name: Prefab_knight
   m_TagString: Untagged
@@ -120,7 +121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 3
   healthBar: {fileID: 2547344074369523785}
-  deathSoundVolume: 0.75
+  deathSound: {fileID: 8300000, guid: 77b28444a1763b04e821e5da549cef77, type: 3}
+  deathSoundVolume: 0.5
   deathParticle: {fileID: 4932603299850224586, guid: ca1a652ee76e38648a9d140342d29372,
     type: 3}
   unitName: NIGHT
@@ -139,7 +141,7 @@ MonoBehaviour:
   animator: {fileID: 1364789935}
   firstAttackTime: 2
   timeBetweenAttacks: 2
-  attackSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
+  attackSound: {fileID: 8300000, guid: a6ec053a868997a4681db456da4b17dd, type: 3}
   attackSoundVolume: 0.5
   attackPower: 4
   attackParticle: {fileID: 1404681256839616, guid: 3640199bf9dc32f4da57c37d57581f57,
@@ -170,6 +172,103 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.19953865, y: 0.04339741}
   m_EdgeRadius: 0
+--- !u!82 &4660595603728333298
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148159689196226553}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -288249335641491322, guid: 6e6c2ead5d271c74193955e50515cb83,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6328524192162867056
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,6 +413,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4833480161345594352}
     m_Modifications:
+    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_healthbar
+      objectReference: {fileID: 0}
     - target: {fileID: 476845422696492459, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -418,11 +522,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_healthbar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da41eab665dce04d8882179252d1fce, type: 3}

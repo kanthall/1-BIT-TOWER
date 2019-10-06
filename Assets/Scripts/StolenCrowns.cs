@@ -8,12 +8,19 @@ public class StolenCrowns : MonoBehaviour
     [SerializeField] AudioClip stealSound;
     [SerializeField] [Range(0, 1)] float stealSoundVolume = 1f;
 
+    AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("CrownTrigger"))
         {
             stolenCrown.GetComponent<SpriteRenderer>().enabled = true;
-            AudioSource.PlayClipAtPoint(stealSound, Camera.main.transform.position, stealSoundVolume);
+            audioSource.PlayOneShot(stealSound, stealSoundVolume);
         }
     }
     

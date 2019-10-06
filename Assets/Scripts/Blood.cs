@@ -4,6 +4,7 @@ public class Blood : MonoBehaviour
 {
     [SerializeField] int blood;
     [SerializeField] GameObject bloodFading;
+    [SerializeField] float destroyTime;
 
     private void OnMouseUp()
     {
@@ -19,7 +20,7 @@ public class Blood : MonoBehaviour
             Destroy(gameObject);
 
             GameObject deathVfxObject = Instantiate(bloodFading, transform.position, Quaternion.identity);
-            Destroy(deathVfxObject, 3f);
+            Destroy(deathVfxObject, destroyTime);
         }
     }
 }

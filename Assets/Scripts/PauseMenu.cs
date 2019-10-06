@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
@@ -10,9 +11,8 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        pauseCanvas.enabled = false; 
+        pauseCanvas.enabled = false;
     }
-
 
     void Update()
     {    

@@ -156,7 +156,8 @@ AudioSource:
   m_GameObject: {fileID: 2019632099307947733}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -288249335641491322, guid: 6e6c2ead5d271c74193955e50515cb83,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 72d38edde990ef64189e0893737bb98e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -352,6 +353,7 @@ MonoBehaviour:
   blood: 3
   bloodFading: {fileID: 1967047115873555042, guid: 07be2fb070deea145924deed3d2d8bbc,
     type: 3}
+  destroyTime: 0
 --- !u!114 &1370829776626947399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,8 +367,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stolenCrown: {fileID: 4125783020347896438}
-  stealSound: {fileID: 8300000, guid: cd5945fc93b5a8c48bd74d2a91fb2c68, type: 3}
-  stealSoundVolume: 1
+  stealSound: {fileID: 8300000, guid: 1843d4fc1e86bc145ba733dc0adf10b0, type: 3}
+  stealSoundVolume: 0.25
 --- !u!114 &-2288923818378853388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,7 +406,7 @@ MonoBehaviour:
     type: 3}
   bloodSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
   bloodSoundVolume: 0.5
-  punchSound: {fileID: 0}
+  punchSound: {fileID: 8300000, guid: a6ec053a868997a4681db456da4b17dd, type: 3}
   healthBar: {fileID: 2129245964183147550}
   isLocked: 0
 --- !u!114 &2472557896644764166
@@ -462,6 +464,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2019632099307947731}
     m_Modifications:
+    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_enemy_healthbar
+      objectReference: {fileID: 0}
     - target: {fileID: 476845422696492459, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -567,11 +574,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_enemy_healthbar
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da41eab665dce04d8882179252d1fce, type: 3}
 --- !u!224 &941543844158063226 stripped
@@ -599,6 +601,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2019632099307947731}
     m_Modifications:
+    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_stolen_crown
+      objectReference: {fileID: 0}
     - target: {fileID: 2968957688243422900, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -653,11 +660,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_stolen_crown
       objectReference: {fileID: 0}
     - target: {fileID: 939910584623352724, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}

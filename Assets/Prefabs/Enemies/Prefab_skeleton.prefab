@@ -173,8 +173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stolenCrown: {fileID: 1369518606524971513}
-  stealSound: {fileID: 8300000, guid: cd5945fc93b5a8c48bd74d2a91fb2c68, type: 3}
-  stealSoundVolume: 1
+  stealSound: {fileID: 8300000, guid: 1843d4fc1e86bc145ba733dc0adf10b0, type: 3}
+  stealSoundVolume: 0.25
 --- !u!114 &3850378135001326840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,6 +190,7 @@ MonoBehaviour:
   blood: 4
   bloodFading: {fileID: 1967047115873555042, guid: 07be2fb070deea145924deed3d2d8bbc,
     type: 3}
+  destroyTime: 0
 --- !u!114 &316326444486480100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,6 +366,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 316326444486480105}
     m_Modifications:
+    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_enemy_healthbar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 476845422696492459, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -470,22 +481,12 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_enemy_healthbar
-      objectReference: {fileID: 0}
-    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
+    - target: {fileID: 6298447871385677026, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8791876879592434063, guid: 7da41eab665dce04d8882179252d1fce,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6298447871385677026, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_Layer
       value: 8
@@ -517,6 +518,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 316326444486480105}
     m_Modifications:
+    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_stolen_crown
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2968957688243422900, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -571,16 +582,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_stolen_crown
-      objectReference: {fileID: 0}
-    - target: {fileID: 1684998077892386975, guid: c0a244a425dd79f49b4404d11c3ef467,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 939910584623352724, guid: c0a244a425dd79f49b4404d11c3ef467,
         type: 3}

@@ -11,15 +11,18 @@ public class UnitHealth : MonoBehaviour
     [SerializeField] Image healthBar;
 
     [Header("Death")]
+    [SerializeField] AudioClip deathSound;
     [SerializeField] [Range(0, 1)] float deathSoundVolume = 0.75f;
     [SerializeField] GameObject deathParticle;
     [SerializeField] public string unitName;
 
+    private AudioSource audioSource;
     private GameObject parent;
 
     private void Start()
     {
-        health = startHealth;    
+        health = startHealth;
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void TakeDamage(int damage)
@@ -37,9 +40,8 @@ public class UnitHealth : MonoBehaviour
             Destroy(parent);
 
             GameObject death = Instantiate(deathParticle, transform.position, Quaternion.identity);
+            audioSource.PlayOneShot(deathSound, 1F);
             Destroy(death, 3f);
-            //audioSource.PlayOneShot(deathSound, 1F);
-        
         }
     }
 }

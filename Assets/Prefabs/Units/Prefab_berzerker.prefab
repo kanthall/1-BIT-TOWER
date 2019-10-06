@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 7849987632478839969}
   - component: {fileID: -1256376170637275126}
   - component: {fileID: -3425085001395007222}
+  - component: {fileID: 5075177423256077216}
   m_Layer: 0
   m_Name: Prefab_berzerker
   m_TagString: Untagged
@@ -283,7 +284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 2
   healthBar: {fileID: 3835150636090094912}
-  deathSoundVolume: 1
+  deathSound: {fileID: 8300000, guid: 77b28444a1763b04e821e5da549cef77, type: 3}
+  deathSoundVolume: 0.5
   deathParticle: {fileID: 5114857049984410586, guid: 07f3c5489ad05fa409af812cce70de38,
     type: 3}
   unitName: BERK
@@ -303,10 +305,107 @@ MonoBehaviour:
   firstAttackTime: 1
   timeBetweenAttacks: 1
   attackSound: {fileID: 8300000, guid: a6ec053a868997a4681db456da4b17dd, type: 3}
-  attackSoundVolume: 1
+  attackSoundVolume: 0.5
   attackPower: 2
   attackParticle: {fileID: 1404681256839616, guid: 3640199bf9dc32f4da57c37d57581f57,
     type: 3}
+--- !u!82 &5075177423256077216
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6249041821588456142}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -288249335641491322, guid: 6e6c2ead5d271c74193955e50515cb83,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2538545311080926863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -314,6 +413,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3497089965181115729}
     m_Modifications:
+    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_healthbar
+      objectReference: {fileID: 0}
     - target: {fileID: 476845422696492459, guid: 7da41eab665dce04d8882179252d1fce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -418,11 +522,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7703646231287604498, guid: 7da41eab665dce04d8882179252d1fce,
-        type: 3}
-      propertyPath: m_Name
-      value: Prefab_healthbar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da41eab665dce04d8882179252d1fce, type: 3}

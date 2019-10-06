@@ -11,16 +11,18 @@ public class UnitsManager : MonoBehaviour
     public GameObject berzerkerPrefab;
     public GameObject magePrefab;
 
+    [Header("Units Canvases")]
     [SerializeField]Canvas wizardStats;
     [SerializeField]Canvas knightStats;
     [SerializeField]Canvas berzerkStats;
-    [SerializeField]Canvas mageStats; 
-    
+    [SerializeField]Canvas mageStats;
+
+    Canvas currentUnitCanvas;
+
     [Header("Selected Unit Sound")]
     [SerializeField] AudioClip selectedUnitSound;
     [SerializeField] [Range(0, 1)] float selectedUnitSoundVolume = 1f;
-
-
+    
     [Header("Particles")]
     public GameObject instantiateParticle;
 
@@ -30,23 +32,30 @@ public class UnitsManager : MonoBehaviour
     private UnitType currentUnitType = UnitType.WIZARD;
     
     private List<Units> unitsButtons = new List<Units>();
-
+    AudioSource audioSource;
     public UnitType CurrentUnitType {  get { return currentUnitType; } }
 
+    public bool wizard;
+    public bool mage;
+    public bool berzerker;
+    public bool knight;
+    
     private void Start()
     {
         money = FindObjectOfType<Money>();
         currentUnitType = UnitType.NONE;
 
-        wizardStats.enabled = false;
-        knightStats.enabled = false;
-        berzerkStats.enabled = false;
-        mageStats.enabled = false; 
+        wizardStats.gameObject.SetActive(false);
+        knightStats.gameObject.SetActive(false);
+        berzerkStats.gameObject.SetActive(false);
+        mageStats.gameObject.SetActive(false);
+
+        audioSource = GetComponent<AudioSource>();
     }
     
     private void Update()
     {
-        UnitsShortcuts();
+        ShowCanvas();
     }
 
     public void InstantiateUnit(Transform unitPlace)
@@ -56,17 +65,40 @@ public class UnitsManager : MonoBehaviour
         switch (currentUnitType)
         {
             case UnitType.WIZARD:
-                unitPrefab = wizardPrefab;
-                break;
+                {
+                    unitPrefab = wizardPrefab;
+                    wizard = true;
+                    berzerker = false;
+                    knight = false;
+                    mage = false;
+                }   break;
+
             case UnitType.KNIGHT:
-                unitPrefab = knightPrefab;
-                break;
+                {
+                    unitPrefab = knightPrefab;
+                    knight = true;
+                    wizard = false;
+                    berzerker = false;
+                    mage = false;
+                }   break;
+
             case UnitType.BERZERKER:
-                unitPrefab = berzerkerPrefab;
-                break;
+                {
+                    unitPrefab = berzerkerPrefab;
+                    berzerker = true;
+                    wizard = false;
+                    knight = false;
+                    mage = false;
+                }   break;
+
             case UnitType.MAGE:
-                unitPrefab = magePrefab;
-                break;
+                {
+                    unitPrefab = magePrefab;
+                    mage = true;
+                    wizard = false;
+                    berzerker = false;
+                    knight = false;
+                }   break;
         }
 
         if (money.Gold <= 0)
@@ -103,7 +135,7 @@ public class UnitsManager : MonoBehaviour
         unitsButtons.Add(unitBtn);
     }
 
-    public void SelectUnitButton(UnitType unitType, int price, Canvas statsCanvas)
+    public void SelectUnitButton(UnitType unitType, int price)
     {
         currentUnitPrice = price;
         currentUnitType = unitType;
@@ -115,34 +147,76 @@ public class UnitsManager : MonoBehaviour
                 if (btn.GetUnitType == unitType)
                 {
                     btn.GetSpriteRenderer.color = new Color32(0, 255, 11, 255);
-                    AudioSource.PlayClipAtPoint(selectedUnitSound, Camera.main.transform.position, selectedUnitSoundVolume);
+                    audioSource.PlayOneShot(selectedUnitSound, selectedUnitSoundVolume);
+                    UnitsShortcuts();
                 }
                 else
+                {
                     btn.GetSpriteRenderer.color = Color.white;
+                }
             }
         }
     }
 
     private void UnitsShortcuts()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                SelectUnitButton(UnitType.BERZERKER, 2);
+            }
+
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                SelectUnitButton(UnitType.KNIGHT, 5);
+            }
+
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                SelectUnitButton(UnitType.WIZARD, 20);
+            }
+
+            else if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                SelectUnitButton(UnitType.MAGE, 25);
+            }
+    }
+
+    private void ShowCanvas()
+    {
+        if (berzerker)
         {
-            SelectUnitButton(UnitType.BERZERKER, 2, wizardStats);
+            berzerkStats.gameObject.SetActive(true);
+            wizardStats.gameObject.SetActive(false);
+            knightStats.gameObject.SetActive(false);
+            mageStats.gameObject.SetActive(false);
         }
-        
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+
+        if (knight)
         {
-            SelectUnitButton(UnitType.KNIGHT, 5, knightStats);
+            knightStats.gameObject.SetActive(true);
+            wizardStats.gameObject.SetActive(false);
+            berzerkStats.gameObject.SetActive(false);
+            mageStats.gameObject.SetActive(false);
         }
-        
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+
+        if (wizard)
         {
-            SelectUnitButton(UnitType.WIZARD, 20, wizardStats);
+           wizardStats.gameObject.SetActive(true);
+           knightStats.gameObject.SetActive(false);
+           berzerkStats.gameObject.SetActive(false);
+           mageStats.gameObject.SetActive(false);
         }
-        
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
+
+        if (mage)
         {
-            SelectUnitButton(UnitType.MAGE, 25, mageStats);
+            mageStats.gameObject.SetActive(true);
+            wizardStats.gameObject.SetActive(false);
+            knightStats.gameObject.SetActive(false);
+            berzerkStats.gameObject.SetActive(false);
         } 
     }
 }
+ 
+
+
+        
