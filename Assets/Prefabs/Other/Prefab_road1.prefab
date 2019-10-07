@@ -155,7 +155,7 @@ MonoBehaviour:
   placingSound: {fileID: 8300000, guid: 1c38f1b7c60eb984fbbcfa12176f100e, type: 3}
   placingSoundVolume: 1
   noUnitSelectedSound: {fileID: 8300000, guid: 959dce88de07a6e488b48263f1f85936, type: 3}
-  noUnitSelectedSoundVolume: 0.15
+  noUnitSelectedSoundVolume: 0.1
   noMoreMoneySound: {fileID: 8300000, guid: bf6966a7eb4c6b347a799f650eb3d394, type: 3}
   noMoreMoneySoundVolume: 0.55
 --- !u!82 &6067129960402231498

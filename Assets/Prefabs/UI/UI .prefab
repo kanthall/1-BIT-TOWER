@@ -3572,7 +3572,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5819215854465412757}
+      - m_Target: {fileID: 5819215854465412757, guid: 7b74c8f33d903a346bbc47d8ef29ba7e,
+          type: 3}
         m_MethodName: SetSoundVolume
         m_Mode: 2
         m_Arguments:
@@ -4287,7 +4288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6162640345068131586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6763,7 +6764,6 @@ GameObject:
   - component: {fileID: 6162640345877421919}
   - component: {fileID: 6162640345877421888}
   - component: {fileID: 6162640345877421889}
-  - component: {fileID: 5819215854465412757}
   m_Layer: 0
   m_Name: Canvas_pause_menu
   m_TagString: Untagged
@@ -6866,19 +6866,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5819215854465412757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6162640345877421891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da0078cc8ecab74468586b5ea2f16100, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  masterMixer: {fileID: 24100000, guid: 6e6c2ead5d271c74193955e50515cb83, type: 2}
 --- !u!1 &6162640345887710441
 GameObject:
   m_ObjectHideFlags: 0
@@ -7823,7 +7810,7 @@ MonoBehaviour:
   berzerkStats: {fileID: 5298556723739407340}
   mageStats: {fileID: 6394600512782246490}
   selectedUnitSound: {fileID: 8300000, guid: ba2465fea220dfc46a0308cc5a4e4298, type: 3}
-  selectedUnitSoundVolume: 1
+  selectedUnitSoundVolume: 0.5
   instantiateParticle: {fileID: 7285990772871968805, guid: 30b1b79e1e8e40b4283e8189bb0b8c79,
     type: 3}
   currentUnitPrice: -1
@@ -7843,7 +7830,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -288249335641491322, guid: 6e6c2ead5d271c74193955e50515cb83,
     type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -10719,7 +10706,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5819215854465412757}
+      - m_Target: {fileID: 5819215854465412757, guid: 7b74c8f33d903a346bbc47d8ef29ba7e,
+          type: 3}
         m_MethodName: SetSFXVolume
         m_Mode: 2
         m_Arguments:
@@ -11121,11 +11109,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas_stonger_wave
-      objectReference: {fileID: 0}
-    - target: {fileID: 8684639584856589402, guid: c1d9204865f0a4348ab27cc6635bd60b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8684639584856589406, guid: c1d9204865f0a4348ab27cc6635bd60b,
         type: 3}

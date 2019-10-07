@@ -303,7 +303,7 @@ MonoBehaviour:
   firstAttackTime: 1
   timeBetweenAttacks: 1
   attackSound: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
-  attackSoundVolume: 1
+  attackSoundVolume: 0.5
   attackPower: 1
   attackParticle: {fileID: 4586509936800099380, guid: 4ca5b4f6ef43bf343a15819755840b52,
     type: 3}

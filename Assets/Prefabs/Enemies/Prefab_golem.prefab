@@ -424,7 +424,7 @@ MonoBehaviour:
   animator: {fileID: 1127110092186633418}
   firstAttackTime: 3
   timeBetweenAttacks: 3
-  attackSound: {fileID: 8300000, guid: a6ec053a868997a4681db456da4b17dd, type: 3}
+  attackSound: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
   attackSoundVolume: 0.5
   attackPower: 5
   attackParticle: {fileID: 4586509936800099380, guid: 4ca5b4f6ef43bf343a15819755840b52,

@@ -872,5 +872,22 @@ PrefabInstance:
       propertyPath: m_ReferenceResolution.y
       value: 1080
       objectReference: {fileID: 0}
+    - target: {fileID: 1087546629622081335, guid: eec11d8becd2a6246aeef61428bd265b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -96.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087546629622081335, guid: eec11d8becd2a6246aeef61428bd265b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 68.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 2458439106364821436, guid: eec11d8becd2a6246aeef61428bd265b,
+        type: 3}
+      propertyPath: m_Text
+      value: 'KENNY ASSETS
+
+        ITCH.IO'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eec11d8becd2a6246aeef61428bd265b, type: 3}

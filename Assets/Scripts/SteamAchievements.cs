@@ -18,11 +18,6 @@ public class SteamAchievements : MonoBehaviour
         if(!SteamManager.Initialized)
         {
             gameObject.SetActive(false);
-            Debug.Log("nie działam");
-        }
-        else
-        {
-            Debug.Log("działam");
         }
 
         if (script != null)
