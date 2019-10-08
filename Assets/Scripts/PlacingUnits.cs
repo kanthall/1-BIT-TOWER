@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class PlacingUnits : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class PlacingUnits : MonoBehaviour
     private NoMoreMoney noMoreMoney;
     private BoxCollider2D box2d;
     private AudioSource audioSource;
+    private PauseMenu pauseMenu;
+    private Tutorial tutorialMenu;
     
     private void Start()
     {
@@ -39,10 +42,18 @@ public class PlacingUnits : MonoBehaviour
 
         box2d = GetComponent<BoxCollider2D>();
         audioSource = GetComponent<AudioSource>();
+
+        pauseMenu = FindObjectOfType<PauseMenu>();
+        tutorialMenu = FindObjectOfType<Tutorial>();
     }
 
     private void OnMouseUp()
     {
+        if (pauseMenu.pauseActive == true || tutorialMenu.tutorialEnabled == true)
+        {
+            return;
+        }
+
         if (!isEmpty || unitsManager.CurrentUnitType == UnitType.NONE)
         {
             StartCoroutine(NoUnitSelected());

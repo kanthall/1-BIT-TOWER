@@ -1796,11 +1796,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_level_manager
       objectReference: {fileID: 0}
-    - target: {fileID: -2854732996902771009, guid: 1ae60e3b7273bd042a09e9ea3a4b526b,
-        type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 982191107347028425}
     - target: {fileID: 556830913945868307, guid: 1ae60e3b7273bd042a09e9ea3a4b526b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1856,6 +1851,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2854732996902771009, guid: 1ae60e3b7273bd042a09e9ea3a4b526b,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 982191107347028425}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ae60e3b7273bd042a09e9ea3a4b526b, type: 3}
 --- !u!20 &9159806313098946685
