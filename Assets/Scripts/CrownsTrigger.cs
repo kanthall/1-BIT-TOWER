@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class CrownsTrigger : MonoBehaviour
 {
-    [SerializeField] int health;
+    [SerializeField] public int health;
     [SerializeField] public Text healthValue;
 
     public GameObject[] healthIndicator;

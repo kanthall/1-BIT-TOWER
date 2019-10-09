@@ -9,9 +9,10 @@ public class SteamAchievements : MonoBehaviour
     public static SteamAchievements script;
     private bool unlockTest = false;
 
-    private int scoreToCompare = 10;
-    [SerializeField] int crowns;
-    [SerializeField] int waveValue;
+    private WaveManager waveManager;
+
+    private CrownsStealing health;
+    private int crowns;
     
      void Awake()
     {
@@ -28,6 +29,14 @@ public class SteamAchievements : MonoBehaviour
         
 
         DontDestroyOnLoad(gameObject);
+     }
+
+    private void Start()
+    {
+        waveManager = FindObjectOfType<WaveManager>();
+
+        health = FindObjectOfType<CrownsStealing>();
+        crowns = health.crowns.Count;
     }
 
     void Update()
@@ -54,7 +63,7 @@ public class SteamAchievements : MonoBehaviour
             Debug.Log("Heroes bought reset");
         }
     }
-    
+
     public void UnlockSteamAchievement(string ID)
     {
         TestSteamAchievement(ID);
@@ -106,18 +115,17 @@ public class SteamAchievements : MonoBehaviour
             UnlockSteamAchievement("5AnArmy");
         }
 
-        if (waveValue == 2 && crowns >= 1)
+        if (waveManager.GetWave() == 2 && crowns >= 1)
         {
-            Debug.Log("Zdobyte 6Training");
             UnlockSteamAchievement("6Training");
         }
 
-        if (Input.GetKeyDown(KeyCode.J))
+        if (waveManager.GetWave() == 6 && crowns >= 1)
         {
             UnlockSteamAchievement("7PreparedHero");
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (waveManager.GetWave() == 11 && crowns >= 1)
         {
             UnlockSteamAchievement("8TrueDefender");
         }

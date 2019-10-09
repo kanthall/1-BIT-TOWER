@@ -5,7 +5,7 @@ public class WaveManager : MonoBehaviour
 {
     [SerializeField] Text waveValue;
     [SerializeField] int startingWave;
-    private int wave;
+    public int wave;
 
     [Header("Wave button text")]
     [SerializeField] private Text startText;
