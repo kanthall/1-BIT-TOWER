@@ -26,6 +26,8 @@ public class EnemyHealth : MonoBehaviour
     private WaveManager waveManager;
     private int waveValue;
 
+    private SteamAchievements steamAchievements;
+
     AudioSource audioSource;
 
     private void Start()
@@ -38,6 +40,8 @@ public class EnemyHealth : MonoBehaviour
         health = startHealth;
 
         audioSource = GetComponent<AudioSource>();
+
+        steamAchievements = FindObjectOfType<SteamAchievements>();
     }
 
     public void DealDamage(int damage)
@@ -57,6 +61,7 @@ public class EnemyHealth : MonoBehaviour
             FindObjectOfType<ScoreDisplay>().AddToScore(scoreValue);
 
             PlayerPrefs.SetInt("EnemiesKilled", PlayerPrefs.GetInt("EnemiesKilled") + 1);
+            steamAchievements.Unlocking(PlayerPrefs.GetInt("EnemiesKilled", 0));
         }
     }
 
@@ -73,7 +78,7 @@ public class EnemyHealth : MonoBehaviour
             return;
         }
         
-        GameObject bloodObject = Instantiate(bloodParticle, transform.position, Quaternion.identity);
+        GameObject bloodObject = Instantiate(bloodParticle, transform.position + new Vector3(0, 0, -0.03f), Quaternion.identity);
         audioSource.PlayOneShot(bloodSound, bloodSoundVolume);
         Destroy(bloodObject, 3f);
     }

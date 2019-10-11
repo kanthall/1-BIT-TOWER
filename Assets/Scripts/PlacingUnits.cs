@@ -27,6 +27,8 @@ public class PlacingUnits : MonoBehaviour
     private AudioSource audioSource;
     private PauseMenu pauseMenu;
     private Tutorial tutorialMenu;
+
+    private SteamAchievements achievements;
     
     private void Start()
     {
@@ -45,6 +47,8 @@ public class PlacingUnits : MonoBehaviour
 
         pauseMenu = FindObjectOfType<PauseMenu>();
         tutorialMenu = FindObjectOfType<Tutorial>();
+
+        achievements = FindObjectOfType<SteamAchievements>();
     }
 
     private void OnMouseUp()
@@ -60,7 +64,6 @@ public class PlacingUnits : MonoBehaviour
             return;
         }
 
-        //brak kasy daje komunikat
         if (money.Gold - unitsManager.currentUnitPrice < 0)
         {
             StartCoroutine("NoMoreMoney");
@@ -74,6 +77,7 @@ public class PlacingUnits : MonoBehaviour
         audioSource.PlayOneShot(placingSound, placingSoundVolume);
 
         PlayerPrefs.SetInt("HeroesBought", PlayerPrefs.GetInt("HeroesBought") + 1);
+        achievements.Unlocking2(PlayerPrefs.GetInt("HeroesBought", 0));
     }
 
     private void OnMouseOver()

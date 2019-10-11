@@ -191,7 +191,7 @@ MonoBehaviour:
   blood: 4
   bloodFading: {fileID: 1967047115873555042, guid: 07be2fb070deea145924deed3d2d8bbc,
     type: 3}
-  destroyTime: 0
+  destroyTime: 3
 --- !u!114 &316326444486480100
 MonoBehaviour:
   m_ObjectHideFlags: 0

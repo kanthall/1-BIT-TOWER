@@ -9,14 +9,9 @@ public class SteamAchievements : MonoBehaviour
     public static SteamAchievements script;
     private bool unlockTest = false;
 
-    private WaveManager waveManager;
-
-    private CrownsStealing health;
-    private int crowns;
-    
-     void Awake()
+    void Awake()
     {
-        if(!SteamManager.Initialized)
+        if (!SteamManager.Initialized)
         {
             gameObject.SetActive(false);
         }
@@ -26,24 +21,14 @@ public class SteamAchievements : MonoBehaviour
             Destroy(gameObject);
         }
         script = this;
-        
+
 
         DontDestroyOnLoad(gameObject);
-     }
-
-    private void Start()
-    {
-        waveManager = FindObjectOfType<WaveManager>();
-
-        health = FindObjectOfType<CrownsStealing>();
-        crowns = health.crowns.Count;
     }
 
-    void Update()
+    /*void Update()
     {
-        Unlocking();
         Deleting();
-
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -62,12 +47,12 @@ public class SteamAchievements : MonoBehaviour
             PlayerPrefs.DeleteKey("HeroesBought");
             Debug.Log("Heroes bought reset");
         }
-    }
+    }*/
 
     public void UnlockSteamAchievement(string ID)
     {
         TestSteamAchievement(ID);
-        if(!unlockTest)
+        if (!unlockTest)
         {
             SteamUserStats.SetAchievement(ID);
             SteamUserStats.StoreStats();
@@ -88,7 +73,25 @@ public class SteamAchievements : MonoBehaviour
         }
     }
 
-    private void Unlocking()
+    public void Unlocking(int wave, int health)
+    {
+        if (wave == 6 && health >= 1)
+        {
+            UnlockSteamAchievement("6Training");
+        }
+
+        if (wave == 11 && health >= 1)
+        {
+            UnlockSteamAchievement("7PreparedHero");
+        }
+
+        if (wave == 16 && health >= 1)
+        {
+            UnlockSteamAchievement("8TrueDefender");
+        }
+    }
+
+    public void Unlocking(int enemiesKilled)
     {
         if (PlayerPrefs.GetInt("EnemiesKilled", 0) == 11)
         {
@@ -109,27 +112,18 @@ public class SteamAchievements : MonoBehaviour
         {
             UnlockSteamAchievement("4PowerfullMage");
         }
+    }
 
+    public void Unlocking2(int heroesBought)
+    {
         if (PlayerPrefs.GetInt("HeroesBought", 0) == 501)
         {
             UnlockSteamAchievement("5AnArmy");
         }
+    }
 
-        if (waveManager.GetWave() == 2 && crowns >= 1)
-        {
-            UnlockSteamAchievement("6Training");
-        }
-
-        if (waveManager.GetWave() == 6 && crowns >= 1)
-        {
-            UnlockSteamAchievement("7PreparedHero");
-        }
-
-        if (waveManager.GetWave() == 11 && crowns >= 1)
-        {
-            UnlockSteamAchievement("8TrueDefender");
-        }
-
+    public void Unlocking3(int highScore)
+    {
         if (PlayerPrefs.GetInt("Highscore", 0) > 1000)
         {
             UnlockSteamAchievement("9TheLeader");

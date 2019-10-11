@@ -10,6 +10,8 @@ public class WaveManager : MonoBehaviour
     [Header("Wave button text")]
     [SerializeField] private Text startText;
     [SerializeField] private Text nextWaveText;
+    [SerializeField] private SteamAchievements steamAchievements;
+    [SerializeField] private CrownsStealing health;
 
     private void Start()
     {
@@ -21,7 +23,7 @@ public class WaveManager : MonoBehaviour
 
     private void Update()
     {
-        waveValue.text = "WAVE" + " - " + GetWave().ToString();
+        waveValue.text = "WAVE" + " - " + wave.ToString();
 
         if (wave == startingWave)
         {
@@ -43,5 +45,6 @@ public class WaveManager : MonoBehaviour
     public void AddToWaveCounter()
     {
         wave += 1;
+        steamAchievements.Unlocking(wave, health.crowns.Count);
     }
 }

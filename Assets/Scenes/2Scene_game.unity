@@ -1845,7 +1845,7 @@ Transform:
   - {fileID: 843816557}
   - {fileID: 100637971}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &121750865
 PrefabInstance:
@@ -25197,6 +25197,8 @@ MonoBehaviour:
   wave: 0
   startText: {fileID: 1007304680}
   nextWaveText: {fileID: 1301795170}
+  steamAchievements: {fileID: 2049126178}
+  health: {fileID: 210482637}
 --- !u!1 &1982503256
 GameObject:
   m_ObjectHideFlags: 0
@@ -27334,7 +27336,7 @@ PrefabInstance:
     - target: {fileID: 6162640346191470176, guid: 7b74c8f33d903a346bbc47d8ef29ba7e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6162640346191470176, guid: 7b74c8f33d903a346bbc47d8ef29ba7e,
         type: 3}
@@ -27444,6 +27446,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162640345068131590, guid: 7b74c8f33d903a346bbc47d8ef29ba7e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162640345501284822, guid: 7b74c8f33d903a346bbc47d8ef29ba7e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162640345877421891, guid: 7b74c8f33d903a346bbc47d8ef29ba7e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387502290555072366, guid: 7b74c8f33d903a346bbc47d8ef29ba7e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b74c8f33d903a346bbc47d8ef29ba7e, type: 3}
