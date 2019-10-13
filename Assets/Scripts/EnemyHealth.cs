@@ -12,11 +12,12 @@ public class EnemyHealth : MonoBehaviour
     [Header("Visual & sound")]
     [SerializeField] GameObject deathParticle;
     [SerializeField] GameObject bloodParticle;
-    [SerializeField] AudioClip bloodSound;
-    [SerializeField] [Range(0, 1)] float bloodSoundVolume = 0.50f;
+    //[SerializeField] AudioClip bloodSound;
+    //[SerializeField] [Range(0, 1)] float bloodSoundVolume = 0.50f;
     
     [Header("Sound type for hit")]
-    [SerializeField] AudioClip punchSound;
+    [SerializeField] AudioClip attackSound;
+    [SerializeField] [Range(0, 1)] float punchSoundVolume = 0.50f;
     
     [Header("Healthbar")]
     [SerializeField] Image healthBar;
@@ -50,7 +51,7 @@ public class EnemyHealth : MonoBehaviour
 
         healthBar.fillAmount = health / startHealth;
 
-   //tutaj był dźwięk uderzania
+        audioSource.PlayOneShot(attackSound, punchSoundVolume);
 
         if (health <= 0)
         {
@@ -79,7 +80,7 @@ public class EnemyHealth : MonoBehaviour
         }
         
         GameObject bloodObject = Instantiate(bloodParticle, transform.position + new Vector3(0, 0, -0.03f), Quaternion.identity);
-        audioSource.PlayOneShot(bloodSound, bloodSoundVolume);
+        //audioSource.PlayOneShot(bloodSound, bloodSoundVolume);
         Destroy(bloodObject, 3f);
     }
     
@@ -234,6 +235,24 @@ public class EnemyHealth : MonoBehaviour
         if (isLocked == false && waveValue == 25)
         {
             startHealth += 110;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 26)
+        {
+            startHealth += 120;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 27)
+        {
+            startHealth += 130;
+            FindObjectOfType<WaveCanvas>().ShowWarning();
+        }
+
+        if (isLocked == false && waveValue == 28)
+        {
+            startHealth += 140;
             FindObjectOfType<WaveCanvas>().ShowWarning();
         }
     }

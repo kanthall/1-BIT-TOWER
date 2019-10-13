@@ -5,7 +5,7 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private float firstAttackTime;
     [SerializeField] private float timeBetweenAttacks;
-    [SerializeField] private AudioClip attackSound;
+    [SerializeField] private AudioClip heroesHitEnemy;
     [SerializeField] [Range(0, 1)] float attackSoundVolume = 0.50f;
     [SerializeField] public int attackPower;
     [SerializeField] GameObject attackParticle;
@@ -35,7 +35,7 @@ public class EnemyAttack : MonoBehaviour
 
             if (firstAttackTime <= 0f)
             {
-                audioSource.PlayOneShot(attackSound, attackSoundVolume);
+                audioSource.PlayOneShot(heroesHitEnemy, attackSoundVolume);
                 firstAttackTime = timeBetweenAttacks;
 
                 animator.SetTrigger("Attack");

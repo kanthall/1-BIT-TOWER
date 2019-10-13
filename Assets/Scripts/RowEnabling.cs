@@ -22,6 +22,8 @@ public class RowEnabling : MonoBehaviour
     [SerializeField] [Range(0, 1)] float buyingSoundVolume = 0.75f;
     private AudioSource audio;
     [SerializeField] GameObject child;
+
+    PlacingUnits noMoney;
     
     void Start()
     {
@@ -29,6 +31,7 @@ public class RowEnabling : MonoBehaviour
         money = FindObjectOfType<Money>();
         placingUnits = GetComponent<PlacingUnits>();
         audio = GetComponent<AudioSource>();
+        noMoney = FindObjectOfType<PlacingUnits>();
     }
 
     public void BuyRow()
@@ -41,6 +44,8 @@ public class RowEnabling : MonoBehaviour
                 {
                     if (money.Gold <= 0)
                     {
+                        noMoney.StartCoroutine("NoMoreMoney");
+                        Debug.Log("no moneeeey");
                         return;
                     }
 

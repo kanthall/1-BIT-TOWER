@@ -4739,7 +4739,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 15
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -4779,7 +4779,7 @@ MonoBehaviour:
   damage: 3
   hitPrefab: {fileID: 1404681256839616, guid: 3640199bf9dc32f4da57c37d57581f57, type: 3}
   projectileHitSound: {fileID: 8300000, guid: c65fa4b24ab6a7746be885b48894274b, type: 3}
-  projectileSoundVolume: 0.45
+  projectileSoundVolume: 0.25
 --- !u!61 &7522824472901200048
 BoxCollider2D:
   m_ObjectHideFlags: 0

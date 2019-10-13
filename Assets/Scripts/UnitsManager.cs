@@ -145,7 +145,7 @@ public class UnitsManager : MonoBehaviour
 
     public void SelectUnitButton(UnitType unitType, int price)
     {
-        Debug.Log(unitType);
+        //Debug.Log(unitType);
 
         currentUnitPrice = price;
         currentUnitType = unitType;

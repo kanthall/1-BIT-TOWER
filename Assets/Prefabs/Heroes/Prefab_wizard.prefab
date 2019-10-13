@@ -136,7 +136,7 @@ MonoBehaviour:
   timeBeforeFirstShoot: 1.5
   timeBetweenShots: 1.5
   projectileSound: {fileID: 8300000, guid: 72d38edde990ef64189e0893737bb98e, type: 3}
-  projectileSoundVolume: 0.25
+  projectileSoundVolume: 0.2
   animator: {fileID: 4441583328139430113}
 --- !u!61 &2426838610890665452
 BoxCollider2D:
@@ -198,7 +198,7 @@ MonoBehaviour:
   startHealth: 4
   healthBar: {fileID: 1415216778630365263}
   deathSound: {fileID: 8300000, guid: 77b28444a1763b04e821e5da549cef77, type: 3}
-  deathSoundVolume: 0.5
+  deathSoundVolume: 1
   deathParticle: {fileID: 6581906583552249297, guid: fb75110e15070b54cac725df015fcd92,
     type: 3}
   unitName: WIZZ
@@ -343,7 +343,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.087, y: -0.07755165}
+  m_Offset: {x: 0.087, y: -0.021819223}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -354,7 +354,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.13884038}
+  m_Size: {x: 0.15, y: 0.027475528}
   m_EdgeRadius: 0
 --- !u!1001 &405416896118832000
 PrefabInstance:

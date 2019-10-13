@@ -209,7 +209,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.080046296, y: -0.080046326}
+  m_Offset: {x: 0.080046296, y: -0.08689383}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 1}
@@ -220,7 +220,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14027786, y: 0.14027792}
+  m_Size: {x: 0.14027786, y: 0.12658292}
   m_EdgeRadius: 0
 --- !u!95 &1127110092186633418
 Animator:
@@ -404,9 +404,8 @@ MonoBehaviour:
     type: 3}
   bloodParticle: {fileID: 3315457047935365390, guid: 5751a28d5416388419fd38b7f75f4e5c,
     type: 3}
-  bloodSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
-  bloodSoundVolume: 0.5
-  punchSound: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
+  attackSound: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
+  punchSoundVolume: 0.5
   healthBar: {fileID: 4149765987654062706}
   isLocked: 0
 --- !u!114 &2868044723884871890
@@ -424,8 +423,8 @@ MonoBehaviour:
   animator: {fileID: 1127110092186633418}
   firstAttackTime: 3
   timeBetweenAttacks: 3
-  attackSound: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
-  attackSoundVolume: 0.5
+  heroesHitEnemy: {fileID: 8300000, guid: 8dfcc087c6ed4464b8031dff5ad35745, type: 3}
+  attackSoundVolume: 0.75
   attackPower: 5
   attackParticle: {fileID: 4586509936800099380, guid: 4ca5b4f6ef43bf343a15819755840b52,
     type: 3}

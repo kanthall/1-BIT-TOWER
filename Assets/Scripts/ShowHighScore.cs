@@ -13,7 +13,6 @@ public class ShowHighScore : MonoBehaviour
         temp = PlayerPrefs.GetInt("Highscore", 0);
         highscore.text = temp.ToString();
 
-        achievements = FindObjectOfType<SteamAchievements>();
-        achievements.Unlocking3(PlayerPrefs.GetInt("Highscore", 0));
+        
     }
 }

@@ -324,9 +324,8 @@ MonoBehaviour:
     type: 3}
   bloodParticle: {fileID: 3315457047935365390, guid: 5751a28d5416388419fd38b7f75f4e5c,
     type: 3}
-  bloodSound: {fileID: 8300000, guid: 6355013b2b8c32d4eb19d4b4771c1343, type: 3}
-  bloodSoundVolume: 0.5
-  punchSound: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
+  attackSound: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
+  punchSoundVolume: 0.5
   healthBar: {fileID: 2901120606897207202}
   isLocked: 0
 --- !u!114 &7948214384151311767
@@ -344,8 +343,8 @@ MonoBehaviour:
   animator: {fileID: -3819350254876787015}
   firstAttackTime: 2
   timeBetweenAttacks: 2
-  attackSound: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
-  attackSoundVolume: 0.5
+  heroesHitEnemy: {fileID: 8300000, guid: 4477a1640c84e8c4c8a0b5caa062c127, type: 3}
+  attackSoundVolume: 0.75
   attackPower: 3
   attackParticle: {fileID: 4586509936800099380, guid: 4ca5b4f6ef43bf343a15819755840b52,
     type: 3}
