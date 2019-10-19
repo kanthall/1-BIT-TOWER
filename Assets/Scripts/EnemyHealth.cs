@@ -12,8 +12,6 @@ public class EnemyHealth : MonoBehaviour
     [Header("Visual & sound")]
     [SerializeField] GameObject deathParticle;
     [SerializeField] GameObject bloodParticle;
-    //[SerializeField] AudioClip bloodSound;
-    //[SerializeField] [Range(0, 1)] float bloodSoundVolume = 0.50f;
     
     [Header("Sound type for hit")]
     [SerializeField] AudioClip attackSound;
@@ -80,7 +78,6 @@ public class EnemyHealth : MonoBehaviour
         }
         
         GameObject bloodObject = Instantiate(bloodParticle, transform.position + new Vector3(0, 0, -0.03f), Quaternion.identity);
-        //audioSource.PlayOneShot(bloodSound, bloodSoundVolume);
         Destroy(bloodObject, 3f);
     }
     

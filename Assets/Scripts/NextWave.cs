@@ -11,10 +11,10 @@ public class NextWave : MonoBehaviour
 
     private WaveManager waveManager;
     private int waveValue;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        
         waveManager = FindObjectOfType<WaveManager>();
         waveValue = waveManager.GetWave();
     }

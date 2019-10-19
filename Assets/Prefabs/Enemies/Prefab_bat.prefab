@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stolenCrown: {fileID: 5028086318426018624}
-  stealSound: {fileID: 8300000, guid: 1843d4fc1e86bc145ba733dc0adf10b0, type: 3}
+  stealSound: {fileID: 8300000, guid: 47cecee01710d82468d48e94c37b8fa7, type: 3}
   stealSoundVolume: 0.25
 --- !u!114 &8168801368881212191
 MonoBehaviour:
@@ -303,7 +303,7 @@ MonoBehaviour:
   firstAttackTime: 1
   timeBetweenAttacks: 1
   heroesHitEnemy: {fileID: 8300000, guid: c9fd24b4590fdd84182a596914a92578, type: 3}
-  attackSoundVolume: 0.5
+  attackSoundVolume: 0.75
   attackPower: 1
   attackParticle: {fileID: 4586509936800099380, guid: 4ca5b4f6ef43bf343a15819755840b52,
     type: 3}
@@ -327,7 +327,7 @@ MonoBehaviour:
     type: 3}
   bloodParticle: {fileID: 3315457047935365390, guid: 5751a28d5416388419fd38b7f75f4e5c,
     type: 3}
-  attackSound: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
+  attackSound: {fileID: 8300000, guid: bf1b3b4ac596ac44fb3448f5d9cbfae2, type: 3}
   punchSoundVolume: 0.5
   healthBar: {fileID: 3296456322789459571}
   isLocked: 0

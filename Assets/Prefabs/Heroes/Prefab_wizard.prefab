@@ -197,7 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 4
   healthBar: {fileID: 1415216778630365263}
-  deathSound: {fileID: 8300000, guid: 77b28444a1763b04e821e5da549cef77, type: 3}
+  deathSound: {fileID: 8300000, guid: 2ef075f3f88706d43b3219c9a131538f, type: 3}
   deathSoundVolume: 1
   deathParticle: {fileID: 6581906583552249297, guid: fb75110e15070b54cac725df015fcd92,
     type: 3}

@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -11,7 +7,8 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        pauseCanvas.enabled = false;
+        //pauseCanvas.enabled = false;
+        pauseCanvas.gameObject.SetActive(false);
     }
 
     void Update()
@@ -22,12 +19,14 @@ public class PauseMenu : MonoBehaviour
             if (pauseActive == true)
             {
                 Time.timeScale = 0;
-                pauseCanvas.enabled = true;
+                //pauseCanvas.enabled = true;
+                pauseCanvas.gameObject.SetActive(true);
             }
             else
             {
                 Time.timeScale = 1;
-                pauseCanvas.enabled = false;
+                //pauseCanvas.enabled = false;
+                pauseCanvas.gameObject.SetActive(false);
             }
         }
     }

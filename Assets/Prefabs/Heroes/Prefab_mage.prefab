@@ -192,7 +192,7 @@ MonoBehaviour:
   wand: {fileID: 1485758841953253575}
   timeBeforeFirstShoot: 3
   timeBetweenShots: 3
-  projectileSound: {fileID: 8300000, guid: d9f40ee58b5370946af95c8315a10f55, type: 3}
+  projectileSound: {fileID: 8300000, guid: f15cf4abf0f26bf40ab9faf336c22955, type: 3}
   projectileSoundVolume: 0.5
   animator: {fileID: -6713105024972477976}
 --- !u!61 &5899134433142299436
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 5
   healthBar: {fileID: 8970678255893903831}
-  deathSound: {fileID: 8300000, guid: 77b28444a1763b04e821e5da549cef77, type: 3}
+  deathSound: {fileID: 8300000, guid: 2ef075f3f88706d43b3219c9a131538f, type: 3}
   deathSoundVolume: 0.5
   deathParticle: {fileID: 567038031811761236, guid: 689497a882afebb43a5de854fdd44992,
     type: 3}

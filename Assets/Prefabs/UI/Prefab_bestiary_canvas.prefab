@@ -463,7 +463,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "BAT\nHEALTH - 3 \nATTACK POWER - 2 \nATTACK SPEED - 1.5s \nPOINTS - 15"
+  m_Text: "BAT\nHEALTH - 1 HP \nATTACK POWER - 1 DMG \nATTACK SPEED - 1 SEC \nPOINTS
+    - 5"
 --- !u!1 &262535256831391795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,8 +1426,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "MAGE\nHEALTH - 3 \nATTACK POWER - 2 \nATTACK SPEED - 1.5s \nPRICE - 25
-    BLOOD"
+  m_Text: "MAGE\nHEALTH - 5 hp \nATTACK POWER - 4 dmg \nATTACK SPEED - 3 sec \nPRICE
+    - 25 BLOOD"
 --- !u!1 &1822147627058304040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,8 +1656,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "SKELETON\nHEALTH - 3 \nATTACK POWER - 2 \nATTACK SPEED - 1.5s \nPOINTS
-    - 15"
+  m_Text: "SKELETON\nHEALTH - 4 HP \nATTACK POWER - 4 DMG \nATTACK SPEED - 3 SEC \nPOINTS
+    - 20"
 --- !u!1 &3004579488352713861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,7 +1736,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "GHOST\nHEALTH - 3 \nATTACK POWER - 2 \nATTACK SPEED - 1.5s \nPOINTS - 15"
+  m_Text: "GHOST\nHEALTH - 3 HP\nATTACK POWER - 2 DMG\nATTACK SPEED - 1.5 SEC \nPOINTS
+    - 15"
 --- !u!1 &3238848942247528243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,7 +1816,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "BERK\nHEALTH - 3 \nATTACK POWER - 2 \nATTACK SPEED - 1.5s \nPRICE - 2 BLOOD"
+  m_Text: "BERK\nHEALTH - 2 HP\nATTACK POWER - 2 DMG \nATTACK SPEED - 1 sec \nPRICE
+    - 2 BLOOD"
 --- !u!1 &3425959721548647681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,8 +1896,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "NIGHT\nHEALTH - 3 \nATTACK POWER - 2 \nATTACK SPEED - 1.5s \nPRICE - 5
-    BLOOD"
+  m_Text: "NIGHT\nHEALTH - 3 \nATTACK POWER - 4 DMG \nATTACK SPEED - 2 sec \nPRICE
+    - 5 BLOOD"
 --- !u!1 &4253106474900880992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1973,8 +1976,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "WIZZ\nHEALTH - 3 \nATTACK POWER - 2 \nATTACK SPEED - 1.5s \nPRICE - 20
-    BLOOD"
+  m_Text: "WIZZ\nHEALTH - 4 hp  \nATTACK POWER - 3 dmg \nATTACK SPEED - 1.5 sec \nPRICE
+    - 20 BLOOD"
 --- !u!1 &4297906892538360211
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,7 +2989,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: LoadMenu
+        m_MethodName: Back
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3304,7 +3307,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "GOLEM\nHEALTH - 3 \nATTACK POWER - 2 \nATTACK SPEED - 1.5s \nPOINTS - 15"
+  m_Text: "GOLEM\nHEALTH - 6 HP \nATTACK POWER - 5 DMG \nATTACK SPEED - 3 SEC \nPOINTS
+    - 25"
 --- !u!1 &8538810255546638870
 GameObject:
   m_ObjectHideFlags: 0
@@ -3383,7 +3387,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "SQUID\nHEALTH - 3 \nATTACK POWER - 2 \nATTACK SPEED - 1.5s \nPOINTS - 15"
+  m_Text: "SQUID\nHEALTH - 2 HP \nATTACK POWER - 3 DMG \nATTACK SPEED - 2 SEC \nPOINTS
+    - 10"
 --- !u!1 &8767180609234128218
 GameObject:
   m_ObjectHideFlags: 0

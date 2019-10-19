@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stolenCrown: {fileID: 1369518606524971513}
-  stealSound: {fileID: 8300000, guid: 1843d4fc1e86bc145ba733dc0adf10b0, type: 3}
+  stealSound: {fileID: 8300000, guid: 47cecee01710d82468d48e94c37b8fa7, type: 3}
   stealSoundVolume: 0.25
 --- !u!114 &3850378135001326840
 MonoBehaviour:
@@ -232,7 +232,7 @@ MonoBehaviour:
     type: 3}
   bloodParticle: {fileID: 3315457047935365390, guid: 5751a28d5416388419fd38b7f75f4e5c,
     type: 3}
-  attackSound: {fileID: 8300000, guid: 6161b4439292c6d4286646f1dd1a8031, type: 3}
+  attackSound: {fileID: 8300000, guid: bf1b3b4ac596ac44fb3448f5d9cbfae2, type: 3}
   punchSoundVolume: 0.5
   healthBar: {fileID: 1324156783522839561}
   isLocked: 0

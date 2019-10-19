@@ -40,7 +40,7 @@ public class UnitHealth : MonoBehaviour
             Destroy(parent);
 
             GameObject death = Instantiate(deathParticle, transform.position, Quaternion.identity);
-            audioSource.PlayOneShot(deathSound, 1F);
+            audioSource.PlayOneShot(deathSound, deathSoundVolume);
             Destroy(death, 3f);
         }
     }

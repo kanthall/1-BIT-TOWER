@@ -13,12 +13,15 @@ public class WizardShooting : MonoBehaviour
     [SerializeField] AudioClip projectileSound;
     [SerializeField] [Range(0, 1)] float projectileSoundVolume = 0.50f;
 
+    AudioSource audioSource;
+
     [Header("Animation")]
     [SerializeField] Animator animator;
 
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -43,7 +46,7 @@ public class WizardShooting : MonoBehaviour
     private void Shooting()
     {
         Instantiate(wizardProjectile, wand.transform.position, Quaternion.identity);
-        AudioSource.PlayClipAtPoint(projectileSound, Camera.main.transform.position, projectileSoundVolume);
+        audioSource.PlayOneShot(projectileSound, projectileSoundVolume);
     }
 }
 

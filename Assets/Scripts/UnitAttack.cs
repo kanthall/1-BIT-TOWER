@@ -9,10 +9,12 @@ public class UnitAttack : MonoBehaviour
     [SerializeField] [Range(0, 1)] float attackSoundVolume = 0.50f;
     [SerializeField] public int attackPower;
     [SerializeField] GameObject attackParticle;
+    AudioSource audioSource;
     
     private void Start()
     {
         animator = gameObject.GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -33,7 +35,7 @@ public class UnitAttack : MonoBehaviour
                 if (health && attacker)
                 {
                     health.DealDamage(attackPower);
-                    AudioSource.PlayClipAtPoint(attackSound, new Vector3(0, 0, 0), attackSoundVolume);
+                    audioSource.PlayOneShot(attackSound, attackSoundVolume);
                     var hit = Instantiate(attackParticle, attacker.transform.position, Quaternion.identity);
                     Destroy(hit, 1F);
                 }

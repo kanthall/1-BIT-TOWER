@@ -97,7 +97,7 @@ public class PlacingUnits : MonoBehaviour
 
     IEnumerator NoUnitSelected()
     {
-        AudioSource.PlayClipAtPoint(noUnitSelectedSound, Camera.main.transform.position, noUnitSelectedSoundVolume);
+        audioSource.PlayOneShot(noUnitSelectedSound, noUnitSelectedSoundVolume);
         noUnitSelected.noUnitSelectedText1.enabled = true;
         noUnitSelected.noUnitSelectedText2.enabled = true;
         noUnitSelected.noUnitSelectedImage.enabled = true;
@@ -109,7 +109,7 @@ public class PlacingUnits : MonoBehaviour
     
     IEnumerator NoMoreMoney()
     {
-        AudioSource.PlayClipAtPoint(noMoreMoneySound, Camera.main.transform.position, noMoreMoneySoundVolume);
+        audioSource.PlayOneShot(noMoreMoneySound, noMoreMoneySoundVolume);
         noMoreMoney.noMoneyText1.enabled = true;
         noMoreMoney.noMoneyText2.enabled = true;
         noMoreMoney.noMoneyTextImage.enabled = true;

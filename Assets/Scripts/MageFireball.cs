@@ -9,10 +9,12 @@ public class WizardFlame : MonoBehaviour
     
     [SerializeField] AudioClip flameSound;
     [SerializeField] [Range(0, 1)] private float projectileSoundVolume;
+    AudioSource audioSource;
  
     void Update()
     {
         Move();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Move()
@@ -32,8 +34,8 @@ public class WizardFlame : MonoBehaviour
             Destroy(gameObject);
 
             var hit = Instantiate(hitPrefab, health.transform.position, Quaternion.identity);
-            
-            AudioSource.PlayClipAtPoint(flameSound, Camera.main.transform.position, projectileSoundVolume);
+
+            audioSource.PlayOneShot(flameSound, projectileSoundVolume);
 
             Destroy(hit, 0.5f); 
         }  

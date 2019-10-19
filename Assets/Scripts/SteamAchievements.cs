@@ -26,28 +26,29 @@ public class SteamAchievements : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    /*void Update()
+    void Update()
     {
-        Deleting();
+        //Deleting();
 
-        if (Input.GetKeyDown(KeyCode.Q))
+       /* if (Input.GetKeyDown(KeyCode.T))
         {
             PlayerPrefs.DeleteKey("Highscore");
             Debug.Log("Score reset");
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Y))
         {
             PlayerPrefs.DeleteKey("EnemiesKilled");
             Debug.Log("Enemies killed reset");
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.U))
         {
             PlayerPrefs.DeleteKey("HeroesBought");
             Debug.Log("Heroes bought reset");
         }
-    }*/
+        */
+    }
 
     public void UnlockSteamAchievement(string ID)
     {
@@ -103,12 +104,12 @@ public class SteamAchievements : MonoBehaviour
             UnlockSteamAchievement("2NobleKnight");
         }
 
-        if (PlayerPrefs.GetInt("EnemiesKilled", 0) == 1001)
+        if (PlayerPrefs.GetInt("EnemiesKilled", 0) == 501)
         {
             UnlockSteamAchievement("3MightyWizard");
         }
 
-        if (PlayerPrefs.GetInt("EnemiesKilled", 0) == 10001)
+        if (PlayerPrefs.GetInt("EnemiesKilled", 0) == 1001)
         {
             UnlockSteamAchievement("4PowerfullMage");
         }

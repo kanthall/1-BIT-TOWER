@@ -7,16 +7,18 @@ public class LevelManager : MonoBehaviour
     public Animator animator;
     [SerializeField] float delayInSeconds = 3f;
     public Canvas pauseCanvas;
+    private YesNo accept;
 
     private void Start()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        accept = FindObjectOfType<YesNo>();
     }
 
     private void Update()
     {
-        Restart();
+        //Restart();
         Escape();
     }
 
@@ -39,6 +41,11 @@ public class LevelManager : MonoBehaviour
     }
 
     public void LoadMenu()
+    {
+        accept.OpenYesNo();
+    }
+
+    public void Back()
     {
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
@@ -84,6 +91,6 @@ public class LevelManager : MonoBehaviour
     public void BackToGame()
     {
         Time.timeScale = 1;
-        pauseCanvas.enabled = false;
+        pauseCanvas.gameObject.SetActive(false);
     }
 }

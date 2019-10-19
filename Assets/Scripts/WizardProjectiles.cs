@@ -9,10 +9,12 @@ public class WizardProjectiles : MonoBehaviour
     
     [SerializeField] AudioClip projectileHitSound;
     [SerializeField] [Range(0, 1)] private float projectileSoundVolume;
+    AudioSource audioSource;
 
     void Update()
     {
         Move();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Move()
@@ -30,10 +32,10 @@ public class WizardProjectiles : MonoBehaviour
         {
             health.DealDamage(damage);
             Destroy(gameObject);
-            AudioSource.PlayClipAtPoint(projectileHitSound, Camera.main.transform.position, projectileSoundVolume);
-            
+            audioSource.PlayOneShot(projectileHitSound, projectileSoundVolume);
+
             var hit = Instantiate(hitPrefab, health.transform.position, Quaternion.identity);
-            Destroy(hit, 0.5f); 
+            Destroy(hit, 1f); 
         }
     }
 }
