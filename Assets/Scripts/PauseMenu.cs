@@ -19,15 +19,23 @@ public class PauseMenu : MonoBehaviour
             if (pauseActive == true)
             {
                 Time.timeScale = 0;
+                //Debug.Log("Time 0");
                 //pauseCanvas.enabled = true;
                 pauseCanvas.gameObject.SetActive(true);
             }
             else
             {
                 Time.timeScale = 1;
+                //Debug.Log("Time 1");
                 //pauseCanvas.enabled = false;
                 pauseCanvas.gameObject.SetActive(false);
+                
             }
         }
+    }
+
+    public void pauseOff()
+    {
+        pauseActive = false;
     }
 }

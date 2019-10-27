@@ -44,7 +44,7 @@ namespace ProGrids
 				}
 			}
 #endif
-			Debug.LogError("Could not locate ProGrids/GUI/ProGridsToggles folder.  The ProGrids folder may be moved, but the contents of ProGrids must remain unmodified.");
+			//Debug.LogError("Could not locate ProGrids/GUI/ProGridsToggles folder.  The ProGrids folder may be moved, but the contents of ProGrids must remain unmodified.");
 
 			return "";
 		}
@@ -55,7 +55,7 @@ namespace ProGrids
 
 			if(!File.Exists(iconPath))
 			{
-				Debug.LogError("ProGrids failed to locate menu image: " + iconName + ".\nThis can happen if the GUI folder is moved or deleted.  Deleting and re-importing ProGrids will fix this error.");
+				//Debug.LogError("ProGrids failed to locate menu image: " + iconName + ".\nThis can happen if the GUI folder is moved or deleted.  Deleting and re-importing ProGrids will fix this error.");
 				return (Texture2D) null;
 			}
 

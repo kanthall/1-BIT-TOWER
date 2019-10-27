@@ -29,8 +29,8 @@ public class SteamAchievements : MonoBehaviour
     void Update()
     {
         //Deleting();
-
-       /* if (Input.GetKeyDown(KeyCode.T))
+        /*
+        if (Input.GetKeyDown(KeyCode.T))
         {
             PlayerPrefs.DeleteKey("Highscore");
             Debug.Log("Score reset");

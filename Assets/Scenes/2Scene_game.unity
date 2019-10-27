@@ -8389,6 +8389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 631499588}
   - component: {fileID: 631499587}
+  - component: {fileID: 631499589}
   m_Layer: 0
   m_Name: _king
   m_TagString: Untagged
@@ -8459,6 +8460,25 @@ Transform:
   m_Father: {fileID: 742882188}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &631499589
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631499586}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6937b16f033cd1342aa89de6853e1a75, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &632801983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9293,6 +9313,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 753774636466039652, guid: dc12b16e934e4f64594f8491f78e00b3,
+        type: 3}
+      propertyPath: placingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4df9fd757b5def84ca6f628ae7416c23, type: 3}
     - target: {fileID: 3568885828400794108, guid: dc12b16e934e4f64594f8491f78e00b3,
         type: 3}
       propertyPath: m_Color.r
@@ -9308,11 +9333,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 753774636466039652, guid: dc12b16e934e4f64594f8491f78e00b3,
-        type: 3}
-      propertyPath: placingSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 4df9fd757b5def84ca6f628ae7416c23, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc12b16e934e4f64594f8491f78e00b3, type: 3}
 --- !u!4 &695077963 stripped
@@ -11972,6 +11992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 922523709}
   - component: {fileID: 922523708}
+  - component: {fileID: 922523710}
   m_Layer: 0
   m_Name: _queen
   m_TagString: Untagged
@@ -12036,12 +12057,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922523707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3399999, y: 1.53, z: 0}
+  m_LocalPosition: {x: -0.3391, y: 1.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 742882188}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &922523710
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922523707}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7cc0c00d817b8d242afb76b124aeebbc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &923751221 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8998163829217295386, guid: 78e805893ef800e4aa46e22a2a7e75a2,
@@ -28660,6 +28700,11 @@ PrefabInstance:
       propertyPath: selectedUnitSound
       value: 
       objectReference: {fileID: 8300000, guid: ba2465fea220dfc46a0308cc5a4e4298, type: 3}
+    - target: {fileID: 6162640345501284822, guid: 7b74c8f33d903a346bbc47d8ef29ba7e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b74c8f33d903a346bbc47d8ef29ba7e, type: 3}
 --- !u!114 &6368639039460137982

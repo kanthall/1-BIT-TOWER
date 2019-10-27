@@ -45,7 +45,6 @@ public class RowEnabling : MonoBehaviour
                     if (money.Gold <= 0)
                     {
                         noMoney.StartCoroutine("NoMoreMoney");
-                        Debug.Log("no moneeeey");
                         return;
                     }
 

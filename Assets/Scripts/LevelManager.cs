@@ -8,18 +8,27 @@ public class LevelManager : MonoBehaviour
     [SerializeField] float delayInSeconds = 3f;
     public Canvas pauseCanvas;
     private YesNo accept;
+    private int interval = 3;
+
+    Tutorial tutek;
+    PauseMenu pause;
 
     private void Start()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         accept = FindObjectOfType<YesNo>();
+        tutek = FindObjectOfType<Tutorial>();
+        pause = FindObjectOfType<PauseMenu>();
     }
 
     private void Update()
     {
         //Restart();
-        Escape();
+        if (Time.frameCount % interval == 0)
+        {
+            Escape();
+        }
     }
 
     public void LoadGameOver()        
@@ -88,9 +97,16 @@ public class LevelManager : MonoBehaviour
         }
     } 
 
+    public void ScreenChange()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
+    }
+
     public void BackToGame()
     {
         Time.timeScale = 1;
         pauseCanvas.gameObject.SetActive(false);
+        tutek.TutorialOff();
+        pause.pauseOff();
     }
 }

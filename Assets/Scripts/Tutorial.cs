@@ -2,7 +2,7 @@
  
 public class Tutorial : MonoBehaviour
 {
-    [SerializeField] Canvas tutorial;
+    [SerializeField] Canvas tutorial; 
     [SerializeField] BoxCollider2D collider2D;
     [SerializeField] public bool tutorialEnabled;
 
@@ -43,5 +43,13 @@ public class Tutorial : MonoBehaviour
             collider2D.enabled = false;
             tutorialEnabled = false;
         }
+    }
+
+    public void TutorialOff()
+    {
+        Time.timeScale = 1;
+        tutorial.enabled = false;
+        collider2D.enabled = false;
+        tutorialEnabled = false;
     }
 }

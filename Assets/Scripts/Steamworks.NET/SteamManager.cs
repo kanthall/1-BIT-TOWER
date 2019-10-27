@@ -47,7 +47,7 @@ public class SteamManager : MonoBehaviour {
 
 	protected SteamAPIWarningMessageHook_t m_SteamAPIWarningMessageHook;
 	protected static void SteamAPIDebugTextHook(int nSeverity, System.Text.StringBuilder pchDebugText) {
-		Debug.LogWarning(pchDebugText);
+		//Debug.LogWarning(pchDebugText);
 	}
 
     protected virtual void Awake()

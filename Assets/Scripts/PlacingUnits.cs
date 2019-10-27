@@ -52,26 +52,37 @@ public class PlacingUnits : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (pauseMenu.pauseActive == true || tutorialMenu.tutorialEnabled == true)
+        if (pauseMenu.pauseActive == true)
         {
+            //Debug.Log("pause");
+            return;
+        }
+
+        if (tutorialMenu.tutorialEnabled == true)
+        {
+            //Debug.Log("tutorial");
             return;
         }
 
         if (!isEmpty || unitsManager.CurrentUnitType == UnitType.NONE)
         {
             StartCoroutine(NoUnitSelected());
+            //Debug.Log("nie ma jednostki");
             return;
         }
 
         if (money.Gold - unitsManager.currentUnitPrice < 0)
         {
             StartCoroutine("NoMoreMoney");
+            //Debug.Log("nie ma kasy");
             return;
         }
 
         unitsManager.InstantiateUnit(gameObject.transform);
         spriteRenderer.enabled = false;
-        
+
+        //Debug.Log("kupujemy");
+
         isEmpty = false;
         audioSource.PlayOneShot(placingSound, placingSoundVolume);
 
